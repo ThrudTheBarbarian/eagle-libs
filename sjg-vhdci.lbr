@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -96,17 +97,17 @@
 <smd name="P32" x="-11.746" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
 <smd name="P33" x="-12.546" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
 <smd name="P34" x="-13.346" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<wire x1="-13.9192" y1="0" x2="14.0208" y2="0" width="0.127" layer="20"/>
-<wire x1="-15.1511" y1="2.17" x2="-15.1511" y2="5.588" width="0.127" layer="20"/>
-<wire x1="-15.1511" y1="2.17" x2="-13.9192" y2="0" width="0.127" layer="20"/>
-<wire x1="15.1511" y1="5.6388" x2="15.1511" y2="2.1844" width="0.127" layer="20"/>
-<wire x1="14.0208" y1="0" x2="15.1511" y2="2.1844" width="0.127" layer="20"/>
-<wire x1="-15.1511" y1="5.6388" x2="-17.3863" y2="5.6388" width="0.127" layer="20"/>
-<wire x1="15.1511" y1="5.6388" x2="17.3863" y2="5.6388" width="0.127" layer="20"/>
-<wire x1="17.3863" y1="5.6388" x2="17.3863" y2="0" width="0.127" layer="20"/>
-<wire x1="17.3863" y1="0" x2="21.59" y2="0" width="0.127" layer="20"/>
-<wire x1="-17.3863" y1="5.6388" x2="-17.3863" y2="0" width="0.127" layer="20"/>
-<wire x1="-21.59" y1="0" x2="-17.3863" y2="0" width="0.127" layer="20"/>
+<wire x1="-13.9192" y1="0" x2="14.0208" y2="0" width="0" layer="20"/>
+<wire x1="-15.1511" y1="2.17" x2="-15.1511" y2="5.588" width="0" layer="20"/>
+<wire x1="-15.1511" y1="2.17" x2="-13.9192" y2="0" width="0" layer="20"/>
+<wire x1="15.1511" y1="5.6388" x2="15.1511" y2="2.1844" width="0" layer="20"/>
+<wire x1="14.0208" y1="0" x2="15.1511" y2="2.1844" width="0" layer="20"/>
+<wire x1="-15.1511" y1="5.6388" x2="-17.3863" y2="5.6388" width="0" layer="20"/>
+<wire x1="15.1511" y1="5.6388" x2="17.3863" y2="5.6388" width="0" layer="20"/>
+<wire x1="17.3863" y1="5.6388" x2="17.3863" y2="0" width="0" layer="20"/>
+<wire x1="17.3863" y1="0" x2="21.59" y2="0" width="0" layer="20"/>
+<wire x1="-17.3863" y1="5.6388" x2="-17.3863" y2="0" width="0" layer="20"/>
+<wire x1="-21.59" y1="0" x2="-17.3863" y2="0" width="0" layer="20"/>
 <smd name="P68" x="-12.9911" y="2.17" dx="0.508" dy="2.0066" layer="16"/>
 <smd name="P67" x="-12.1911" y="2.17" dx="0.508" dy="2.0066" layer="16"/>
 <smd name="P66" x="-11.3911" y="2.17" dx="0.508" dy="2.0066" layer="16"/>
@@ -141,10 +142,10 @@
 <smd name="P37" x="11.8089" y="2.17" dx="0.508" dy="2.0066" layer="16"/>
 <smd name="P36" x="12.6089" y="2.17" dx="0.508" dy="2.0066" layer="16"/>
 <smd name="P35" x="13.4089" y="2.17" dx="0.508" dy="2.0066" layer="16"/>
-<smd name="PGT2" x="-19.304" y="3.048" dx="3.4798" dy="5.6388" layer="1"/>
-<smd name="PGT1" x="19.304" y="3.048" dx="3.4798" dy="5.6388" layer="1"/>
-<smd name="PGB2" x="-19.304" y="3.048" dx="3.4798" dy="5.6388" layer="16"/>
-<smd name="PGB1" x="19.304" y="3.048" dx="3.4798" dy="5.6388" layer="16"/>
+<smd name="PGT2" x="-19.6" y="3.2" dx="3.4798" dy="5.6388" layer="1"/>
+<smd name="PGT1" x="19.6" y="3.2" dx="3.4798" dy="5.6388" layer="1"/>
+<smd name="PGB2" x="-19.6" y="3.2" dx="3.4798" dy="5.6388" layer="16"/>
+<smd name="PGB1" x="19.6" y="3.2" dx="3.4798" dy="5.6388" layer="16"/>
 <text x="-3.81" y="3.81" size="1.27" layer="21">VHDCI-68</text>
 <circle x="13.335" y="4.445" radius="0.635" width="0.127" layer="21"/>
 </package>
@@ -235,7 +236,7 @@
 <devicesets>
 <deviceset name="HE11-RDA-101-4">
 <gates>
-<gate name="G$1" symbol="HE11-RDA-101-4" x="5.08" y="10.16"/>
+<gate name="G$1" symbol="HE11-RDA-101-4" x="7.62" y="7.62"/>
 </gates>
 <devices>
 <device name="" package="HE11-RDA-101-4">
