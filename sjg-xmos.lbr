@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -4222,7 +4222,7 @@ Flash</text>
 <pin name="X0D67@H18" x="25.4" y="-40.64" length="middle" rot="R180"/>
 <pin name="X0D66@H19" x="25.4" y="-25.4" length="middle" rot="R180"/>
 <pin name="X0D63@J17" x="25.4" y="-17.78" length="middle" rot="R180"/>
-<pin name="X0D64J18" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="X0D64@J18" x="25.4" y="-20.32" length="middle" rot="R180"/>
 <pin name="X0D65@J19" x="25.4" y="-22.86" length="middle" rot="R180"/>
 <pin name="X0D62@K17" x="25.4" y="-15.24" length="middle" rot="R180"/>
 <pin name="X0D61@K18" x="25.4" y="-12.7" length="middle" rot="R180"/>
@@ -5487,7 +5487,7 @@ Flash</text>
 <connect gate="G$4" pin="X0D61@K18" pad="K18"/>
 <connect gate="G$4" pin="X0D62@K17" pad="K17"/>
 <connect gate="G$4" pin="X0D63@J17" pad="J17"/>
-<connect gate="G$4" pin="X0D64J18" pad="J18"/>
+<connect gate="G$4" pin="X0D64@J18" pad="J18"/>
 <connect gate="G$4" pin="X0D65@J19" pad="J19"/>
 <connect gate="G$4" pin="X0D66@H19" pad="H19"/>
 <connect gate="G$4" pin="X0D67@H18" pad="H18"/>
