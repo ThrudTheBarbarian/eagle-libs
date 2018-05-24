@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.0.1">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+</packages>
+<symbols>
+<symbol name="STM32F777NIH6">
+<pin name="PE4@A1" x="-35.56" y="27.94" length="middle"/>
+<pin name="PE3@A2" x="-35.56" y="25.4" length="middle"/>
+<pin name="PE2@A3" x="-35.56" y="22.86" length="middle"/>
+<pin name="PG14@A4" x="-35.56" y="20.32" length="middle"/>
+<pin name="PE1@A5" x="-35.56" y="17.78" length="middle"/>
+<pin name="PE0@A6" x="-35.56" y="15.24" length="middle"/>
+<pin name="PB8@A7" x="-35.56" y="12.7" length="middle"/>
+<pin name="PB5@A8" x="-35.56" y="10.16" length="middle"/>
+<pin name="PB4@A9" x="-35.56" y="7.62" length="middle"/>
+<pin name="PB3@A10" x="-35.56" y="5.08" length="middle"/>
+<pin name="PD7@A11" x="-35.56" y="2.54" length="middle"/>
+<pin name="PC12@A12" x="-35.56" y="0" length="middle"/>
+<pin name="PA15@A13" x="-35.56" y="-2.54" length="middle"/>
+<pin name="PA14@A14" x="-35.56" y="-5.08" length="middle"/>
+<pin name="PA13@A15" x="-35.56" y="-7.62" length="middle"/>
+<pin name="PE5@B1" x="-35.56" y="-10.16" length="middle"/>
+<pin name="PE6@B2" x="-35.56" y="-12.7" length="middle"/>
+<pin name="PG13@B3" x="-35.56" y="-15.24" length="middle"/>
+<pin name="PB9@B4" x="-35.56" y="-17.78" length="middle"/>
+<pin name="PB7@B5" x="-35.56" y="-20.32" length="middle"/>
+<pin name="PB6@B6" x="-35.56" y="-22.86" length="middle"/>
+<pin name="PG15@B7" x="-35.56" y="-25.4" length="middle"/>
+<pin name="PG11@B8" x="-35.56" y="-27.94" length="middle"/>
+<pin name="PJ13@B9" x="-35.56" y="-30.48" length="middle"/>
+<pin name="PJ12@B10" x="-35.56" y="-33.02" length="middle"/>
+<pin name="PD6@B11" x="-35.56" y="-35.56" length="middle"/>
+<pin name="PD0@B12" x="-35.56" y="-38.1" length="middle"/>
+<pin name="PC11@B13" x="-35.56" y="-40.64" length="middle"/>
+<pin name="PC10@B14" x="-35.56" y="-43.18" length="middle"/>
+<pin name="PA12@B15" x="-35.56" y="-45.72" length="middle"/>
+<pin name="VBAT@C1" x="-35.56" y="-48.26" length="middle"/>
+<pin name="PI8@C2" x="-35.56" y="-50.8" length="middle"/>
+<pin name="PI4@C3" x="-35.56" y="-53.34" length="middle"/>
+<pin name="PK7@C4" x="-35.56" y="-55.88" length="middle"/>
+<pin name="PK6@C5" x="-35.56" y="-58.42" length="middle"/>
+<pin name="PK5@C6" x="-35.56" y="-60.96" length="middle"/>
+<pin name="PG12@C7" x="-35.56" y="-63.5" length="middle"/>
+<pin name="PG10@C8" x="-35.56" y="-66.04" length="middle"/>
+<pin name="PJ14@C9" x="-35.56" y="-68.58" length="middle"/>
+<pin name="PD5@C10" x="-35.56" y="-71.12" length="middle"/>
+<pin name="PD3@C11" x="-35.56" y="-73.66" length="middle"/>
+<pin name="PD1@C12" x="-35.56" y="-76.2" length="middle"/>
+<pin name="PI3@C13" x="-35.56" y="-78.74" length="middle"/>
+<pin name="PI2@C14" x="-35.56" y="-81.28" length="middle"/>
+<pin name="PA11@C15" x="-35.56" y="-83.82" length="middle"/>
+<pin name="PC13@D1" x="-35.56" y="-86.36" length="middle"/>
+<pin name="PF0@D2" x="-35.56" y="-88.9" length="middle"/>
+<pin name="P$48" x="-35.56" y="-91.44" length="middle"/>
+<pin name="P$49" x="-35.56" y="-93.98" length="middle"/>
+<pin name="P$50" x="-35.56" y="-96.52" length="middle"/>
+<pin name="P$51" x="10.16" y="27.94" length="middle"/>
+<pin name="P$52" x="10.16" y="25.4" length="middle"/>
+<pin name="P$53" x="10.16" y="22.86" length="middle"/>
+<pin name="P$54" x="10.16" y="20.32" length="middle"/>
+<pin name="P$55" x="10.16" y="17.78" length="middle"/>
+<pin name="P$56" x="10.16" y="15.24" length="middle"/>
+<pin name="P$57" x="10.16" y="12.7" length="middle"/>
+<pin name="P$58" x="10.16" y="10.16" length="middle"/>
+<pin name="P$59" x="10.16" y="7.62" length="middle"/>
+<pin name="P$60" x="10.16" y="5.08" length="middle"/>
+<pin name="P$61" x="10.16" y="2.54" length="middle"/>
+<pin name="P$62" x="10.16" y="0" length="middle"/>
+<pin name="P$63" x="10.16" y="-2.54" length="middle"/>
+<pin name="P$64" x="10.16" y="-5.08" length="middle"/>
+<pin name="P$65" x="10.16" y="-7.62" length="middle"/>
+<pin name="P$66" x="10.16" y="-10.16" length="middle"/>
+<pin name="P$67" x="10.16" y="-12.7" length="middle"/>
+<pin name="P$68" x="10.16" y="-15.24" length="middle"/>
+<pin name="P$69" x="10.16" y="-17.78" length="middle"/>
+<pin name="P$70" x="10.16" y="-20.32" length="middle"/>
+<pin name="P$71" x="10.16" y="-22.86" length="middle"/>
+<pin name="P$72" x="10.16" y="-25.4" length="middle"/>
+<pin name="P$73" x="10.16" y="-27.94" length="middle"/>
+<pin name="P$74" x="10.16" y="-30.48" length="middle"/>
+<pin name="P$75" x="10.16" y="-33.02" length="middle"/>
+<pin name="P$76" x="10.16" y="-35.56" length="middle"/>
+<pin name="P$77" x="10.16" y="-38.1" length="middle"/>
+<pin name="P$78" x="10.16" y="-40.64" length="middle"/>
+<pin name="P$79" x="10.16" y="-43.18" length="middle"/>
+<pin name="P$80" x="10.16" y="-45.72" length="middle"/>
+<pin name="P$81" x="10.16" y="-48.26" length="middle"/>
+<pin name="P$82" x="10.16" y="-50.8" length="middle"/>
+<pin name="P$83" x="10.16" y="-53.34" length="middle"/>
+<pin name="P$84" x="10.16" y="-55.88" length="middle"/>
+<pin name="P$85" x="10.16" y="-58.42" length="middle"/>
+<pin name="P$86" x="10.16" y="-60.96" length="middle"/>
+<pin name="P$87" x="10.16" y="-63.5" length="middle"/>
+<pin name="P$88" x="10.16" y="-66.04" length="middle"/>
+<pin name="P$89" x="10.16" y="-68.58" length="middle"/>
+<pin name="P$90" x="10.16" y="-71.12" length="middle"/>
+<pin name="P$91" x="10.16" y="-73.66" length="middle"/>
+<pin name="P$92" x="10.16" y="-76.2" length="middle"/>
+<pin name="P$93" x="10.16" y="-78.74" length="middle"/>
+<pin name="P$94" x="10.16" y="-81.28" length="middle"/>
+<pin name="P$95" x="10.16" y="-83.82" length="middle"/>
+<pin name="P$96" x="10.16" y="-86.36" length="middle"/>
+<pin name="P$97" x="10.16" y="-88.9" length="middle"/>
+<pin name="P$98" x="10.16" y="-91.44" length="middle"/>
+<pin name="P$99" x="10.16" y="-93.98" length="middle"/>
+<pin name="P$100" x="10.16" y="-96.52" length="middle"/>
+<pin name="P$101" x="63.5" y="27.94" length="middle"/>
+<pin name="P$102" x="63.5" y="25.4" length="middle"/>
+<pin name="P$103" x="63.5" y="22.86" length="middle"/>
+<pin name="P$104" x="63.5" y="20.32" length="middle"/>
+<pin name="P$105" x="63.5" y="17.78" length="middle"/>
+<pin name="P$106" x="63.5" y="15.24" length="middle"/>
+<pin name="P$107" x="63.5" y="12.7" length="middle"/>
+<pin name="P$108" x="63.5" y="10.16" length="middle"/>
+<pin name="P$109" x="63.5" y="7.62" length="middle"/>
+<pin name="P$110" x="63.5" y="5.08" length="middle"/>
+<pin name="P$111" x="63.5" y="2.54" length="middle"/>
+<pin name="P$112" x="63.5" y="0" length="middle"/>
+<pin name="P$113" x="63.5" y="-2.54" length="middle"/>
+<pin name="P$114" x="63.5" y="-5.08" length="middle"/>
+<pin name="P$115" x="63.5" y="-7.62" length="middle"/>
+<pin name="P$116" x="63.5" y="-10.16" length="middle"/>
+<pin name="P$117" x="63.5" y="-12.7" length="middle"/>
+<pin name="P$118" x="63.5" y="-15.24" length="middle"/>
+<pin name="P$119" x="63.5" y="-17.78" length="middle"/>
+<pin name="P$120" x="63.5" y="-20.32" length="middle"/>
+<pin name="P$121" x="63.5" y="-22.86" length="middle"/>
+<pin name="P$122" x="63.5" y="-25.4" length="middle"/>
+<pin name="P$123" x="63.5" y="-27.94" length="middle"/>
+<pin name="P$124" x="63.5" y="-30.48" length="middle"/>
+<pin name="P$125" x="63.5" y="-33.02" length="middle"/>
+<pin name="P$126" x="63.5" y="-35.56" length="middle"/>
+<pin name="P$127" x="63.5" y="-38.1" length="middle"/>
+<pin name="P$128" x="63.5" y="-40.64" length="middle"/>
+<pin name="P$129" x="63.5" y="-43.18" length="middle"/>
+<pin name="P$130" x="63.5" y="-45.72" length="middle"/>
+<pin name="P$131" x="63.5" y="-48.26" length="middle"/>
+<pin name="P$132" x="63.5" y="-50.8" length="middle"/>
+<pin name="P$133" x="63.5" y="-53.34" length="middle"/>
+<pin name="P$134" x="63.5" y="-55.88" length="middle"/>
+<pin name="P$135" x="63.5" y="-58.42" length="middle"/>
+<pin name="P$136" x="63.5" y="-60.96" length="middle"/>
+<pin name="P$137" x="63.5" y="-63.5" length="middle"/>
+<pin name="P$138" x="63.5" y="-66.04" length="middle"/>
+<pin name="P$139" x="63.5" y="-68.58" length="middle"/>
+<pin name="P$140" x="63.5" y="-71.12" length="middle"/>
+<pin name="P$141" x="63.5" y="-73.66" length="middle"/>
+<pin name="P$142" x="63.5" y="-76.2" length="middle"/>
+<pin name="P$143" x="63.5" y="-78.74" length="middle"/>
+<pin name="P$144" x="63.5" y="-81.28" length="middle"/>
+<pin name="P$145" x="63.5" y="-83.82" length="middle"/>
+<pin name="P$146" x="63.5" y="-86.36" length="middle"/>
+<pin name="P$147" x="63.5" y="-88.9" length="middle"/>
+<pin name="P$148" x="63.5" y="-91.44" length="middle"/>
+<pin name="P$149" x="63.5" y="-93.98" length="middle"/>
+<pin name="P$150" x="63.5" y="-96.52" length="middle"/>
+<pin name="P$151" x="109.22" y="27.94" length="middle"/>
+<pin name="P$152" x="109.22" y="25.4" length="middle"/>
+<pin name="P$153" x="109.22" y="22.86" length="middle"/>
+<pin name="P$154" x="109.22" y="20.32" length="middle"/>
+<pin name="P$155" x="109.22" y="17.78" length="middle"/>
+<pin name="P$156" x="109.22" y="15.24" length="middle"/>
+<pin name="P$157" x="109.22" y="12.7" length="middle"/>
+<pin name="P$158" x="109.22" y="10.16" length="middle"/>
+<pin name="P$159" x="109.22" y="7.62" length="middle"/>
+<pin name="P$160" x="109.22" y="5.08" length="middle"/>
+<pin name="P$161" x="109.22" y="2.54" length="middle"/>
+<pin name="P$162" x="109.22" y="0" length="middle"/>
+<pin name="P$163" x="109.22" y="-2.54" length="middle"/>
+<pin name="P$164" x="109.22" y="-5.08" length="middle"/>
+<pin name="P$165" x="109.22" y="-7.62" length="middle"/>
+<pin name="P$166" x="109.22" y="-10.16" length="middle"/>
+<pin name="P$167" x="109.22" y="-12.7" length="middle"/>
+<pin name="P$168" x="109.22" y="-15.24" length="middle"/>
+<pin name="P$169" x="109.22" y="-17.78" length="middle"/>
+<pin name="P$170" x="109.22" y="-20.32" length="middle"/>
+<pin name="P$171" x="109.22" y="-22.86" length="middle"/>
+<pin name="P$172" x="109.22" y="-25.4" length="middle"/>
+<pin name="P$173" x="109.22" y="-27.94" length="middle"/>
+<pin name="P$174" x="109.22" y="-30.48" length="middle"/>
+<pin name="P$175" x="109.22" y="-33.02" length="middle"/>
+<pin name="P$176" x="109.22" y="-35.56" length="middle"/>
+<pin name="P$177" x="109.22" y="-38.1" length="middle"/>
+<pin name="P$178" x="109.22" y="-40.64" length="middle"/>
+<pin name="P$179" x="109.22" y="-43.18" length="middle"/>
+<pin name="P$180" x="109.22" y="-45.72" length="middle"/>
+<pin name="P$181" x="109.22" y="-48.26" length="middle"/>
+<pin name="P$182" x="109.22" y="-50.8" length="middle"/>
+<pin name="P$183" x="109.22" y="-53.34" length="middle"/>
+<pin name="P$184" x="109.22" y="-55.88" length="middle"/>
+<pin name="P$185" x="109.22" y="-58.42" length="middle"/>
+<pin name="P$186" x="109.22" y="-60.96" length="middle"/>
+<pin name="P$187" x="109.22" y="-63.5" length="middle"/>
+<pin name="P$188" x="109.22" y="-66.04" length="middle"/>
+<pin name="P$189" x="109.22" y="-68.58" length="middle"/>
+<pin name="P$190" x="109.22" y="-71.12" length="middle"/>
+<pin name="P$191" x="109.22" y="-73.66" length="middle"/>
+<pin name="P$192" x="109.22" y="-76.2" length="middle"/>
+<pin name="P$193" x="109.22" y="-78.74" length="middle"/>
+<pin name="P$194" x="109.22" y="-81.28" length="middle"/>
+<pin name="P$195" x="109.22" y="-83.82" length="middle"/>
+<pin name="P$196" x="109.22" y="-86.36" length="middle"/>
+<pin name="P$197" x="109.22" y="-88.9" length="middle"/>
+<pin name="P$198" x="109.22" y="-91.44" length="middle"/>
+<pin name="P$199" x="109.22" y="-93.98" length="middle"/>
+<pin name="P$200" x="109.22" y="-96.52" length="middle"/>
+<pin name="P$201" x="160.02" y="27.94" length="middle"/>
+<pin name="P$202" x="160.02" y="25.4" length="middle"/>
+<pin name="P$203" x="160.02" y="22.86" length="middle"/>
+<pin name="P$204" x="160.02" y="20.32" length="middle"/>
+<pin name="P$205" x="160.02" y="17.78" length="middle"/>
+<pin name="P$206" x="160.02" y="15.24" length="middle"/>
+<pin name="P$207" x="160.02" y="12.7" length="middle"/>
+<pin name="P$208" x="160.02" y="10.16" length="middle"/>
+<pin name="P$209" x="160.02" y="7.62" length="middle"/>
+<pin name="P$210" x="160.02" y="5.08" length="middle"/>
+<pin name="P$211" x="160.02" y="2.54" length="middle"/>
+<pin name="P$212" x="160.02" y="0" length="middle"/>
+<pin name="P$213" x="160.02" y="-2.54" length="middle"/>
+<pin name="P$214" x="160.02" y="-5.08" length="middle"/>
+<pin name="P$215" x="160.02" y="-7.62" length="middle"/>
+<pin name="P$216" x="160.02" y="-10.16" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+</devicesets>
+</library>
+</drawing>
+</eagle>
