@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -57,8 +57,13 @@
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -70,6 +75,74 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="ID" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="bMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="14" fill="6" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="14" fill="3" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
+<layer number="202" name="202bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -307,6 +380,24 @@
 <smd name="R15" x="5.6" y="-5.6" dx="0.35" dy="0.35" layer="1" roundness="100" thermals="no"/>
 <text x="0" y="7.21" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-7.21" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SWD_DEBUG">
+<wire x1="-3.175" y1="1.7145" x2="3.175" y2="1.7145" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.7145" x2="3.175" y2="-1.7145" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.7145" x2="-3.175" y2="-1.7145" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="1.7145" x2="-3.175" y2="-1.7145" width="0.127" layer="21"/>
+<smd name="P2" x="-2.54" y="2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P4" x="-1.27" y="2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P6" x="0" y="2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P8" x="1.27" y="2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P10" x="2.54" y="2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P9" x="2.54" y="-2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P7" x="1.27" y="-2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P5" x="0" y="-2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P3" x="-1.27" y="-2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<smd name="P1" x="-2.54" y="-2.54" dx="1.27" dy="0.508" layer="1" rot="R90"/>
+<circle x="-3.556" y="-2.413" radius="0.283978125" width="0.508" layer="21"/>
+<text x="-2.794" y="-0.635" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -547,7 +638,7 @@
 <description>STM32F777N Power and system config</description>
 <pin name="VBAT@C1" x="10.16" y="48.26" length="middle" rot="R270"/>
 <pin name="PDR_ON@E5" x="-45.72" y="25.4" length="middle"/>
-<pin name="BOOT0@E6" x="-45.72" y="17.78" length="middle"/>
+<pin name="BOOT0@E6" x="-45.72" y="-2.54" length="middle"/>
 <pin name="VDD@E7" x="7.62" y="48.26" length="middle" rot="R270"/>
 <pin name="VDD@E8" x="5.08" y="48.26" length="middle" rot="R270"/>
 <pin name="VDD_SDMMC@E9" x="17.78" y="48.26" length="middle" rot="R270"/>
@@ -570,7 +661,7 @@
 <pin name="VSS@H6" x="-10.16" y="-53.34" length="middle" rot="R90"/>
 <pin name="VSS@H10" x="-7.62" y="-53.34" length="middle" rot="R90"/>
 <pin name="VDD@H11" x="-12.7" y="48.26" length="middle" rot="R270"/>
-<pin name="!RST!@J1" x="-45.72" y="2.54" length="middle"/>
+<pin name="!RST!@J1" x="-45.72" y="17.78" length="middle"/>
 <pin name="VDD@J5" x="-15.24" y="48.26" length="middle" rot="R270"/>
 <pin name="VSS@J6" x="-5.08" y="-53.34" length="middle" rot="R90"/>
 <pin name="VSS@J10" x="-2.54" y="-53.34" length="middle" rot="R90"/>
@@ -598,82 +689,80 @@
 <wire x1="43.18" y1="-48.26" x2="-40.64" y2="-48.26" width="0.254" layer="94"/>
 <wire x1="-40.64" y1="-48.26" x2="-40.64" y2="43.18" width="0.254" layer="94"/>
 <text x="-2.54" y="0" size="1.778" layer="94">&gt;NAME</text>
-<pin name="PA15@A13" x="-45.72" y="-5.08" length="middle"/>
-<pin name="PA14@A14" x="-45.72" y="-2.54" length="middle"/>
-<pin name="PA13@A15" x="-45.72" y="0" length="middle"/>
-<text x="-25.146" y="-0.508" size="1.27" layer="94">TMS/SWDio</text>
-<text x="-25.146" y="-3.048" size="1.27" layer="94">TCK/SWDclk</text>
-<text x="-25.146" y="-5.588" size="1.27" layer="94">TDI</text>
+<pin name="PA14@A14" x="-45.72" y="12.7" length="middle"/>
+<pin name="PA13@A15" x="-45.72" y="15.24" length="middle"/>
+<text x="-27.94" y="14.732" size="1.27" layer="94">SWD io</text>
+<text x="-27.94" y="12.192" size="1.27" layer="94">SWD clk</text>
+<pin name="PB8@A7" x="-45.72" y="10.16" length="middle"/>
+<pin name="PB9@B4" x="-45.72" y="7.62" length="middle"/>
+<text x="-27.94" y="9.652" size="1.27" layer="94">DBG tx</text>
+<text x="-27.94" y="7.112" size="1.27" layer="94">DBG rx</text>
+<text x="-27.94" y="17.272" size="1.27" layer="94">!RESET!</text>
 </symbol>
 <symbol name="STM32F777N-PIO">
 <description>STM32F777N interface to peripherals</description>
-<pin name="PE4@A1" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="PE3@A2" x="25.4" y="17.78" length="middle" rot="R180"/>
-<pin name="PB5@A8" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="PB4@A9" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="PB3@A10" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="PE5@B1" x="25.4" y="12.7" length="middle" rot="R180"/>
-<pin name="PE6@B2" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="PB7@B5" x="25.4" y="-17.78" length="middle" rot="R180"/>
-<pin name="PB6@B6" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="PI4@C3" x="25.4" y="-45.72" length="middle" rot="R180"/>
-<pin name="PI3@C13" x="25.4" y="-43.18" length="middle" rot="R180"/>
-<pin name="PI2@C14" x="25.4" y="-40.64" length="middle" rot="R180"/>
-<pin name="PI5@D3" x="25.4" y="-48.26" length="middle" rot="R180"/>
-<pin name="PI7@D4" x="25.4" y="-53.34" length="middle" rot="R180"/>
-<pin name="PI6@D6" x="25.4" y="-50.8" length="middle" rot="R180"/>
-<pin name="PI1@D14" x="25.4" y="-38.1" length="middle" rot="R180"/>
-<pin name="PI0@E14" x="25.4" y="-35.56" length="middle" rot="R180"/>
-<pin name="PH1@H1" x="25.4" y="-25.4" length="middle" rot="R180"/>
-<pin name="PH4@H4" x="25.4" y="-60.96" length="middle" rot="R180"/>
-<pin name="PC1@M3" x="25.4" y="-22.86" length="middle" rot="R180"/>
-<pin name="PB2@M5" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="PD12@M10" x="25.4" y="50.8" length="middle" rot="R180"/>
-<pin name="PD13@M11" x="25.4" y="48.26" length="middle" rot="R180"/>
-<pin name="PG3@M12" x="25.4" y="-58.42" length="middle" rot="R180"/>
-<pin name="PA0@N3" x="25.4" y="38.1" length="middle" rot="R180"/>
-<pin name="PA4@N4" x="25.4" y="25.4" length="middle" rot="R180"/>
-<pin name="PD11@N10" x="25.4" y="53.34" length="middle" rot="R180"/>
-<pin name="PA6@P3" x="25.4" y="20.32" length="middle" rot="R180"/>
-<pin name="PA5@P4" x="25.4" y="22.86" length="middle" rot="R180"/>
-<pin name="PA3@R2" x="25.4" y="27.94" length="middle" rot="R180"/>
-<pin name="PB1@R4" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="PB0@R5" x="25.4" y="0" length="middle" rot="R180"/>
-<wire x1="20.32" y1="53.34" x2="20.32" y2="58.42" width="0.254" layer="94"/>
-<wire x1="20.32" y1="58.42" x2="-17.78" y2="58.42" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="58.42" x2="-17.78" y2="43.18" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="43.18" x2="-17.78" y2="33.02" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="33.02" x2="-17.78" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="5.08" x2="-17.78" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-30.48" x2="-17.78" y2="-66.04" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-66.04" x2="20.32" y2="-66.04" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-66.04" x2="20.32" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-30.48" x2="20.32" y2="5.08" width="0.254" layer="94"/>
-<wire x1="20.32" y1="5.08" x2="20.32" y2="33.02" width="0.254" layer="94"/>
-<wire x1="20.32" y1="33.02" x2="20.32" y2="43.18" width="0.254" layer="94"/>
-<wire x1="20.32" y1="43.18" x2="20.32" y2="53.34" width="0.254" layer="94"/>
-<wire x1="20.32" y1="43.18" x2="-17.78" y2="43.18" width="0.254" layer="94" style="shortdash"/>
-<wire x1="20.32" y1="33.02" x2="-17.78" y2="33.02" width="0.254" layer="94" style="shortdash"/>
-<wire x1="20.32" y1="5.08" x2="-17.78" y2="5.08" width="0.254" layer="94" style="shortdash"/>
-<wire x1="20.32" y1="-30.48" x2="-17.78" y2="-30.48" width="0.254" layer="94" style="shortdash"/>
-<text x="-15.24" y="50.8" size="1.778" layer="94">PIO sel</text>
-<text x="-15.24" y="38.1" size="1.778" layer="94">PIO tristate</text>
-<text x="-15.24" y="17.78" size="1.778" layer="94">PIO irq</text>
-<text x="-15.24" y="-12.7" size="1.778" layer="94">PIO in</text>
-<text x="-15.24" y="-48.26" size="1.778" layer="94">PIO out</text>
-<text x="-17.78" y="58.674" size="1.778" layer="94">&gt;NAME</text>
-<wire x1="7.62" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-17.78" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-35.56" x2="5.08" y2="-35.56" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-35.56" x2="5.08" y2="-53.34" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-53.34" x2="7.62" y2="-53.34" width="0.254" layer="94"/>
-<text x="2.54" y="-7.62" size="1.27" layer="94" rot="R270">Data</text>
-<text x="2.54" y="-43.18" size="1.27" layer="94" rot="R270">Data</text>
-<text x="5.08" y="-22.098" size="1.27" layer="94" rot="R180">Clk</text>
-<text x="5.08" y="-57.658" size="1.27" layer="94" rot="R180">Clk</text>
-<text x="5.08" y="-24.638" size="1.27" layer="94" rot="R180">Rcv</text>
-<text x="5.08" y="-60.198" size="1.27" layer="94" rot="R180">Rcv</text>
+<pin name="PE4@A1" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="PE3@A2" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="PB5@A8" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="PB4@A9" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PB3@A10" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PE5@B1" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PE6@B2" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="PB7@B5" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="PB6@B6" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="PI4@C3" x="25.4" y="-40.64" length="middle" rot="R180"/>
+<pin name="PI3@C13" x="25.4" y="-38.1" length="middle" rot="R180"/>
+<pin name="PI2@C14" x="25.4" y="-35.56" length="middle" rot="R180"/>
+<pin name="PI5@D3" x="25.4" y="-43.18" length="middle" rot="R180"/>
+<pin name="PI7@D4" x="25.4" y="-48.26" length="middle" rot="R180"/>
+<pin name="PI6@D6" x="25.4" y="-45.72" length="middle" rot="R180"/>
+<pin name="PI1@D14" x="25.4" y="-33.02" length="middle" rot="R180"/>
+<pin name="PI0@E14" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="PH1@H1" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="PH4@H4" x="25.4" y="-55.88" length="middle" rot="R180"/>
+<pin name="PC1@M3" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="PB2@M5" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PD12@M10" x="25.4" y="45.72" length="middle" rot="R180"/>
+<pin name="PD13@M11" x="25.4" y="43.18" length="middle" rot="R180"/>
+<pin name="PG3@M12" x="25.4" y="-53.34" length="middle" rot="R180"/>
+<pin name="PA4@N4" x="25.4" y="30.48" length="middle" rot="R180"/>
+<pin name="PD11@N10" x="25.4" y="48.26" length="middle" rot="R180"/>
+<pin name="PA6@P3" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="PA5@P4" x="25.4" y="27.94" length="middle" rot="R180"/>
+<pin name="PA3@R2" x="25.4" y="33.02" length="middle" rot="R180"/>
+<pin name="PB1@R4" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PB0@R5" x="25.4" y="5.08" length="middle" rot="R180"/>
+<wire x1="20.32" y1="48.26" x2="20.32" y2="53.34" width="0.254" layer="94"/>
+<wire x1="20.32" y1="53.34" x2="-17.78" y2="53.34" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="53.34" x2="-17.78" y2="38.1" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="38.1" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="10.16" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="-60.96" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-60.96" x2="20.32" y2="-60.96" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-60.96" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="20.32" y2="10.16" width="0.254" layer="94"/>
+<wire x1="20.32" y1="10.16" x2="20.32" y2="38.1" width="0.254" layer="94"/>
+<wire x1="20.32" y1="38.1" x2="20.32" y2="48.26" width="0.254" layer="94"/>
+<wire x1="20.32" y1="38.1" x2="-17.78" y2="38.1" width="0.254" layer="94" style="shortdash"/>
+<wire x1="20.32" y1="10.16" x2="-17.78" y2="10.16" width="0.254" layer="94" style="shortdash"/>
+<wire x1="20.32" y1="-25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94" style="shortdash"/>
+<text x="-15.24" y="45.72" size="1.778" layer="94">PIO sel</text>
+<text x="-15.24" y="22.86" size="1.778" layer="94">PIO irq</text>
+<text x="-15.24" y="-7.62" size="1.778" layer="94">PIO in</text>
+<text x="-15.24" y="-43.18" size="1.778" layer="94">PIO out</text>
+<text x="-17.78" y="53.594" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="7.62" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-30.48" x2="5.08" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-30.48" x2="5.08" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-48.26" x2="7.62" y2="-48.26" width="0.254" layer="94"/>
+<text x="2.54" y="-2.54" size="1.27" layer="94" rot="R270">Data</text>
+<text x="2.54" y="-38.1" size="1.27" layer="94" rot="R270">Data</text>
+<text x="5.08" y="-17.018" size="1.27" layer="94" rot="R180">Clk</text>
+<text x="5.08" y="-52.578" size="1.27" layer="94" rot="R180">Clk</text>
+<text x="5.08" y="-19.558" size="1.27" layer="94" rot="R180">Rcv</text>
+<text x="5.08" y="-55.118" size="1.27" layer="94" rot="R180">Rcv</text>
 </symbol>
 <symbol name="STM32F777N-NET">
 <description>STM32F777N Ethernet</description>
@@ -710,8 +799,6 @@
 <text x="-17.78" y="33.528" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="STM32F777N-XMOS-GPIO">
-<pin name="PB8@A7" x="-25.4" y="5.08" length="middle"/>
-<pin name="PB9@B4" x="-25.4" y="2.54" length="middle"/>
 <pin name="PC13@D1" x="-25.4" y="0" length="middle"/>
 <pin name="PC14@E1" x="-25.4" y="-2.54" length="middle"/>
 <pin name="PC15@F1" x="-25.4" y="-5.08" length="middle"/>
@@ -720,6 +807,8 @@
 <wire x1="17.78" y1="-10.16" x2="-20.32" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-10.16" x2="-20.32" y2="10.16" width="0.254" layer="94"/>
 <text x="-20.32" y="10.414" size="1.778" layer="94">&gt;NAME</text>
+<pin name="PA15@A13" x="-25.4" y="2.54" length="middle"/>
+<pin name="PA0@N3" x="-25.4" y="5.08" length="middle"/>
 </symbol>
 <symbol name="STM32F777N-I2C-SPI">
 <pin name="PI8@C2" x="-22.86" y="-15.24" length="middle"/>
@@ -980,6 +1069,25 @@ Bus</text>
 <wire x1="-12.7" y1="-2.54" x2="-12.7" y2="2.54" width="0.254" layer="94"/>
 <text x="-12.7" y="7.874" size="1.4224" layer="94">&gt;NAME</text>
 </symbol>
+<symbol name="SWD_DEBUG">
+<description>ARM SWD connector</description>
+<pin name="VDD_OUT@1" x="-20.32" y="5.08" length="middle"/>
+<pin name="GND@3" x="-20.32" y="2.54" length="middle"/>
+<pin name="GND@5" x="-20.32" y="0" length="middle"/>
+<pin name="NC@7" x="-20.32" y="-2.54" length="middle"/>
+<pin name="GND@9" x="-20.32" y="-5.08" length="middle"/>
+<pin name="SWDIO@2" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="SWD_CLK@4" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="USART_TX@6" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="USART_RX@8" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="RESET@10" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="-15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
+<text x="-15.24" y="8.128" size="1.778" layer="94">&gt;NAME</text>
+<text x="-15.24" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="STM32F777N">
@@ -1069,7 +1177,6 @@ Bus</text>
 <connect gate="NET" pin="PH6@P13" pad="P13"/>
 <connect gate="NET" pin="PH7@N13" pad="N13"/>
 <connect gate="NET" pin="PI10@D5" pad="D5"/>
-<connect gate="PIO" pin="PA0@N3" pad="N3"/>
 <connect gate="PIO" pin="PA3@R2" pad="R2"/>
 <connect gate="PIO" pin="PA4@N4" pad="N4"/>
 <connect gate="PIO" pin="PA5@P4" pad="P4"/>
@@ -1147,9 +1254,10 @@ Bus</text>
 <connect gate="SYSTEM" pin="!RST!@J1" pad="J1"/>
 <connect gate="SYSTEM" pin="BOOT0@E6" pad="E6"/>
 <connect gate="SYSTEM" pin="BYPASS_REG@L5" pad="L5"/>
-<connect gate="SYSTEM" pin="PA13@A15" pad="A15"/>
+<connect gate="SYSTEM" pin="PA13@A15" pad="A13"/>
 <connect gate="SYSTEM" pin="PA14@A14" pad="A14"/>
-<connect gate="SYSTEM" pin="PA15@A13" pad="A13"/>
+<connect gate="SYSTEM" pin="PB8@A7" pad="A7"/>
+<connect gate="SYSTEM" pin="PB9@B4" pad="B4"/>
 <connect gate="SYSTEM" pin="PDR_ON@E5" pad="E5"/>
 <connect gate="SYSTEM" pin="VBAT@C1" pad="C1"/>
 <connect gate="SYSTEM" pin="VCAP1@L11" pad="L11"/>
@@ -1203,8 +1311,8 @@ Bus</text>
 <connect gate="USART" pin="PD6@B11" pad="B11"/>
 <connect gate="USART" pin="PG12@C7" pad="C7"/>
 <connect gate="USART" pin="PG13@B3" pad="B3"/>
-<connect gate="XMOS_GPIO" pin="PB8@A7" pad="A7"/>
-<connect gate="XMOS_GPIO" pin="PB9@B4" pad="B4"/>
+<connect gate="XMOS_GPIO" pin="PA0@N3" pad="N3"/>
+<connect gate="XMOS_GPIO" pin="PA15@A13" pad="A15"/>
 <connect gate="XMOS_GPIO" pin="PC13@D1" pad="D1"/>
 <connect gate="XMOS_GPIO" pin="PC14@E1" pad="E1"/>
 <connect gate="XMOS_GPIO" pin="PC15@F1" pad="F1"/>
@@ -1221,6 +1329,30 @@ Bus</text>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3202291/1"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM_DEBUG">
+<gates>
+<gate name="G$1" symbol="SWD_DEBUG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SWD_DEBUG">
+<connects>
+<connect gate="G$1" pin="GND@3" pad="P3"/>
+<connect gate="G$1" pin="GND@5" pad="P5"/>
+<connect gate="G$1" pin="GND@9" pad="P9"/>
+<connect gate="G$1" pin="NC@7" pad="P7"/>
+<connect gate="G$1" pin="RESET@10" pad="P10"/>
+<connect gate="G$1" pin="SWDIO@2" pad="P2"/>
+<connect gate="G$1" pin="SWD_CLK@4" pad="P4"/>
+<connect gate="G$1" pin="USART_RX@8" pad="P8"/>
+<connect gate="G$1" pin="USART_TX@6" pad="P6"/>
+<connect gate="G$1" pin="VDD_OUT@1" pad="P1"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
