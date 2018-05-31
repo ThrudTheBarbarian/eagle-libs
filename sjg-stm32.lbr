@@ -840,32 +840,32 @@ signals</text>
 <pin name="PA0@N3" x="-22.86" y="-20.32" length="middle"/>
 </symbol>
 <symbol name="STM32F777N-USART">
-<pin name="PG13@B3" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PG13@B3" x="-22.86" y="-7.62" length="middle"/>
 <pin name="PD6@B11" x="-22.86" y="12.7" length="middle"/>
-<pin name="PG12@C7" x="-22.86" y="-12.7" length="middle"/>
-<pin name="PD5@C10" x="-22.86" y="15.24" length="middle"/>
-<pin name="PD3@C11" x="-22.86" y="7.62" length="middle"/>
-<pin name="PD4@D11" x="-22.86" y="10.16" length="middle"/>
+<pin name="PG12@C7" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PD5@C10" x="-22.86" y="10.16" length="middle"/>
+<pin name="PD3@C11" x="-22.86" y="15.24" length="middle"/>
+<pin name="PD4@D11" x="-22.86" y="7.62" length="middle"/>
 <pin name="PC7@G15" x="-22.86" y="-10.16" length="middle"/>
-<pin name="PC6@H15" x="-22.86" y="-7.62" length="middle"/>
-<wire x1="-17.78" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
-<wire x1="20.32" y1="20.32" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-20.32" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-20.32" x2="-17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="0" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<pin name="PC6@H15" x="-22.86" y="-12.7" length="middle"/>
+<wire x1="-17.78" y1="22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="-17.78" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-22.86" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="0" x2="20.32" y2="0" width="0.254" layer="94" style="shortdash"/>
-<text x="7.62" y="10.16" size="1.778" layer="94">USART 2</text>
+<text x="7.62" y="12.7" size="1.778" layer="94">USART 2</text>
 <text x="7.62" y="-12.7" size="1.778" layer="94">USART 6</text>
-<text x="-3.048" y="14.732" size="1.27" layer="94">TX</text>
-<text x="-3.048" y="-8.128" size="1.27" layer="94">TX</text>
+<text x="-3.048" y="9.652" size="1.27" layer="94">TX</text>
+<text x="-3.048" y="-13.208" size="1.27" layer="94">TX</text>
 <text x="-3.048" y="12.192" size="1.27" layer="94">RX</text>
 <text x="-3.048" y="-10.668" size="1.27" layer="94">RX</text>
-<text x="-3.048" y="9.652" size="1.27" layer="94">RTS</text>
-<text x="-3.048" y="-13.208" size="1.27" layer="94">RTS</text>
-<text x="-3.048" y="7.112" size="1.27" layer="94">CTS</text>
-<text x="-3.048" y="-15.748" size="1.27" layer="94">CTS</text>
-<text x="-17.78" y="20.828" size="1.778" layer="94">&gt;NAME</text>
+<text x="-3.048" y="7.112" size="1.27" layer="94">RTS</text>
+<text x="-3.048" y="-15.748" size="1.27" layer="94">RTS</text>
+<text x="-3.048" y="14.732" size="1.27" layer="94">CTS</text>
+<text x="-3.048" y="-8.128" size="1.27" layer="94">CTS</text>
+<text x="-17.78" y="23.368" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="STM32F777N-SD">
 <pin name="PC12@A12" x="-25.4" y="10.16" length="middle"/>
