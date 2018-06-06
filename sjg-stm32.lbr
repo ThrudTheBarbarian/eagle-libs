@@ -808,11 +808,8 @@
 <text x="-20.32" y="7.874" size="1.778" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="STM32F777N-I2C-SPI">
-<pin name="PI8@C2" x="-22.86" y="-10.16" length="middle"/>
 <pin name="PG10@C8" x="-22.86" y="-7.62" length="middle"/>
 <pin name="PG9@D9" x="-22.86" y="-5.08" length="middle"/>
-<pin name="PI9@E4" x="-22.86" y="-12.7" length="middle"/>
-<pin name="PI11@F3" x="-22.86" y="-15.24" length="middle"/>
 <pin name="PG7@J14" x="-22.86" y="-2.54" length="middle"/>
 <pin name="PG6@J15" x="-22.86" y="0" length="middle"/>
 <pin name="PB13@K14" x="-22.86" y="10.16" length="middle"/>
@@ -822,20 +819,20 @@
 <pin name="PB15@R15" x="-22.86" y="5.08" length="middle"/>
 <wire x1="-17.78" y1="33.02" x2="20.32" y2="33.02" width="0.254" layer="94"/>
 <wire x1="20.32" y1="33.02" x2="20.32" y2="17.78" width="0.254" layer="94"/>
-<wire x1="20.32" y1="17.78" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="17.78" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-12.7" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-12.7" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="17.78" x2="-17.78" y2="33.02" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="17.78" x2="20.32" y2="17.78" width="0.254" layer="94" style="shortdash"/>
-<text x="7.62" y="25.4" size="1.778" layer="94">I2C</text>
-<text x="7.62" y="7.62" size="1.778" layer="94">SPI</text>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
-<text x="7.62" y="-12.7" size="1.778" layer="94">SPI Slave
-signals</text>
+<text x="2.54" y="25.4" size="1.778" layer="94">I2C</text>
+<text x="2.54" y="7.62" size="1.778" layer="94">SPI</text>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<text x="2.54" y="-7.62" size="1.778" layer="94">SPI Slave
+signals
+(multiplexed)</text>
 <text x="-17.78" y="33.528" size="1.778" layer="94">&gt;NAME</text>
-<pin name="PA0@N3" x="-22.86" y="-20.32" length="middle"/>
 </symbol>
 <symbol name="STM32F777N-USART">
 <pin name="PG13@B3" x="-22.86" y="-7.62" length="middle"/>
@@ -1007,9 +1004,9 @@ Bus</text>
 <pin name="PJ0@R6" x="-27.94" y="50.8" length="middle"/>
 <pin name="PJ1@R7" x="-27.94" y="48.26" length="middle"/>
 <wire x1="-22.86" y1="58.42" x2="12.7" y2="58.42" width="0.254" layer="94"/>
-<wire x1="12.7" y1="58.42" x2="12.7" y2="-53.34" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-53.34" x2="-22.86" y2="-53.34" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="-53.34" x2="-22.86" y2="58.42" width="0.254" layer="94"/>
+<wire x1="12.7" y1="58.42" x2="12.7" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-58.42" x2="-22.86" y2="-58.42" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-58.42" x2="-22.86" y2="58.42" width="0.254" layer="94"/>
 <text x="-22.86" y="58.928" size="1.778" layer="94">&gt;NAME</text>
 <wire x1="-7.62" y1="53.34" x2="-5.08" y2="53.34" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="53.34" x2="-5.08" y2="35.56" width="0.254" layer="94"/>
@@ -1027,6 +1024,8 @@ Bus</text>
 <text x="-5.08" y="-38.1" size="1.6764" layer="94">!DE!</text>
 <text x="-5.08" y="-43.18" size="1.6764" layer="94">Vsync</text>
 <text x="-5.08" y="-48.26" size="1.6764" layer="94">HSync</text>
+<pin name="PA0@N3" x="-27.94" y="-53.34" length="middle"/>
+<text x="-5.08" y="-53.34" size="1.6764" layer="94">!IRQ!</text>
 </symbol>
 <symbol name="STM32F777N-ADC">
 <pin name="PF10@L1" x="-25.4" y="-2.54" length="middle"/>
@@ -1056,15 +1055,18 @@ Bus</text>
 <text x="-20.32" y="13.208" size="1.4224" layer="94">&gt;NAME</text>
 </symbol>
 <symbol name="STM32F777N-LED">
-<pin name="PF7@K1" x="-22.86" y="-5.08" length="middle"/>
-<pin name="PF6@K2" x="-22.86" y="5.08" length="middle"/>
-<wire x1="-17.78" y1="5.08" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="10.16" x2="20.32" y2="10.16" width="0.254" layer="94"/>
-<wire x1="20.32" y1="10.16" x2="20.32" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="0" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="0" x2="-17.78" y2="5.08" width="0.254" layer="94"/>
-<text x="-17.78" y="10.414" size="1.4224" layer="94">&gt;NAME</text>
+<pin name="PF7@K1" x="-22.86" y="10.16" length="middle"/>
+<pin name="PF6@K2" x="-22.86" y="20.32" length="middle"/>
+<wire x1="-17.78" y1="20.32" x2="-17.78" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="25.4" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-25.4" x2="-17.78" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-25.4" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="15.24" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<text x="-17.78" y="25.654" size="1.4224" layer="94">&gt;NAME</text>
+<pin name="PI8@C2" x="-22.86" y="0" length="middle"/>
+<pin name="PI9@E4" x="-22.86" y="-10.16" length="middle"/>
+<pin name="PI11@F3" x="-22.86" y="-20.32" length="middle"/>
 </symbol>
 <symbol name="SWD_DEBUG">
 <description>ARM SWD connector</description>
@@ -1114,10 +1116,10 @@ Bus</text>
 <gate name="-USART" symbol="STM32F777N-USART" x="45.72" y="-73.66"/>
 <gate name="-XMOS_GPIO" symbol="STM32F777N-XMOS-GPIO" x="48.26" y="-109.22"/>
 <gate name="-XMOS_VIDEO" symbol="STM32F777N-XMOS-VID" x="45.72" y="-144.78"/>
-<gate name="-LED" symbol="STM32F777N-LED" x="40.64" y="-172.72"/>
-<gate name="-USB" symbol="STM32F777N-USB" x="48.26" y="-200.66"/>
+<gate name="-LED" symbol="STM32F777N-LED" x="45.72" y="-175.26"/>
+<gate name="-USB" symbol="STM32F777N-USB" x="-104.14" y="-218.44"/>
 <gate name="-ADC" symbol="STM32F777N-ADC" x="48.26" y="-228.6"/>
-<gate name="-I2S" symbol="STM32F777N-I2S" x="-33.02" y="-218.44"/>
+<gate name="-I2S" symbol="STM32F777N-I2S" x="-33.02" y="-220.98"/>
 </gates>
 <devices>
 <device name="" package="BGA216C80P15X15_1300X1300X110">
@@ -1125,7 +1127,6 @@ Bus</text>
 <connect gate="-ADC" pin="PF10@L1" pad="L1"/>
 <connect gate="-ADC" pin="PF8@L3" pad="L3"/>
 <connect gate="-ADC" pin="PF9@L2" pad="L2"/>
-<connect gate="-I2C/SPI" pin="PA0@N3" pad="N3"/>
 <connect gate="-I2C/SPI" pin="PB10@P12" pad="P12"/>
 <connect gate="-I2C/SPI" pin="PB11@R13" pad="R13"/>
 <connect gate="-I2C/SPI" pin="PB13@K14" pad="K14"/>
@@ -1135,12 +1136,10 @@ Bus</text>
 <connect gate="-I2C/SPI" pin="PG6@J15" pad="J15"/>
 <connect gate="-I2C/SPI" pin="PG7@J14" pad="J14"/>
 <connect gate="-I2C/SPI" pin="PG9@D9" pad="D9"/>
-<connect gate="-I2C/SPI" pin="PI11@F3" pad="F3"/>
-<connect gate="-I2C/SPI" pin="PI8@C2" pad="C2"/>
-<connect gate="-I2C/SPI" pin="PI9@E4" pad="E4"/>
 <connect gate="-I2S" pin="PA15@A13" pad="A13"/>
 <connect gate="-I2S" pin="PA5@P4" pad="P4"/>
 <connect gate="-I2S" pin="PD7@A11" pad="A11"/>
+<connect gate="-LCD" pin="PA0@N3" pad="N3"/>
 <connect gate="-LCD" pin="PI12@E3" pad="E3"/>
 <connect gate="-LCD" pin="PI13@G3" pad="G3"/>
 <connect gate="-LCD" pin="PI14@H3" pad="H3"/>
@@ -1171,6 +1170,9 @@ Bus</text>
 <connect gate="-LCD" pin="PK7@C4" pad="C4"/>
 <connect gate="-LED" pin="PF6@K2" pad="K2"/>
 <connect gate="-LED" pin="PF7@K1" pad="K1"/>
+<connect gate="-LED" pin="PI11@F3" pad="F3"/>
+<connect gate="-LED" pin="PI8@C2" pad="C2"/>
+<connect gate="-LED" pin="PI9@E4" pad="E4"/>
 <connect gate="-NET" pin="PA1@N2" pad="N2"/>
 <connect gate="-NET" pin="PA2@P2" pad="P2"/>
 <connect gate="-NET" pin="PA7@R3" pad="R3"/>
