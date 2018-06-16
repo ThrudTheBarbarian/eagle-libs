@@ -2860,7 +2860,7 @@ Bus</text>
 <gates>
 <gate name="-AUDIO" symbol="STM32F746B-VID-I2S" x="-83.82" y="55.88"/>
 <gate name="-VIDEO_OUT" symbol="STM32F746B-VID-LCD" x="-12.7" y="58.42"/>
-<gate name="G$4" symbol="STM32F746B-VID-LED" x="-83.82" y="15.24"/>
+<gate name="-LED" symbol="STM32F746B-VID-LED" x="-83.82" y="15.24"/>
 <gate name="-NET" symbol="STM32F746B-VID-NET" x="40.64" y="55.88"/>
 <gate name="-PIO" symbol="STM32F746B-VID-PIO" x="-83.82" y="-60.96"/>
 <gate name="-SD_CARD" symbol="STM32F746B-VID-SD" x="-17.78" y="-35.56"/>
@@ -2868,15 +2868,21 @@ Bus</text>
 <gate name="-USB" symbol="STM32F746B-VID-USB" x="43.18" y="-38.1"/>
 <gate name="-VIDEO_IN" symbol="STM32F746B-VID-VBUS" x="-83.82" y="101.6"/>
 <gate name="-XSPI" symbol="STM32F746B-VID-XSPI" x="114.3" y="-83.82"/>
-<gate name="ADC" symbol="STM32F746B-VID-ADC" x="116.84" y="-119.38"/>
-<gate name="G$1" symbol="STM32F746B-VID-PWR" x="12.7" y="-116.84"/>
+<gate name="-ADC" symbol="STM32F746B-VID-ADC" x="116.84" y="-119.38"/>
+<gate name="-POWER" symbol="STM32F746B-VID-PWR" x="12.7" y="-116.84"/>
 </gates>
 <devices>
 <device name="" package="PQFP208">
 <connects>
+<connect gate="-ADC" pin="PA3@50" pad="50"/>
+<connect gate="-ADC" pin="PC2@37" pad="37"/>
+<connect gate="-ADC" pin="PC3@38" pad="38"/>
 <connect gate="-AUDIO" pin="PA15@160" pad="160"/>
 <connect gate="-AUDIO" pin="PA5@54" pad="54"/>
 <connect gate="-AUDIO" pin="PD7@173" pad="173"/>
+<connect gate="-LED" pin="PD11@111" pad="111"/>
+<connect gate="-LED" pin="PD12@112" pad="112"/>
+<connect gate="-LED" pin="PD13@113" pad="113"/>
 <connect gate="-NET" pin="PA1@44" pad="44"/>
 <connect gate="-NET" pin="PA2@45" pad="45"/>
 <connect gate="-NET" pin="PA7@56" pad="56"/>
@@ -2915,6 +2921,52 @@ Bus</text>
 <connect gate="-PIO" pin="PH7@97" pad="97"/>
 <connect gate="-PIO" pin="PI11@13" pad="13"/>
 <connect gate="-PIO" pin="PI8@7" pad="7"/>
+<connect gate="-POWER" pin="!RST!@34" pad="34"/>
+<connect gate="-POWER" pin="BOOT0@197" pad="197"/>
+<connect gate="-POWER" pin="PA13@147" pad="147"/>
+<connect gate="-POWER" pin="PA14@159" pad="159"/>
+<connect gate="-POWER" pin="PD5@169" pad="169"/>
+<connect gate="-POWER" pin="PD6@172" pad="172"/>
+<connect gate="-POWER" pin="PDR_ON@203" pad="203"/>
+<connect gate="-POWER" pin="PH0@32" pad="32"/>
+<connect gate="-POWER" pin="PH1@33" pad="33"/>
+<connect gate="-POWER" pin="VBAT@6" pad="6"/>
+<connect gate="-POWER" pin="VCAP1@92" pad="92"/>
+<connect gate="-POWER" pin="VCAP2@148" pad="148"/>
+<connect gate="-POWER" pin="VDD@103" pad="103"/>
+<connect gate="-POWER" pin="VDD@115" pad="115"/>
+<connect gate="-POWER" pin="VDD@124" pad="124"/>
+<connect gate="-POWER" pin="VDD@15" pad="15"/>
+<connect gate="-POWER" pin="VDD@150" pad="150"/>
+<connect gate="-POWER" pin="VDD@158" pad="158"/>
+<connect gate="-POWER" pin="VDD@171" pad="171"/>
+<connect gate="-POWER" pin="VDD@185" pad="185"/>
+<connect gate="-POWER" pin="VDD@204" pad="204"/>
+<connect gate="-POWER" pin="VDD@26" pad="26"/>
+<connect gate="-POWER" pin="VDD@39" pad="39"/>
+<connect gate="-POWER" pin="VDD@52" pad="52"/>
+<connect gate="-POWER" pin="VDD@59" pad="59"/>
+<connect gate="-POWER" pin="VDD@73" pad="73"/>
+<connect gate="-POWER" pin="VDD@83" pad="83"/>
+<connect gate="-POWER" pin="VDD@94" pad="94"/>
+<connect gate="-POWER" pin="VDDA@42" pad="42"/>
+<connect gate="-POWER" pin="VDDUSB@137" pad="137"/>
+<connect gate="-POWER" pin="VREF+@41" pad="41"/>
+<connect gate="-POWER" pin="VSS@114" pad="114"/>
+<connect gate="-POWER" pin="VSS@125" pad="125"/>
+<connect gate="-POWER" pin="VSS@136" pad="136"/>
+<connect gate="-POWER" pin="VSS@14" pad="14"/>
+<connect gate="-POWER" pin="VSS@149" pad="149"/>
+<connect gate="-POWER" pin="VSS@170" pad="170"/>
+<connect gate="-POWER" pin="VSS@184" pad="184"/>
+<connect gate="-POWER" pin="VSS@202" pad="202"/>
+<connect gate="-POWER" pin="VSS@25" pad="25"/>
+<connect gate="-POWER" pin="VSS@51" pad="51"/>
+<connect gate="-POWER" pin="VSS@60" pad="60"/>
+<connect gate="-POWER" pin="VSS@72" pad="72"/>
+<connect gate="-POWER" pin="VSS@82" pad="82"/>
+<connect gate="-POWER" pin="VSS@93" pad="93"/>
+<connect gate="-POWER" pin="VSSA@40" pad="40"/>
 <connect gate="-SDRAM" pin="PC0@35" pad="35"/>
 <connect gate="-SDRAM" pin="PD0@164" pad="164"/>
 <connect gate="-SDRAM" pin="PD10@110" pad="110"/>
@@ -3030,58 +3082,6 @@ Bus</text>
 <connect gate="-XSPI" pin="PF7@28" pad="28"/>
 <connect gate="-XSPI" pin="PF8@29" pad="29"/>
 <connect gate="-XSPI" pin="PF9@30" pad="30"/>
-<connect gate="ADC" pin="PA3@50" pad="50"/>
-<connect gate="ADC" pin="PC2@37" pad="37"/>
-<connect gate="ADC" pin="PC3@38" pad="38"/>
-<connect gate="G$1" pin="!RST!@34" pad="34"/>
-<connect gate="G$1" pin="BOOT0@197" pad="197"/>
-<connect gate="G$1" pin="PA13@147" pad="147"/>
-<connect gate="G$1" pin="PA14@159" pad="159"/>
-<connect gate="G$1" pin="PD5@169" pad="169"/>
-<connect gate="G$1" pin="PD6@172" pad="172"/>
-<connect gate="G$1" pin="PDR_ON@203" pad="203"/>
-<connect gate="G$1" pin="PH0@32" pad="32"/>
-<connect gate="G$1" pin="PH1@33" pad="33"/>
-<connect gate="G$1" pin="VBAT@6" pad="6"/>
-<connect gate="G$1" pin="VCAP1@92" pad="92"/>
-<connect gate="G$1" pin="VCAP2@148" pad="148"/>
-<connect gate="G$1" pin="VDD@103" pad="103"/>
-<connect gate="G$1" pin="VDD@115" pad="115"/>
-<connect gate="G$1" pin="VDD@124" pad="124"/>
-<connect gate="G$1" pin="VDD@15" pad="15"/>
-<connect gate="G$1" pin="VDD@150" pad="150"/>
-<connect gate="G$1" pin="VDD@158" pad="158"/>
-<connect gate="G$1" pin="VDD@171" pad="171"/>
-<connect gate="G$1" pin="VDD@185" pad="185"/>
-<connect gate="G$1" pin="VDD@204" pad="204"/>
-<connect gate="G$1" pin="VDD@26" pad="26"/>
-<connect gate="G$1" pin="VDD@39" pad="39"/>
-<connect gate="G$1" pin="VDD@52" pad="52"/>
-<connect gate="G$1" pin="VDD@59" pad="59"/>
-<connect gate="G$1" pin="VDD@73" pad="73"/>
-<connect gate="G$1" pin="VDD@83" pad="83"/>
-<connect gate="G$1" pin="VDD@94" pad="94"/>
-<connect gate="G$1" pin="VDDA@42" pad="42"/>
-<connect gate="G$1" pin="VDDUSB@137" pad="137"/>
-<connect gate="G$1" pin="VREF+@41" pad="41"/>
-<connect gate="G$1" pin="VSS@114" pad="114"/>
-<connect gate="G$1" pin="VSS@125" pad="125"/>
-<connect gate="G$1" pin="VSS@136" pad="136"/>
-<connect gate="G$1" pin="VSS@14" pad="14"/>
-<connect gate="G$1" pin="VSS@149" pad="149"/>
-<connect gate="G$1" pin="VSS@170" pad="170"/>
-<connect gate="G$1" pin="VSS@184" pad="184"/>
-<connect gate="G$1" pin="VSS@202" pad="202"/>
-<connect gate="G$1" pin="VSS@25" pad="25"/>
-<connect gate="G$1" pin="VSS@51" pad="51"/>
-<connect gate="G$1" pin="VSS@60" pad="60"/>
-<connect gate="G$1" pin="VSS@72" pad="72"/>
-<connect gate="G$1" pin="VSS@82" pad="82"/>
-<connect gate="G$1" pin="VSS@93" pad="93"/>
-<connect gate="G$1" pin="VSSA@40" pad="40"/>
-<connect gate="G$4" pin="PD11@111" pad="111"/>
-<connect gate="G$4" pin="PD12@112" pad="112"/>
-<connect gate="G$4" pin="PD13@113" pad="113"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3089,7 +3089,7 @@ Bus</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STM32F756B-XIO">
+<deviceset name="STM32F746B-XIO">
 <gates>
 <gate name="-POWER" symbol="STM32F746B-XIO-PWR" x="-109.22" y="114.3"/>
 <gate name="-CFG" symbol="STM32F746B-XIO-CFG" x="-132.08" y="25.4"/>
@@ -3100,7 +3100,7 @@ Bus</text>
 <gate name="-VHDCI" symbol="STM32F746B-XIO-VHDCI" x="-195.58" y="-25.4"/>
 <gate name="-XSPI" symbol="STM32F746B-XIO-XSPI" x="7.62" y="81.28"/>
 <gate name="-VBUS" symbol="STM32F746B-XIO-VBUS" x="7.62" y="137.16"/>
-<gate name="G$1" symbol="STM32F746B-XIO-USART" x="-66.04" y="-96.52"/>
+<gate name="-UART" symbol="STM32F746B-XIO-USART" x="-66.04" y="-96.52"/>
 </gates>
 <devices>
 <device name="" package="PQFP208">
@@ -3242,6 +3242,14 @@ Bus</text>
 <connect gate="-SPI-I2C" pin="PH7@97" pad="97"/>
 <connect gate="-SPI-I2C" pin="PH8@98" pad="98"/>
 <connect gate="-SPI-I2C" pin="PH9@99" pad="99"/>
+<connect gate="-UART" pin="PA0@43" pad="43"/>
+<connect gate="-UART" pin="PA1@44" pad="44"/>
+<connect gate="-UART" pin="PA2@45" pad="45"/>
+<connect gate="-UART" pin="PA3@50" pad="50"/>
+<connect gate="-UART" pin="PG12@181" pad="181"/>
+<connect gate="-UART" pin="PG13@182" pad="182"/>
+<connect gate="-UART" pin="PG14@183" pad="183"/>
+<connect gate="-UART" pin="PG9@178" pad="178"/>
 <connect gate="-VBUS" pin="PJ15@177" pad="177"/>
 <connect gate="-VBUS" pin="PK0@126" pad="126"/>
 <connect gate="-VBUS" pin="PK1@127" pad="127"/>
@@ -3305,14 +3313,6 @@ Bus</text>
 <connect gate="-XSPI" pin="PF7@28" pad="28"/>
 <connect gate="-XSPI" pin="PF8@29" pad="29"/>
 <connect gate="-XSPI" pin="PF9@30" pad="30"/>
-<connect gate="G$1" pin="PA0@43" pad="43"/>
-<connect gate="G$1" pin="PA1@44" pad="44"/>
-<connect gate="G$1" pin="PA2@45" pad="45"/>
-<connect gate="G$1" pin="PA3@50" pad="50"/>
-<connect gate="G$1" pin="PG12@181" pad="181"/>
-<connect gate="G$1" pin="PG13@182" pad="182"/>
-<connect gate="G$1" pin="PG14@183" pad="183"/>
-<connect gate="G$1" pin="PG9@178" pad="178"/>
 </connects>
 <technologies>
 <technology name=""/>
