@@ -1708,24 +1708,24 @@ www.analog.com AD9852_b.pdf</description>
 <pin name="AVDD@24" x="-20.32" y="86.36" length="middle" rot="R270"/>
 <pin name="HPD@25" x="38.1" y="-15.24" length="middle" rot="R180"/>
 <pin name="GND@26" x="5.08" y="-91.44" length="middle" rot="R90"/>
-<pin name="TXC-@27" x="38.1" y="20.32" length="middle" rot="R180"/>
-<pin name="TXC+@28" x="38.1" y="22.86" length="middle" rot="R180"/>
+<pin name="TXC-@27" x="38.1" y="63.5" length="middle" rot="R180"/>
+<pin name="TXC+@28" x="38.1" y="66.04" length="middle" rot="R180"/>
 <pin name="AVDD@29" x="-15.24" y="86.36" length="middle" rot="R270"/>
-<pin name="TX0-@30" x="38.1" y="12.7" length="middle" rot="R180"/>
-<pin name="TX0+@31" x="38.1" y="15.24" length="middle" rot="R180"/>
+<pin name="TX0-@30" x="38.1" y="55.88" length="middle" rot="R180"/>
+<pin name="TX0+@31" x="38.1" y="58.42" length="middle" rot="R180"/>
 <pin name="GND@32" x="2.54" y="-91.44" length="middle" rot="R90"/>
 <pin name="PD/A0@33" x="-40.64" y="48.26" length="middle"/>
-<pin name="TX1-@34" x="38.1" y="5.08" length="middle" rot="R180"/>
-<pin name="TX1+@35" x="38.1" y="7.62" length="middle" rot="R180"/>
+<pin name="TX1-@34" x="38.1" y="48.26" length="middle" rot="R180"/>
+<pin name="TX1+@35" x="38.1" y="50.8" length="middle" rot="R180"/>
 <pin name="AVDD@36" x="-17.78" y="86.36" length="middle" rot="R270"/>
-<pin name="TX2-@37" x="38.1" y="-2.54" length="middle" rot="R180"/>
-<pin name="TX2+@38" x="38.1" y="0" length="middle" rot="R180"/>
+<pin name="TX2-@37" x="38.1" y="40.64" length="middle" rot="R180"/>
+<pin name="TX2+@38" x="38.1" y="43.18" length="middle" rot="R180"/>
 <pin name="GND@39" x="0" y="-91.44" length="middle" rot="R90"/>
 <pin name="INT@40" x="-40.64" y="73.66" length="middle"/>
 <pin name="AVDD@41" x="-22.86" y="86.36" length="middle" rot="R270"/>
 <pin name="GND@42" x="15.24" y="-91.44" length="middle" rot="R90"/>
 <pin name="GND@43" x="12.7" y="-91.44" length="middle" rot="R90"/>
-<pin name="DDSCL@44" x="38.1" y="-7.62" length="middle" rot="R180"/>
+<pin name="DDSCL@44" x="38.1" y="15.24" length="middle" rot="R180"/>
 <pin name="DDSDA@45" x="38.1" y="-10.16" length="middle" rot="R180"/>
 <pin name="SCL@46" x="-40.64" y="53.34" length="middle"/>
 <pin name="SDA@47" x="-40.64" y="50.8" length="middle"/>
