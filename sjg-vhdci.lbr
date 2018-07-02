@@ -63,47 +63,47 @@
 <library>
 <packages>
 <package name="HE11-RDA-101-4">
-<smd name="P1" x="13.054" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P2" x="12.254" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P3" x="11.454" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P4" x="10.654" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P5" x="9.854" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P6" x="9.054" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P7" x="8.254" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P8" x="7.454" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P9" x="6.654" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P10" x="5.854" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P11" x="5.054" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P12" x="4.254" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P13" x="3.454" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P14" x="2.654" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P15" x="1.854" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P16" x="1.054" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P17" x="0.254" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P18" x="-0.546" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P19" x="-1.346" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P20" x="-2.146" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P21" x="-2.946" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P22" x="-3.746" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P23" x="-4.546" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P24" x="-5.346" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P25" x="-6.146" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P26" x="-6.946" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P27" x="-7.746" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P28" x="-8.546" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P29" x="-9.346" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P30" x="-10.146" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P31" x="-10.946" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P32" x="-11.746" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P33" x="-12.546" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
-<smd name="P34" x="-13.346" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P1" x="13" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P2" x="12.2" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P3" x="11.4" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P4" x="10.6" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P5" x="9.8" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P6" x="9" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P7" x="8.2" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P8" x="7.4" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P9" x="6.6" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P10" x="5.8" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P11" x="5" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P12" x="4.2" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P13" x="3.4" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P14" x="2.6" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P15" x="1.8" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P16" x="1" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P17" x="0.2" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P18" x="-0.6" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P19" x="-1.4" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P20" x="-2.2" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P21" x="-3" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P22" x="-3.8" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P23" x="-4.6" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P24" x="-5.4" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P25" x="-6.2" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P26" x="-7" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P27" x="-7.8" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P28" x="-8.6" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P29" x="-9.4" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P30" x="-10.2" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P31" x="-11" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P32" x="-11.8" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P33" x="-12.6" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
+<smd name="P34" x="-13.4" y="2.17" dx="0.508" dy="2.0066" layer="1"/>
 <wire x1="-13.9192" y1="0" x2="14.0208" y2="0" width="0" layer="20"/>
-<wire x1="-15.1511" y1="2.17" x2="-15.1511" y2="5.588" width="0" layer="20"/>
-<wire x1="-15.1511" y1="2.17" x2="-13.9192" y2="0" width="0" layer="20"/>
-<wire x1="15.1511" y1="5.6388" x2="15.1511" y2="2.1844" width="0" layer="20"/>
-<wire x1="14.0208" y1="0" x2="15.1511" y2="2.1844" width="0" layer="20"/>
+<wire x1="-15.15" y1="2.17" x2="-15.15" y2="5.588" width="0" layer="20"/>
+<wire x1="-15.15" y1="2.17" x2="-13.9192" y2="0" width="0" layer="20"/>
+<wire x1="15.15" y1="5.6388" x2="15.15" y2="2.1844" width="0" layer="20"/>
+<wire x1="14.0208" y1="0" x2="15.15" y2="2.1844" width="0" layer="20"/>
 <wire x1="-15.1511" y1="5.6388" x2="-17.3863" y2="5.6388" width="0" layer="20"/>
-<wire x1="15.1511" y1="5.6388" x2="17.3863" y2="5.6388" width="0" layer="20"/>
+<wire x1="15.15" y1="5.6388" x2="17.3863" y2="5.6388" width="0" layer="20"/>
 <wire x1="17.3863" y1="5.6388" x2="17.3863" y2="0" width="0" layer="20"/>
 <wire x1="17.3863" y1="0" x2="21.59" y2="0" width="0" layer="20"/>
 <wire x1="-17.3863" y1="5.6388" x2="-17.3863" y2="0" width="0" layer="20"/>
@@ -147,7 +147,7 @@
 <smd name="PGB2" x="-19.6" y="3.2" dx="3.4798" dy="5.6388" layer="16"/>
 <smd name="PGB1" x="19.6" y="3.2" dx="3.4798" dy="5.6388" layer="16"/>
 <text x="-3.81" y="3.81" size="1.27" layer="21">VHDCI-68</text>
-<circle x="13.335" y="4.445" radius="0.635" width="0.127" layer="21"/>
+<circle x="12.954" y="3.937" radius="0.235" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
