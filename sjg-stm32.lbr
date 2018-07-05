@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -3114,19 +3114,16 @@ signals</text>
 <symbol name="STM32H753B-XIO-UNUSED">
 <description>STM32F777N interface to peripherals</description>
 <wire x1="20.32" y1="17.78" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="17.78" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-20.32" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-20.32" x2="20.32" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="17.78" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-12.7" x2="20.32" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-12.7" x2="20.32" y2="17.78" width="0.254" layer="94"/>
 <text x="-17.78" y="18.034" size="1.778" layer="94">&gt;NAME</text>
-<text x="-17.78" y="-22.86" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-17.78" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 <pin name="PB12@104" x="25.4" y="0" length="middle" rot="R180"/>
 <pin name="PG10@179" x="25.4" y="-5.08" length="middle" rot="R180"/>
 <pin name="PG11@180" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="PJ14@176" x="25.4" y="-12.7" length="middle" rot="R180"/>
 <pin name="PB3@192" x="25.4" y="5.08" length="middle" rot="R180"/>
 <pin name="PB4@193" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="PJ15@177" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="PJ13@175" x="25.4" y="-10.16" length="middle" rot="R180"/>
 <pin name="PB2@63" x="25.4" y="7.62" length="middle" rot="R180"/>
 <pin name="PB0@61" x="25.4" y="10.16" length="middle" rot="R180"/>
 <pin name="PF10@31" x="25.4" y="-2.54" length="middle" rot="R180"/>
@@ -3421,20 +3418,23 @@ signals</text>
 <symbol name="STM32H753B-XIO-LVL">
 <wire x1="-20.32" y1="2.54" x2="-20.32" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="7.62" x2="17.78" y2="7.62" width="0.254" layer="94"/>
-<wire x1="17.78" y1="7.62" x2="17.78" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-25.4" x2="-20.32" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-20.32" y1="-25.4" x2="-20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-33.02" x2="-20.32" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-33.02" x2="-20.32" y2="2.54" width="0.254" layer="94"/>
 <text x="-20.32" y="8.128" size="1.778" layer="94">&gt;NAME</text>
 <pin name="PK0@126" x="-25.4" y="2.54" length="middle"/>
 <pin name="PK1@127" x="-25.4" y="0" length="middle"/>
 <pin name="PK2@128" x="-25.4" y="-2.54" length="middle"/>
-<text x="-20.32" y="-27.94" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-20.32" y="-35.56" size="1.778" layer="94">&gt;VALUE</text>
 <pin name="PK3@186" x="-25.4" y="-5.08" length="middle"/>
 <pin name="PK4@187" x="-25.4" y="-7.62" length="middle"/>
 <pin name="PK5@188" x="-25.4" y="-10.16" length="middle"/>
 <pin name="PK6@189" x="-25.4" y="-12.7" length="middle"/>
 <pin name="PK7@190" x="-25.4" y="-15.24" length="middle"/>
-<pin name="PE3@2" x="-25.4" y="-20.32" length="middle"/>
+<pin name="PE3@2" x="-25.4" y="-27.94" length="middle"/>
+<pin name="PJ13@175" x="-25.4" y="-17.78" length="middle"/>
+<pin name="PJ14@176" x="-25.4" y="-20.32" length="middle"/>
+<pin name="PJ15@177" x="-25.4" y="-22.86" length="middle"/>
 </symbol>
 <symbol name="STM32H753B-XIO-USB">
 <pin name="PA12@146" x="-25.4" y="-10.16" length="middle"/>
@@ -4198,231 +4198,231 @@ signals</text>
 </deviceset>
 <deviceset name="STM32H753B-PIO">
 <gates>
-<gate name="VIDEO" symbol="STM32FH753B-VID-LCD" x="-76.2" y="78.74"/>
-<gate name="G$2" symbol="STM32H753B-VID-ADC" x="-81.28" y="157.48"/>
-<gate name="CFG" symbol="STM32H753B-VID-CFG" x="-83.82" y="-15.24"/>
-<gate name="I2S" symbol="STM32H753B-VID-I2S" x="-83.82" y="-58.42"/>
-<gate name="LED" symbol="STM32H753B-VID-LED" x="-15.24" y="149.86"/>
-<gate name="NET" symbol="STM32H753B-VID-NET" x="-15.24" y="58.42"/>
-<gate name="UNUSED" symbol="STM32H753B-VID-UNUSED" x="-15.24" y="-43.18"/>
-<gate name="PWR" symbol="STM32H753B-VID-PWR" x="-175.26" y="121.92"/>
-<gate name="SDCARD" symbol="STM32H753B-VID-SD" x="-149.86" y="38.1"/>
-<gate name="USB" symbol="STM32H753B-VID-USB" x="60.96" y="-40.64"/>
-<gate name="XSPI" symbol="STM32H753B-VID-XSPI" x="-152.4" y="-12.7"/>
-<gate name="SDRAM" symbol="STM32H753B-VID-SDRAM" x="58.42" y="81.28"/>
-<gate name="MISC" symbol="STM32H753B-VID-MISC" x="-149.86" y="-66.04"/>
+<gate name="-VIDEO" symbol="STM32FH753B-VID-LCD" x="-76.2" y="78.74"/>
+<gate name="-ADC" symbol="STM32H753B-VID-ADC" x="-81.28" y="157.48"/>
+<gate name="-CFG" symbol="STM32H753B-VID-CFG" x="-83.82" y="-15.24"/>
+<gate name="-I2S" symbol="STM32H753B-VID-I2S" x="-83.82" y="-58.42"/>
+<gate name="-LED" symbol="STM32H753B-VID-LED" x="-15.24" y="149.86"/>
+<gate name="-NET" symbol="STM32H753B-VID-NET" x="-15.24" y="58.42"/>
+<gate name="-UNUSED" symbol="STM32H753B-VID-UNUSED" x="-15.24" y="-43.18"/>
+<gate name="-PWR" symbol="STM32H753B-VID-PWR" x="-175.26" y="121.92"/>
+<gate name="-SDCARD" symbol="STM32H753B-VID-SD" x="-149.86" y="38.1"/>
+<gate name="-USB" symbol="STM32H753B-VID-USB" x="60.96" y="-40.64"/>
+<gate name="-XSPI" symbol="STM32H753B-VID-XSPI" x="-152.4" y="-12.7"/>
+<gate name="-SDRAM" symbol="STM32H753B-VID-SDRAM" x="58.42" y="81.28"/>
+<gate name="-MISC" symbol="STM32H753B-VID-MISC" x="-149.86" y="-73.66"/>
 </gates>
 <devices>
 <device name="" package="PQFP208">
 <connects>
-<connect gate="CFG" pin="PG10@179" pad="179"/>
-<connect gate="CFG" pin="PG11@180" pad="180"/>
-<connect gate="CFG" pin="PG12@181" pad="181"/>
-<connect gate="CFG" pin="PG13@182" pad="182"/>
-<connect gate="CFG" pin="PG14@183" pad="183"/>
-<connect gate="CFG" pin="PG3@130" pad="130"/>
-<connect gate="CFG" pin="PG6@133" pad="133"/>
-<connect gate="CFG" pin="PG7@134" pad="134"/>
-<connect gate="CFG" pin="PG9@178" pad="178"/>
-<connect gate="G$2" pin="PB0@61" pad="61"/>
-<connect gate="G$2" pin="PB1@62" pad="62"/>
-<connect gate="G$2" pin="PF10@31" pad="31"/>
-<connect gate="I2S" pin="PB10@90" pad="90"/>
-<connect gate="I2S" pin="PB15@107" pad="107"/>
-<connect gate="I2S" pin="PB9@199" pad="199"/>
-<connect gate="LED" pin="PD11@111" pad="111"/>
-<connect gate="LED" pin="PD12@112" pad="112"/>
-<connect gate="LED" pin="PD13@113" pad="113"/>
-<connect gate="MISC" pin="PH2@46" pad="46"/>
-<connect gate="MISC" pin="PH3@47" pad="47"/>
-<connect gate="MISC" pin="PH4@48" pad="48"/>
-<connect gate="NET" pin="PA1@44" pad="44"/>
-<connect gate="NET" pin="PA2@45" pad="45"/>
-<connect gate="NET" pin="PA7@56" pad="56"/>
-<connect gate="NET" pin="PB11@91" pad="91"/>
-<connect gate="NET" pin="PB12@104" pad="104"/>
-<connect gate="NET" pin="PB13@105" pad="105"/>
-<connect gate="NET" pin="PC1@36" pad="36"/>
-<connect gate="NET" pin="PC4@57" pad="57"/>
-<connect gate="NET" pin="PC5@58" pad="58"/>
-<connect gate="PWR" pin="!RST!@34" pad="34"/>
-<connect gate="PWR" pin="BOOT0@197" pad="197"/>
-<connect gate="PWR" pin="PA13@147" pad="147"/>
-<connect gate="PWR" pin="PA14@159" pad="159"/>
-<connect gate="PWR" pin="PD5@169" pad="169"/>
-<connect gate="PWR" pin="PD6@172" pad="172"/>
-<connect gate="PWR" pin="PDR_ON@203" pad="203"/>
-<connect gate="PWR" pin="PH0@32" pad="32"/>
-<connect gate="PWR" pin="PH1@33" pad="33"/>
-<connect gate="PWR" pin="VBAT@6" pad="6"/>
-<connect gate="PWR" pin="VCAP1@92" pad="92"/>
-<connect gate="PWR" pin="VCAP2@148" pad="148"/>
-<connect gate="PWR" pin="VDD@103" pad="103"/>
-<connect gate="PWR" pin="VDD@115" pad="115"/>
-<connect gate="PWR" pin="VDD@124" pad="124"/>
-<connect gate="PWR" pin="VDD@15" pad="15"/>
-<connect gate="PWR" pin="VDD@150" pad="150"/>
-<connect gate="PWR" pin="VDD@158" pad="158"/>
-<connect gate="PWR" pin="VDD@171" pad="171"/>
-<connect gate="PWR" pin="VDD@185" pad="185"/>
-<connect gate="PWR" pin="VDD@204" pad="204"/>
-<connect gate="PWR" pin="VDD@26" pad="26"/>
-<connect gate="PWR" pin="VDD@39" pad="39"/>
-<connect gate="PWR" pin="VDD@52" pad="52"/>
-<connect gate="PWR" pin="VDD@59" pad="59"/>
-<connect gate="PWR" pin="VDD@73" pad="73"/>
-<connect gate="PWR" pin="VDD@83" pad="83"/>
-<connect gate="PWR" pin="VDD@94" pad="94"/>
-<connect gate="PWR" pin="VDDA@42" pad="42"/>
-<connect gate="PWR" pin="VDDUSB@137" pad="137"/>
-<connect gate="PWR" pin="VREF+@41" pad="41"/>
-<connect gate="PWR" pin="VSS@114" pad="114"/>
-<connect gate="PWR" pin="VSS@125" pad="125"/>
-<connect gate="PWR" pin="VSS@136" pad="136"/>
-<connect gate="PWR" pin="VSS@14" pad="14"/>
-<connect gate="PWR" pin="VSS@149" pad="149"/>
-<connect gate="PWR" pin="VSS@170" pad="170"/>
-<connect gate="PWR" pin="VSS@184" pad="184"/>
-<connect gate="PWR" pin="VSS@202" pad="202"/>
-<connect gate="PWR" pin="VSS@25" pad="25"/>
-<connect gate="PWR" pin="VSS@51" pad="51"/>
-<connect gate="PWR" pin="VSS@60" pad="60"/>
-<connect gate="PWR" pin="VSS@72" pad="72"/>
-<connect gate="PWR" pin="VSS@82" pad="82"/>
-<connect gate="PWR" pin="VSS@93" pad="93"/>
-<connect gate="PWR" pin="VSSA@40" pad="40"/>
-<connect gate="SDCARD" pin="PC10@161" pad="161"/>
-<connect gate="SDCARD" pin="PC11@162" pad="162"/>
-<connect gate="SDCARD" pin="PC12@163" pad="163"/>
-<connect gate="SDCARD" pin="PC13@8" pad="8"/>
-<connect gate="SDCARD" pin="PC8@140" pad="140"/>
-<connect gate="SDCARD" pin="PC9@141" pad="141"/>
-<connect gate="SDCARD" pin="PD2@166" pad="166"/>
-<connect gate="SDRAM" pin="PC0@35" pad="35"/>
-<connect gate="SDRAM" pin="PD0@164" pad="164"/>
-<connect gate="SDRAM" pin="PD10@110" pad="110"/>
-<connect gate="SDRAM" pin="PD14@116" pad="116"/>
-<connect gate="SDRAM" pin="PD15@117" pad="117"/>
-<connect gate="SDRAM" pin="PD1@165" pad="165"/>
-<connect gate="SDRAM" pin="PD8@108" pad="108"/>
-<connect gate="SDRAM" pin="PD9@109" pad="109"/>
-<connect gate="SDRAM" pin="PE0@200" pad="200"/>
-<connect gate="SDRAM" pin="PE10@84" pad="84"/>
-<connect gate="SDRAM" pin="PE11@85" pad="85"/>
-<connect gate="SDRAM" pin="PE12@86" pad="86"/>
-<connect gate="SDRAM" pin="PE13@87" pad="87"/>
-<connect gate="SDRAM" pin="PE14@88" pad="88"/>
-<connect gate="SDRAM" pin="PE15@89" pad="89"/>
-<connect gate="SDRAM" pin="PE1@201" pad="201"/>
-<connect gate="SDRAM" pin="PE7@79" pad="79"/>
-<connect gate="SDRAM" pin="PE8@80" pad="80"/>
-<connect gate="SDRAM" pin="PE9@81" pad="81"/>
-<connect gate="SDRAM" pin="PF0@16" pad="16"/>
-<connect gate="SDRAM" pin="PF11@70" pad="70"/>
-<connect gate="SDRAM" pin="PF12@71" pad="71"/>
-<connect gate="SDRAM" pin="PF13@74" pad="74"/>
-<connect gate="SDRAM" pin="PF14@75" pad="75"/>
-<connect gate="SDRAM" pin="PF15@76" pad="76"/>
-<connect gate="SDRAM" pin="PF1@17" pad="17"/>
-<connect gate="SDRAM" pin="PF2@18" pad="18"/>
-<connect gate="SDRAM" pin="PF3@22" pad="22"/>
-<connect gate="SDRAM" pin="PF4@23" pad="23"/>
-<connect gate="SDRAM" pin="PF5@24" pad="24"/>
-<connect gate="SDRAM" pin="PG0@77" pad="77"/>
-<connect gate="SDRAM" pin="PG15@191" pad="191"/>
-<connect gate="SDRAM" pin="PG1@78" pad="78"/>
-<connect gate="SDRAM" pin="PG2@129" pad="129"/>
-<connect gate="SDRAM" pin="PG4@131" pad="131"/>
-<connect gate="SDRAM" pin="PG5@132" pad="132"/>
-<connect gate="SDRAM" pin="PG8@135" pad="135"/>
-<connect gate="SDRAM" pin="PH10@100" pad="100"/>
-<connect gate="SDRAM" pin="PH11@101" pad="101"/>
-<connect gate="SDRAM" pin="PH12@102" pad="102"/>
-<connect gate="SDRAM" pin="PH13@151" pad="151"/>
-<connect gate="SDRAM" pin="PH14@152" pad="152"/>
-<connect gate="SDRAM" pin="PH15@153" pad="153"/>
-<connect gate="SDRAM" pin="PH8@98" pad="98"/>
-<connect gate="SDRAM" pin="PH9@99" pad="99"/>
-<connect gate="SDRAM" pin="PI0@154" pad="154"/>
-<connect gate="SDRAM" pin="PI10@12" pad="12"/>
-<connect gate="SDRAM" pin="PI1@155" pad="155"/>
-<connect gate="SDRAM" pin="PI2@156" pad="156"/>
-<connect gate="SDRAM" pin="PI3@157" pad="157"/>
-<connect gate="SDRAM" pin="PI4@205" pad="205"/>
-<connect gate="SDRAM" pin="PI5@206" pad="206"/>
-<connect gate="SDRAM" pin="PI6@207" pad="207"/>
-<connect gate="SDRAM" pin="PI7@208" pad="208"/>
-<connect gate="SDRAM" pin="PI9@11" pad="11"/>
-<connect gate="UNUSED" pin="PA3@50" pad="50"/>
-<connect gate="UNUSED" pin="PB14@106" pad="106"/>
-<connect gate="UNUSED" pin="PB2@63" pad="63"/>
-<connect gate="UNUSED" pin="PB6@195" pad="195"/>
-<connect gate="UNUSED" pin="PB7@196" pad="196"/>
-<connect gate="UNUSED" pin="PB8@198" pad="198"/>
-<connect gate="UNUSED" pin="PC14@9" pad="9"/>
-<connect gate="UNUSED" pin="PC15@10" pad="10"/>
-<connect gate="UNUSED" pin="PC2_C@37" pad="37"/>
-<connect gate="UNUSED" pin="PC3_C@38" pad="38"/>
-<connect gate="UNUSED" pin="PC6@138" pad="138"/>
-<connect gate="UNUSED" pin="PC7@139" pad="139"/>
-<connect gate="UNUSED" pin="PD3@167" pad="167"/>
-<connect gate="UNUSED" pin="PD4@168" pad="168"/>
-<connect gate="UNUSED" pin="PD7@173" pad="173"/>
-<connect gate="UNUSED" pin="PE3@2" pad="2"/>
-<connect gate="UNUSED" pin="PH5@49" pad="49"/>
-<connect gate="UNUSED" pin="PH6@96" pad="96"/>
-<connect gate="UNUSED" pin="PH7@97" pad="97"/>
-<connect gate="USB" pin="PA10@144" pad="144"/>
-<connect gate="USB" pin="PA11@145" pad="145"/>
-<connect gate="USB" pin="PA12@146" pad="146"/>
-<connect gate="USB" pin="PA5@54" pad="54"/>
-<connect gate="USB" pin="PA6@55" pad="55"/>
-<connect gate="USB" pin="PA8@142" pad="142"/>
-<connect gate="USB" pin="PA9@143" pad="143"/>
-<connect gate="VIDEO" pin="PA0@43" pad="43"/>
-<connect gate="VIDEO" pin="PA15@160" pad="160"/>
-<connect gate="VIDEO" pin="PI12@19" pad="19"/>
-<connect gate="VIDEO" pin="PI13@20" pad="20"/>
-<connect gate="VIDEO" pin="PI14@21" pad="21"/>
-<connect gate="VIDEO" pin="PI15@64" pad="64"/>
-<connect gate="VIDEO" pin="PJ0@65" pad="65"/>
-<connect gate="VIDEO" pin="PJ10@122" pad="122"/>
-<connect gate="VIDEO" pin="PJ11@123" pad="123"/>
-<connect gate="VIDEO" pin="PJ12@174" pad="174"/>
-<connect gate="VIDEO" pin="PJ13@175" pad="175"/>
-<connect gate="VIDEO" pin="PJ14@176" pad="176"/>
-<connect gate="VIDEO" pin="PJ15@177" pad="177"/>
-<connect gate="VIDEO" pin="PJ1@66" pad="66"/>
-<connect gate="VIDEO" pin="PJ2@67" pad="67"/>
-<connect gate="VIDEO" pin="PJ3@68" pad="68"/>
-<connect gate="VIDEO" pin="PJ4@69" pad="69"/>
-<connect gate="VIDEO" pin="PJ5@95" pad="95"/>
-<connect gate="VIDEO" pin="PJ6@118" pad="118"/>
-<connect gate="VIDEO" pin="PJ7@119" pad="119"/>
-<connect gate="VIDEO" pin="PJ8@120" pad="120"/>
-<connect gate="VIDEO" pin="PJ9@121" pad="121"/>
-<connect gate="VIDEO" pin="PK0@126" pad="126"/>
-<connect gate="VIDEO" pin="PK1@127" pad="127"/>
-<connect gate="VIDEO" pin="PK2@128" pad="128"/>
-<connect gate="VIDEO" pin="PK3@186" pad="186"/>
-<connect gate="VIDEO" pin="PK4@187" pad="187"/>
-<connect gate="VIDEO" pin="PK5@188" pad="188"/>
-<connect gate="VIDEO" pin="PK6@189" pad="189"/>
-<connect gate="VIDEO" pin="PK7@190" pad="190"/>
-<connect gate="XSPI" pin="PA4@53" pad="53"/>
-<connect gate="XSPI" pin="PB3@192" pad="192"/>
-<connect gate="XSPI" pin="PB4@193" pad="193"/>
-<connect gate="XSPI" pin="PB5@194" pad="194"/>
-<connect gate="XSPI" pin="PE2@1" pad="1"/>
-<connect gate="XSPI" pin="PE4@3" pad="3"/>
-<connect gate="XSPI" pin="PE5@4" pad="4"/>
-<connect gate="XSPI" pin="PE6@5" pad="5"/>
-<connect gate="XSPI" pin="PF6@27" pad="27"/>
-<connect gate="XSPI" pin="PF7@28" pad="28"/>
-<connect gate="XSPI" pin="PF8@29" pad="29"/>
-<connect gate="XSPI" pin="PF9@30" pad="30"/>
-<connect gate="XSPI" pin="PI11@13" pad="13"/>
-<connect gate="XSPI" pin="PI8@7" pad="7"/>
+<connect gate="-ADC" pin="PB0@61" pad="61"/>
+<connect gate="-ADC" pin="PB1@62" pad="62"/>
+<connect gate="-ADC" pin="PF10@31" pad="31"/>
+<connect gate="-CFG" pin="PG10@179" pad="179"/>
+<connect gate="-CFG" pin="PG11@180" pad="180"/>
+<connect gate="-CFG" pin="PG12@181" pad="181"/>
+<connect gate="-CFG" pin="PG13@182" pad="182"/>
+<connect gate="-CFG" pin="PG14@183" pad="183"/>
+<connect gate="-CFG" pin="PG3@130" pad="130"/>
+<connect gate="-CFG" pin="PG6@133" pad="133"/>
+<connect gate="-CFG" pin="PG7@134" pad="134"/>
+<connect gate="-CFG" pin="PG9@178" pad="178"/>
+<connect gate="-I2S" pin="PB10@90" pad="90"/>
+<connect gate="-I2S" pin="PB15@107" pad="107"/>
+<connect gate="-I2S" pin="PB9@199" pad="199"/>
+<connect gate="-LED" pin="PD11@111" pad="111"/>
+<connect gate="-LED" pin="PD12@112" pad="112"/>
+<connect gate="-LED" pin="PD13@113" pad="113"/>
+<connect gate="-MISC" pin="PH2@46" pad="46"/>
+<connect gate="-MISC" pin="PH3@47" pad="47"/>
+<connect gate="-MISC" pin="PH4@48" pad="48"/>
+<connect gate="-NET" pin="PA1@44" pad="44"/>
+<connect gate="-NET" pin="PA2@45" pad="45"/>
+<connect gate="-NET" pin="PA7@56" pad="56"/>
+<connect gate="-NET" pin="PB11@91" pad="91"/>
+<connect gate="-NET" pin="PB12@104" pad="104"/>
+<connect gate="-NET" pin="PB13@105" pad="105"/>
+<connect gate="-NET" pin="PC1@36" pad="36"/>
+<connect gate="-NET" pin="PC4@57" pad="57"/>
+<connect gate="-NET" pin="PC5@58" pad="58"/>
+<connect gate="-PWR" pin="!RST!@34" pad="34"/>
+<connect gate="-PWR" pin="BOOT0@197" pad="197"/>
+<connect gate="-PWR" pin="PA13@147" pad="147"/>
+<connect gate="-PWR" pin="PA14@159" pad="159"/>
+<connect gate="-PWR" pin="PD5@169" pad="169"/>
+<connect gate="-PWR" pin="PD6@172" pad="172"/>
+<connect gate="-PWR" pin="PDR_ON@203" pad="203"/>
+<connect gate="-PWR" pin="PH0@32" pad="32"/>
+<connect gate="-PWR" pin="PH1@33" pad="33"/>
+<connect gate="-PWR" pin="VBAT@6" pad="6"/>
+<connect gate="-PWR" pin="VCAP1@92" pad="92"/>
+<connect gate="-PWR" pin="VCAP2@148" pad="148"/>
+<connect gate="-PWR" pin="VDD@103" pad="103"/>
+<connect gate="-PWR" pin="VDD@115" pad="115"/>
+<connect gate="-PWR" pin="VDD@124" pad="124"/>
+<connect gate="-PWR" pin="VDD@15" pad="15"/>
+<connect gate="-PWR" pin="VDD@150" pad="150"/>
+<connect gate="-PWR" pin="VDD@158" pad="158"/>
+<connect gate="-PWR" pin="VDD@171" pad="171"/>
+<connect gate="-PWR" pin="VDD@185" pad="185"/>
+<connect gate="-PWR" pin="VDD@204" pad="204"/>
+<connect gate="-PWR" pin="VDD@26" pad="26"/>
+<connect gate="-PWR" pin="VDD@39" pad="39"/>
+<connect gate="-PWR" pin="VDD@52" pad="52"/>
+<connect gate="-PWR" pin="VDD@59" pad="59"/>
+<connect gate="-PWR" pin="VDD@73" pad="73"/>
+<connect gate="-PWR" pin="VDD@83" pad="83"/>
+<connect gate="-PWR" pin="VDD@94" pad="94"/>
+<connect gate="-PWR" pin="VDDA@42" pad="42"/>
+<connect gate="-PWR" pin="VDDUSB@137" pad="137"/>
+<connect gate="-PWR" pin="VREF+@41" pad="41"/>
+<connect gate="-PWR" pin="VSS@114" pad="114"/>
+<connect gate="-PWR" pin="VSS@125" pad="125"/>
+<connect gate="-PWR" pin="VSS@136" pad="136"/>
+<connect gate="-PWR" pin="VSS@14" pad="14"/>
+<connect gate="-PWR" pin="VSS@149" pad="149"/>
+<connect gate="-PWR" pin="VSS@170" pad="170"/>
+<connect gate="-PWR" pin="VSS@184" pad="184"/>
+<connect gate="-PWR" pin="VSS@202" pad="202"/>
+<connect gate="-PWR" pin="VSS@25" pad="25"/>
+<connect gate="-PWR" pin="VSS@51" pad="51"/>
+<connect gate="-PWR" pin="VSS@60" pad="60"/>
+<connect gate="-PWR" pin="VSS@72" pad="72"/>
+<connect gate="-PWR" pin="VSS@82" pad="82"/>
+<connect gate="-PWR" pin="VSS@93" pad="93"/>
+<connect gate="-PWR" pin="VSSA@40" pad="40"/>
+<connect gate="-SDCARD" pin="PC10@161" pad="161"/>
+<connect gate="-SDCARD" pin="PC11@162" pad="162"/>
+<connect gate="-SDCARD" pin="PC12@163" pad="163"/>
+<connect gate="-SDCARD" pin="PC13@8" pad="8"/>
+<connect gate="-SDCARD" pin="PC8@140" pad="140"/>
+<connect gate="-SDCARD" pin="PC9@141" pad="141"/>
+<connect gate="-SDCARD" pin="PD2@166" pad="166"/>
+<connect gate="-SDRAM" pin="PC0@35" pad="35"/>
+<connect gate="-SDRAM" pin="PD0@164" pad="164"/>
+<connect gate="-SDRAM" pin="PD10@110" pad="110"/>
+<connect gate="-SDRAM" pin="PD14@116" pad="116"/>
+<connect gate="-SDRAM" pin="PD15@117" pad="117"/>
+<connect gate="-SDRAM" pin="PD1@165" pad="165"/>
+<connect gate="-SDRAM" pin="PD8@108" pad="108"/>
+<connect gate="-SDRAM" pin="PD9@109" pad="109"/>
+<connect gate="-SDRAM" pin="PE0@200" pad="200"/>
+<connect gate="-SDRAM" pin="PE10@84" pad="84"/>
+<connect gate="-SDRAM" pin="PE11@85" pad="85"/>
+<connect gate="-SDRAM" pin="PE12@86" pad="86"/>
+<connect gate="-SDRAM" pin="PE13@87" pad="87"/>
+<connect gate="-SDRAM" pin="PE14@88" pad="88"/>
+<connect gate="-SDRAM" pin="PE15@89" pad="89"/>
+<connect gate="-SDRAM" pin="PE1@201" pad="201"/>
+<connect gate="-SDRAM" pin="PE7@79" pad="79"/>
+<connect gate="-SDRAM" pin="PE8@80" pad="80"/>
+<connect gate="-SDRAM" pin="PE9@81" pad="81"/>
+<connect gate="-SDRAM" pin="PF0@16" pad="16"/>
+<connect gate="-SDRAM" pin="PF11@70" pad="70"/>
+<connect gate="-SDRAM" pin="PF12@71" pad="71"/>
+<connect gate="-SDRAM" pin="PF13@74" pad="74"/>
+<connect gate="-SDRAM" pin="PF14@75" pad="75"/>
+<connect gate="-SDRAM" pin="PF15@76" pad="76"/>
+<connect gate="-SDRAM" pin="PF1@17" pad="17"/>
+<connect gate="-SDRAM" pin="PF2@18" pad="18"/>
+<connect gate="-SDRAM" pin="PF3@22" pad="22"/>
+<connect gate="-SDRAM" pin="PF4@23" pad="23"/>
+<connect gate="-SDRAM" pin="PF5@24" pad="24"/>
+<connect gate="-SDRAM" pin="PG0@77" pad="77"/>
+<connect gate="-SDRAM" pin="PG15@191" pad="191"/>
+<connect gate="-SDRAM" pin="PG1@78" pad="78"/>
+<connect gate="-SDRAM" pin="PG2@129" pad="129"/>
+<connect gate="-SDRAM" pin="PG4@131" pad="131"/>
+<connect gate="-SDRAM" pin="PG5@132" pad="132"/>
+<connect gate="-SDRAM" pin="PG8@135" pad="135"/>
+<connect gate="-SDRAM" pin="PH10@100" pad="100"/>
+<connect gate="-SDRAM" pin="PH11@101" pad="101"/>
+<connect gate="-SDRAM" pin="PH12@102" pad="102"/>
+<connect gate="-SDRAM" pin="PH13@151" pad="151"/>
+<connect gate="-SDRAM" pin="PH14@152" pad="152"/>
+<connect gate="-SDRAM" pin="PH15@153" pad="153"/>
+<connect gate="-SDRAM" pin="PH8@98" pad="98"/>
+<connect gate="-SDRAM" pin="PH9@99" pad="99"/>
+<connect gate="-SDRAM" pin="PI0@154" pad="154"/>
+<connect gate="-SDRAM" pin="PI10@12" pad="12"/>
+<connect gate="-SDRAM" pin="PI1@155" pad="155"/>
+<connect gate="-SDRAM" pin="PI2@156" pad="156"/>
+<connect gate="-SDRAM" pin="PI3@157" pad="157"/>
+<connect gate="-SDRAM" pin="PI4@205" pad="205"/>
+<connect gate="-SDRAM" pin="PI5@206" pad="206"/>
+<connect gate="-SDRAM" pin="PI6@207" pad="207"/>
+<connect gate="-SDRAM" pin="PI7@208" pad="208"/>
+<connect gate="-SDRAM" pin="PI9@11" pad="11"/>
+<connect gate="-UNUSED" pin="PA3@50" pad="50"/>
+<connect gate="-UNUSED" pin="PB14@106" pad="106"/>
+<connect gate="-UNUSED" pin="PB2@63" pad="63"/>
+<connect gate="-UNUSED" pin="PB6@195" pad="195"/>
+<connect gate="-UNUSED" pin="PB7@196" pad="196"/>
+<connect gate="-UNUSED" pin="PB8@198" pad="198"/>
+<connect gate="-UNUSED" pin="PC14@9" pad="9"/>
+<connect gate="-UNUSED" pin="PC15@10" pad="10"/>
+<connect gate="-UNUSED" pin="PC2_C@37" pad="37"/>
+<connect gate="-UNUSED" pin="PC3_C@38" pad="38"/>
+<connect gate="-UNUSED" pin="PC6@138" pad="138"/>
+<connect gate="-UNUSED" pin="PC7@139" pad="139"/>
+<connect gate="-UNUSED" pin="PD3@167" pad="167"/>
+<connect gate="-UNUSED" pin="PD4@168" pad="168"/>
+<connect gate="-UNUSED" pin="PD7@173" pad="173"/>
+<connect gate="-UNUSED" pin="PE3@2" pad="2"/>
+<connect gate="-UNUSED" pin="PH5@49" pad="49"/>
+<connect gate="-UNUSED" pin="PH6@96" pad="96"/>
+<connect gate="-UNUSED" pin="PH7@97" pad="97"/>
+<connect gate="-USB" pin="PA10@144" pad="144"/>
+<connect gate="-USB" pin="PA11@145" pad="145"/>
+<connect gate="-USB" pin="PA12@146" pad="146"/>
+<connect gate="-USB" pin="PA5@54" pad="54"/>
+<connect gate="-USB" pin="PA6@55" pad="55"/>
+<connect gate="-USB" pin="PA8@142" pad="142"/>
+<connect gate="-USB" pin="PA9@143" pad="143"/>
+<connect gate="-VIDEO" pin="PA0@43" pad="43"/>
+<connect gate="-VIDEO" pin="PA15@160" pad="160"/>
+<connect gate="-VIDEO" pin="PI12@19" pad="19"/>
+<connect gate="-VIDEO" pin="PI13@20" pad="20"/>
+<connect gate="-VIDEO" pin="PI14@21" pad="21"/>
+<connect gate="-VIDEO" pin="PI15@64" pad="64"/>
+<connect gate="-VIDEO" pin="PJ0@65" pad="65"/>
+<connect gate="-VIDEO" pin="PJ10@122" pad="122"/>
+<connect gate="-VIDEO" pin="PJ11@123" pad="123"/>
+<connect gate="-VIDEO" pin="PJ12@174" pad="174"/>
+<connect gate="-VIDEO" pin="PJ13@175" pad="175"/>
+<connect gate="-VIDEO" pin="PJ14@176" pad="176"/>
+<connect gate="-VIDEO" pin="PJ15@177" pad="177"/>
+<connect gate="-VIDEO" pin="PJ1@66" pad="66"/>
+<connect gate="-VIDEO" pin="PJ2@67" pad="67"/>
+<connect gate="-VIDEO" pin="PJ3@68" pad="68"/>
+<connect gate="-VIDEO" pin="PJ4@69" pad="69"/>
+<connect gate="-VIDEO" pin="PJ5@95" pad="95"/>
+<connect gate="-VIDEO" pin="PJ6@118" pad="118"/>
+<connect gate="-VIDEO" pin="PJ7@119" pad="119"/>
+<connect gate="-VIDEO" pin="PJ8@120" pad="120"/>
+<connect gate="-VIDEO" pin="PJ9@121" pad="121"/>
+<connect gate="-VIDEO" pin="PK0@126" pad="126"/>
+<connect gate="-VIDEO" pin="PK1@127" pad="127"/>
+<connect gate="-VIDEO" pin="PK2@128" pad="128"/>
+<connect gate="-VIDEO" pin="PK3@186" pad="186"/>
+<connect gate="-VIDEO" pin="PK4@187" pad="187"/>
+<connect gate="-VIDEO" pin="PK5@188" pad="188"/>
+<connect gate="-VIDEO" pin="PK6@189" pad="189"/>
+<connect gate="-VIDEO" pin="PK7@190" pad="190"/>
+<connect gate="-XSPI" pin="PA4@53" pad="53"/>
+<connect gate="-XSPI" pin="PB3@192" pad="192"/>
+<connect gate="-XSPI" pin="PB4@193" pad="193"/>
+<connect gate="-XSPI" pin="PB5@194" pad="194"/>
+<connect gate="-XSPI" pin="PE2@1" pad="1"/>
+<connect gate="-XSPI" pin="PE4@3" pad="3"/>
+<connect gate="-XSPI" pin="PE5@4" pad="4"/>
+<connect gate="-XSPI" pin="PE6@5" pad="5"/>
+<connect gate="-XSPI" pin="PF6@27" pad="27"/>
+<connect gate="-XSPI" pin="PF7@28" pad="28"/>
+<connect gate="-XSPI" pin="PF8@29" pad="29"/>
+<connect gate="-XSPI" pin="PF9@30" pad="30"/>
+<connect gate="-XSPI" pin="PI11@13" pad="13"/>
+<connect gate="-XSPI" pin="PI8@7" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4432,229 +4432,229 @@ signals</text>
 </deviceset>
 <deviceset name="STM32H753B-XIO">
 <gates>
-<gate name="SPI_I2C" symbol="STM32H753B-XIO-I2C-SPI" x="-43.18" y="50.8"/>
-<gate name="LED" symbol="STM32H753B-XIO-LED" x="-43.18" y="-35.56"/>
-<gate name="LVL_CTRL" symbol="STM32H753B-XIO-LVL" x="-40.64" y="-68.58"/>
-<gate name="MISC" symbol="STM32H753B-XIO-MISC" x="-40.64" y="-111.76"/>
-<gate name="PWR" symbol="STM32H753B-XIO-PWR" x="43.18" y="40.64"/>
-<gate name="SDRAM" symbol="STM32H753B-XIO-SDRAM" x="142.24" y="15.24"/>
-<gate name="UNUSED" symbol="STM32H753B-XIO-UNUSED" x="20.32" y="-45.72"/>
-<gate name="USART" symbol="STM32H753B-XIO-USART" x="20.32" y="-104.14"/>
-<gate name="VHDCI" symbol="STM32H753B-XIO-VHDCI" x="200.66" y="12.7"/>
-<gate name="XSPI" symbol="STM32H753B-XIO-XSPI" x="139.7" y="-93.98"/>
-<gate name="G$1" symbol="STM32H753B-XIO-USB" x="205.74" y="-91.44"/>
+<gate name="-SPI_I2C" symbol="STM32H753B-XIO-I2C-SPI" x="-43.18" y="50.8"/>
+<gate name="-LED" symbol="STM32H753B-XIO-LED" x="-43.18" y="-35.56"/>
+<gate name="-LVL_CTRL" symbol="STM32H753B-XIO-LVL" x="-40.64" y="-68.58"/>
+<gate name="-MISC" symbol="STM32H753B-XIO-MISC" x="203.2" y="-48.26"/>
+<gate name="-PWR" symbol="STM32H753B-XIO-PWR" x="43.18" y="40.64"/>
+<gate name="-SDRAM" symbol="STM32H753B-XIO-SDRAM" x="142.24" y="15.24"/>
+<gate name="-UNUSED" symbol="STM32H753B-XIO-UNUSED" x="20.32" y="-45.72"/>
+<gate name="-USART" symbol="STM32H753B-XIO-USART" x="20.32" y="-104.14"/>
+<gate name="-VHDCI" symbol="STM32H753B-XIO-VHDCI" x="200.66" y="12.7"/>
+<gate name="-XSPI" symbol="STM32H753B-XIO-XSPI" x="139.7" y="-93.98"/>
+<gate name="-USB" symbol="STM32H753B-XIO-USB" x="203.2" y="-91.44"/>
 </gates>
 <devices>
 <device name="" package="PQFP208">
 <connects>
-<connect gate="G$1" pin="PA10@144" pad="144"/>
-<connect gate="G$1" pin="PA11@145" pad="145"/>
-<connect gate="G$1" pin="PA12@146" pad="146"/>
-<connect gate="G$1" pin="PA15@160" pad="160"/>
-<connect gate="G$1" pin="PA8@142" pad="142"/>
-<connect gate="G$1" pin="PA9@143" pad="143"/>
-<connect gate="G$1" pin="PB9@199" pad="199"/>
-<connect gate="LED" pin="PD5@169" pad="169"/>
-<connect gate="LED" pin="PD6@172" pad="172"/>
-<connect gate="LED" pin="PD7@173" pad="173"/>
-<connect gate="LVL_CTRL" pin="PE3@2" pad="2"/>
-<connect gate="LVL_CTRL" pin="PK0@126" pad="126"/>
-<connect gate="LVL_CTRL" pin="PK1@127" pad="127"/>
-<connect gate="LVL_CTRL" pin="PK2@128" pad="128"/>
-<connect gate="LVL_CTRL" pin="PK3@186" pad="186"/>
-<connect gate="LVL_CTRL" pin="PK4@187" pad="187"/>
-<connect gate="LVL_CTRL" pin="PK5@188" pad="188"/>
-<connect gate="LVL_CTRL" pin="PK6@189" pad="189"/>
-<connect gate="LVL_CTRL" pin="PK7@190" pad="190"/>
-<connect gate="MISC" pin="PD2@166" pad="166"/>
-<connect gate="MISC" pin="PD7@167" pad="167"/>
-<connect gate="MISC" pin="PD8@168" pad="168"/>
-<connect gate="PWR" pin="!RST!@34" pad="34"/>
-<connect gate="PWR" pin="BOOT0@197" pad="197"/>
-<connect gate="PWR" pin="PA13@147" pad="147"/>
-<connect gate="PWR" pin="PA14@159" pad="159"/>
-<connect gate="PWR" pin="PB6@195" pad="195"/>
-<connect gate="PWR" pin="PB7@196" pad="196"/>
-<connect gate="PWR" pin="PDR_ON@203" pad="203"/>
-<connect gate="PWR" pin="PH0@32" pad="32"/>
-<connect gate="PWR" pin="PH1@33" pad="33"/>
-<connect gate="PWR" pin="VBAT@6" pad="6"/>
-<connect gate="PWR" pin="VCAP1@92" pad="92"/>
-<connect gate="PWR" pin="VCAP2@148" pad="148"/>
-<connect gate="PWR" pin="VDD@103" pad="103"/>
-<connect gate="PWR" pin="VDD@115" pad="115"/>
-<connect gate="PWR" pin="VDD@124" pad="124"/>
-<connect gate="PWR" pin="VDD@15" pad="15"/>
-<connect gate="PWR" pin="VDD@150" pad="150"/>
-<connect gate="PWR" pin="VDD@158" pad="158"/>
-<connect gate="PWR" pin="VDD@171" pad="171"/>
-<connect gate="PWR" pin="VDD@185" pad="185"/>
-<connect gate="PWR" pin="VDD@204" pad="204"/>
-<connect gate="PWR" pin="VDD@26" pad="26"/>
-<connect gate="PWR" pin="VDD@39" pad="39"/>
-<connect gate="PWR" pin="VDD@52" pad="52"/>
-<connect gate="PWR" pin="VDD@59" pad="59"/>
-<connect gate="PWR" pin="VDD@73" pad="73"/>
-<connect gate="PWR" pin="VDD@83" pad="83"/>
-<connect gate="PWR" pin="VDD@94" pad="94"/>
-<connect gate="PWR" pin="VDDA@42" pad="42"/>
-<connect gate="PWR" pin="VDDUSB@137" pad="137"/>
-<connect gate="PWR" pin="VREF+@41" pad="41"/>
-<connect gate="PWR" pin="VSS@114" pad="114"/>
-<connect gate="PWR" pin="VSS@125" pad="125"/>
-<connect gate="PWR" pin="VSS@136" pad="136"/>
-<connect gate="PWR" pin="VSS@14" pad="14"/>
-<connect gate="PWR" pin="VSS@149" pad="149"/>
-<connect gate="PWR" pin="VSS@170" pad="170"/>
-<connect gate="PWR" pin="VSS@184" pad="184"/>
-<connect gate="PWR" pin="VSS@202" pad="202"/>
-<connect gate="PWR" pin="VSS@25" pad="25"/>
-<connect gate="PWR" pin="VSS@51" pad="51"/>
-<connect gate="PWR" pin="VSS@60" pad="60"/>
-<connect gate="PWR" pin="VSS@72" pad="72"/>
-<connect gate="PWR" pin="VSS@82" pad="82"/>
-<connect gate="PWR" pin="VSS@93" pad="93"/>
-<connect gate="PWR" pin="VSSA@40" pad="40"/>
-<connect gate="SDRAM" pin="PD0@164" pad="164"/>
-<connect gate="SDRAM" pin="PD10@110" pad="110"/>
-<connect gate="SDRAM" pin="PD14@116" pad="116"/>
-<connect gate="SDRAM" pin="PD15@117" pad="117"/>
-<connect gate="SDRAM" pin="PD1@165" pad="165"/>
-<connect gate="SDRAM" pin="PD8@108" pad="108"/>
-<connect gate="SDRAM" pin="PD9@109" pad="109"/>
-<connect gate="SDRAM" pin="PE0@200" pad="200"/>
-<connect gate="SDRAM" pin="PE10@84" pad="84"/>
-<connect gate="SDRAM" pin="PE11@85" pad="85"/>
-<connect gate="SDRAM" pin="PE12@86" pad="86"/>
-<connect gate="SDRAM" pin="PE13@87" pad="87"/>
-<connect gate="SDRAM" pin="PE14@88" pad="88"/>
-<connect gate="SDRAM" pin="PE15@89" pad="89"/>
-<connect gate="SDRAM" pin="PE1@201" pad="201"/>
-<connect gate="SDRAM" pin="PE7@79" pad="79"/>
-<connect gate="SDRAM" pin="PE8@80" pad="80"/>
-<connect gate="SDRAM" pin="PE9@81" pad="81"/>
-<connect gate="SDRAM" pin="PF0@16" pad="16"/>
-<connect gate="SDRAM" pin="PF11@70" pad="70"/>
-<connect gate="SDRAM" pin="PF12@71" pad="71"/>
-<connect gate="SDRAM" pin="PF13@74" pad="74"/>
-<connect gate="SDRAM" pin="PF14@75" pad="75"/>
-<connect gate="SDRAM" pin="PF15@76" pad="76"/>
-<connect gate="SDRAM" pin="PF1@17" pad="17"/>
-<connect gate="SDRAM" pin="PF2@18" pad="18"/>
-<connect gate="SDRAM" pin="PF3@22" pad="22"/>
-<connect gate="SDRAM" pin="PF4@23" pad="23"/>
-<connect gate="SDRAM" pin="PF5@24" pad="24"/>
-<connect gate="SDRAM" pin="PG0@77" pad="77"/>
-<connect gate="SDRAM" pin="PG15@191" pad="191"/>
-<connect gate="SDRAM" pin="PG1@78" pad="78"/>
-<connect gate="SDRAM" pin="PG2@129" pad="129"/>
-<connect gate="SDRAM" pin="PG4@131" pad="131"/>
-<connect gate="SDRAM" pin="PG5@132" pad="132"/>
-<connect gate="SDRAM" pin="PG8@135" pad="135"/>
-<connect gate="SDRAM" pin="PH5@49" pad="49"/>
-<connect gate="SPI_I2C" pin="PB10@90" pad="90"/>
-<connect gate="SPI_I2C" pin="PB11@91" pad="91"/>
-<connect gate="SPI_I2C" pin="PB13@105" pad="105"/>
-<connect gate="SPI_I2C" pin="PB14@106" pad="106"/>
-<connect gate="SPI_I2C" pin="PB15@107" pad="107"/>
-<connect gate="SPI_I2C" pin="PB5@194" pad="194"/>
-<connect gate="SPI_I2C" pin="PD11@111" pad="111"/>
-<connect gate="SPI_I2C" pin="PD12@112" pad="112"/>
-<connect gate="SPI_I2C" pin="PD13@113" pad="113"/>
-<connect gate="SPI_I2C" pin="PG3@130" pad="130"/>
-<connect gate="SPI_I2C" pin="PG6@133" pad="133"/>
-<connect gate="SPI_I2C" pin="PG7@134" pad="134"/>
-<connect gate="SPI_I2C" pin="PH10@100" pad="100"/>
-<connect gate="SPI_I2C" pin="PH11@101" pad="101"/>
-<connect gate="SPI_I2C" pin="PH12@102" pad="102"/>
-<connect gate="SPI_I2C" pin="PH13@151" pad="151"/>
-<connect gate="SPI_I2C" pin="PH14@152" pad="152"/>
-<connect gate="SPI_I2C" pin="PH15@153" pad="153"/>
-<connect gate="SPI_I2C" pin="PH2@46" pad="46"/>
-<connect gate="SPI_I2C" pin="PH3@47" pad="47"/>
-<connect gate="SPI_I2C" pin="PH4@48" pad="48"/>
-<connect gate="SPI_I2C" pin="PH6@96" pad="96"/>
-<connect gate="SPI_I2C" pin="PH7@97" pad="97"/>
-<connect gate="SPI_I2C" pin="PH8@98" pad="98"/>
-<connect gate="SPI_I2C" pin="PH9@99" pad="99"/>
-<connect gate="UNUSED" pin="PB0@61" pad="61"/>
-<connect gate="UNUSED" pin="PB12@104" pad="104"/>
-<connect gate="UNUSED" pin="PB2@63" pad="63"/>
-<connect gate="UNUSED" pin="PB3@192" pad="192"/>
-<connect gate="UNUSED" pin="PB4@193" pad="193"/>
-<connect gate="UNUSED" pin="PF10@31" pad="31"/>
-<connect gate="UNUSED" pin="PG10@179" pad="179"/>
-<connect gate="UNUSED" pin="PG11@180" pad="180"/>
-<connect gate="UNUSED" pin="PJ13@175" pad="175"/>
-<connect gate="UNUSED" pin="PJ14@176" pad="176"/>
-<connect gate="UNUSED" pin="PJ15@177" pad="177"/>
-<connect gate="USART" pin="PA0@43" pad="43"/>
-<connect gate="USART" pin="PA1@44" pad="44"/>
-<connect gate="USART" pin="PA2@45" pad="45"/>
-<connect gate="USART" pin="PA3@50" pad="50"/>
-<connect gate="USART" pin="PG12@181" pad="181"/>
-<connect gate="USART" pin="PG13@182" pad="182"/>
-<connect gate="USART" pin="PG14@183" pad="183"/>
-<connect gate="USART" pin="PG9@178" pad="178"/>
-<connect gate="VHDCI" pin="PC0@35" pad="35"/>
-<connect gate="VHDCI" pin="PC10@161" pad="161"/>
-<connect gate="VHDCI" pin="PC11@162" pad="162"/>
-<connect gate="VHDCI" pin="PC12@163" pad="163"/>
-<connect gate="VHDCI" pin="PC13@8" pad="8"/>
-<connect gate="VHDCI" pin="PC14@9" pad="9"/>
-<connect gate="VHDCI" pin="PC15@10" pad="10"/>
-<connect gate="VHDCI" pin="PC1@36" pad="36"/>
-<connect gate="VHDCI" pin="PC2@37" pad="37"/>
-<connect gate="VHDCI" pin="PC3@38" pad="38"/>
-<connect gate="VHDCI" pin="PC4@57" pad="57"/>
-<connect gate="VHDCI" pin="PC5@58" pad="58"/>
-<connect gate="VHDCI" pin="PC6@138" pad="138"/>
-<connect gate="VHDCI" pin="PC7@139" pad="139"/>
-<connect gate="VHDCI" pin="PC8@140" pad="140"/>
-<connect gate="VHDCI" pin="PC9@141" pad="141"/>
-<connect gate="VHDCI" pin="PI0@154" pad="154"/>
-<connect gate="VHDCI" pin="PI10@12" pad="12"/>
-<connect gate="VHDCI" pin="PI11@13" pad="13"/>
-<connect gate="VHDCI" pin="PI12@19" pad="19"/>
-<connect gate="VHDCI" pin="PI13@20" pad="20"/>
-<connect gate="VHDCI" pin="PI14@21" pad="21"/>
-<connect gate="VHDCI" pin="PI15@64" pad="64"/>
-<connect gate="VHDCI" pin="PI1@155" pad="155"/>
-<connect gate="VHDCI" pin="PI2@156" pad="156"/>
-<connect gate="VHDCI" pin="PI3@157" pad="157"/>
-<connect gate="VHDCI" pin="PI4@205" pad="205"/>
-<connect gate="VHDCI" pin="PI5@206" pad="206"/>
-<connect gate="VHDCI" pin="PI6@207" pad="207"/>
-<connect gate="VHDCI" pin="PI7@208" pad="208"/>
-<connect gate="VHDCI" pin="PI8@7" pad="7"/>
-<connect gate="VHDCI" pin="PI9@11" pad="11"/>
-<connect gate="VHDCI" pin="PJ0@65" pad="65"/>
-<connect gate="VHDCI" pin="PJ10@122" pad="122"/>
-<connect gate="VHDCI" pin="PJ11@123" pad="123"/>
-<connect gate="VHDCI" pin="PJ12@174" pad="174"/>
-<connect gate="VHDCI" pin="PJ1@66" pad="66"/>
-<connect gate="VHDCI" pin="PJ2@67" pad="67"/>
-<connect gate="VHDCI" pin="PJ3@68" pad="68"/>
-<connect gate="VHDCI" pin="PJ4@69" pad="69"/>
-<connect gate="VHDCI" pin="PJ5@95" pad="95"/>
-<connect gate="VHDCI" pin="PJ6@118" pad="118"/>
-<connect gate="VHDCI" pin="PJ7@119" pad="119"/>
-<connect gate="VHDCI" pin="PJ8@120" pad="120"/>
-<connect gate="VHDCI" pin="PJ9@121" pad="121"/>
-<connect gate="XSPI" pin="PA4@53" pad="53"/>
-<connect gate="XSPI" pin="PA5@54" pad="54"/>
-<connect gate="XSPI" pin="PA6@55" pad="55"/>
-<connect gate="XSPI" pin="PA7@56" pad="56"/>
-<connect gate="XSPI" pin="PB1@62" pad="62"/>
-<connect gate="XSPI" pin="PB8@198" pad="198"/>
-<connect gate="XSPI" pin="PE2@1" pad="1"/>
-<connect gate="XSPI" pin="PE4@3" pad="3"/>
-<connect gate="XSPI" pin="PE5@4" pad="4"/>
-<connect gate="XSPI" pin="PE6@5" pad="5"/>
-<connect gate="XSPI" pin="PF6@27" pad="27"/>
-<connect gate="XSPI" pin="PF7@28" pad="28"/>
-<connect gate="XSPI" pin="PF8@29" pad="29"/>
-<connect gate="XSPI" pin="PF9@30" pad="30"/>
+<connect gate="-LED" pin="PD5@169" pad="169"/>
+<connect gate="-LED" pin="PD6@172" pad="172"/>
+<connect gate="-LED" pin="PD7@173" pad="173"/>
+<connect gate="-LVL_CTRL" pin="PE3@2" pad="2"/>
+<connect gate="-LVL_CTRL" pin="PJ13@175" pad="175"/>
+<connect gate="-LVL_CTRL" pin="PJ14@176" pad="176"/>
+<connect gate="-LVL_CTRL" pin="PJ15@177" pad="177"/>
+<connect gate="-LVL_CTRL" pin="PK0@126" pad="126"/>
+<connect gate="-LVL_CTRL" pin="PK1@127" pad="127"/>
+<connect gate="-LVL_CTRL" pin="PK2@128" pad="128"/>
+<connect gate="-LVL_CTRL" pin="PK3@186" pad="186"/>
+<connect gate="-LVL_CTRL" pin="PK4@187" pad="187"/>
+<connect gate="-LVL_CTRL" pin="PK5@188" pad="188"/>
+<connect gate="-LVL_CTRL" pin="PK6@189" pad="189"/>
+<connect gate="-LVL_CTRL" pin="PK7@190" pad="190"/>
+<connect gate="-MISC" pin="PD2@166" pad="166"/>
+<connect gate="-MISC" pin="PD7@167" pad="167"/>
+<connect gate="-MISC" pin="PD8@168" pad="168"/>
+<connect gate="-PWR" pin="!RST!@34" pad="34"/>
+<connect gate="-PWR" pin="BOOT0@197" pad="197"/>
+<connect gate="-PWR" pin="PA13@147" pad="147"/>
+<connect gate="-PWR" pin="PA14@159" pad="159"/>
+<connect gate="-PWR" pin="PB6@195" pad="195"/>
+<connect gate="-PWR" pin="PB7@196" pad="196"/>
+<connect gate="-PWR" pin="PDR_ON@203" pad="203"/>
+<connect gate="-PWR" pin="PH0@32" pad="32"/>
+<connect gate="-PWR" pin="PH1@33" pad="33"/>
+<connect gate="-PWR" pin="VBAT@6" pad="6"/>
+<connect gate="-PWR" pin="VCAP1@92" pad="92"/>
+<connect gate="-PWR" pin="VCAP2@148" pad="148"/>
+<connect gate="-PWR" pin="VDD@103" pad="103"/>
+<connect gate="-PWR" pin="VDD@115" pad="115"/>
+<connect gate="-PWR" pin="VDD@124" pad="124"/>
+<connect gate="-PWR" pin="VDD@15" pad="15"/>
+<connect gate="-PWR" pin="VDD@150" pad="150"/>
+<connect gate="-PWR" pin="VDD@158" pad="158"/>
+<connect gate="-PWR" pin="VDD@171" pad="171"/>
+<connect gate="-PWR" pin="VDD@185" pad="185"/>
+<connect gate="-PWR" pin="VDD@204" pad="204"/>
+<connect gate="-PWR" pin="VDD@26" pad="26"/>
+<connect gate="-PWR" pin="VDD@39" pad="39"/>
+<connect gate="-PWR" pin="VDD@52" pad="52"/>
+<connect gate="-PWR" pin="VDD@59" pad="59"/>
+<connect gate="-PWR" pin="VDD@73" pad="73"/>
+<connect gate="-PWR" pin="VDD@83" pad="83"/>
+<connect gate="-PWR" pin="VDD@94" pad="94"/>
+<connect gate="-PWR" pin="VDDA@42" pad="42"/>
+<connect gate="-PWR" pin="VDDUSB@137" pad="137"/>
+<connect gate="-PWR" pin="VREF+@41" pad="41"/>
+<connect gate="-PWR" pin="VSS@114" pad="114"/>
+<connect gate="-PWR" pin="VSS@125" pad="125"/>
+<connect gate="-PWR" pin="VSS@136" pad="136"/>
+<connect gate="-PWR" pin="VSS@14" pad="14"/>
+<connect gate="-PWR" pin="VSS@149" pad="149"/>
+<connect gate="-PWR" pin="VSS@170" pad="170"/>
+<connect gate="-PWR" pin="VSS@184" pad="184"/>
+<connect gate="-PWR" pin="VSS@202" pad="202"/>
+<connect gate="-PWR" pin="VSS@25" pad="25"/>
+<connect gate="-PWR" pin="VSS@51" pad="51"/>
+<connect gate="-PWR" pin="VSS@60" pad="60"/>
+<connect gate="-PWR" pin="VSS@72" pad="72"/>
+<connect gate="-PWR" pin="VSS@82" pad="82"/>
+<connect gate="-PWR" pin="VSS@93" pad="93"/>
+<connect gate="-PWR" pin="VSSA@40" pad="40"/>
+<connect gate="-SDRAM" pin="PD0@164" pad="164"/>
+<connect gate="-SDRAM" pin="PD10@110" pad="110"/>
+<connect gate="-SDRAM" pin="PD14@116" pad="116"/>
+<connect gate="-SDRAM" pin="PD15@117" pad="117"/>
+<connect gate="-SDRAM" pin="PD1@165" pad="165"/>
+<connect gate="-SDRAM" pin="PD8@108" pad="108"/>
+<connect gate="-SDRAM" pin="PD9@109" pad="109"/>
+<connect gate="-SDRAM" pin="PE0@200" pad="200"/>
+<connect gate="-SDRAM" pin="PE10@84" pad="84"/>
+<connect gate="-SDRAM" pin="PE11@85" pad="85"/>
+<connect gate="-SDRAM" pin="PE12@86" pad="86"/>
+<connect gate="-SDRAM" pin="PE13@87" pad="87"/>
+<connect gate="-SDRAM" pin="PE14@88" pad="88"/>
+<connect gate="-SDRAM" pin="PE15@89" pad="89"/>
+<connect gate="-SDRAM" pin="PE1@201" pad="201"/>
+<connect gate="-SDRAM" pin="PE7@79" pad="79"/>
+<connect gate="-SDRAM" pin="PE8@80" pad="80"/>
+<connect gate="-SDRAM" pin="PE9@81" pad="81"/>
+<connect gate="-SDRAM" pin="PF0@16" pad="16"/>
+<connect gate="-SDRAM" pin="PF11@70" pad="70"/>
+<connect gate="-SDRAM" pin="PF12@71" pad="71"/>
+<connect gate="-SDRAM" pin="PF13@74" pad="74"/>
+<connect gate="-SDRAM" pin="PF14@75" pad="75"/>
+<connect gate="-SDRAM" pin="PF15@76" pad="76"/>
+<connect gate="-SDRAM" pin="PF1@17" pad="17"/>
+<connect gate="-SDRAM" pin="PF2@18" pad="18"/>
+<connect gate="-SDRAM" pin="PF3@22" pad="22"/>
+<connect gate="-SDRAM" pin="PF4@23" pad="23"/>
+<connect gate="-SDRAM" pin="PF5@24" pad="24"/>
+<connect gate="-SDRAM" pin="PG0@77" pad="77"/>
+<connect gate="-SDRAM" pin="PG15@191" pad="191"/>
+<connect gate="-SDRAM" pin="PG1@78" pad="78"/>
+<connect gate="-SDRAM" pin="PG2@129" pad="129"/>
+<connect gate="-SDRAM" pin="PG4@131" pad="131"/>
+<connect gate="-SDRAM" pin="PG5@132" pad="132"/>
+<connect gate="-SDRAM" pin="PG8@135" pad="135"/>
+<connect gate="-SDRAM" pin="PH5@49" pad="49"/>
+<connect gate="-SPI_I2C" pin="PB10@90" pad="90"/>
+<connect gate="-SPI_I2C" pin="PB11@91" pad="91"/>
+<connect gate="-SPI_I2C" pin="PB13@105" pad="105"/>
+<connect gate="-SPI_I2C" pin="PB14@106" pad="106"/>
+<connect gate="-SPI_I2C" pin="PB15@107" pad="107"/>
+<connect gate="-SPI_I2C" pin="PB5@194" pad="194"/>
+<connect gate="-SPI_I2C" pin="PD11@111" pad="111"/>
+<connect gate="-SPI_I2C" pin="PD12@112" pad="112"/>
+<connect gate="-SPI_I2C" pin="PD13@113" pad="113"/>
+<connect gate="-SPI_I2C" pin="PG3@130" pad="130"/>
+<connect gate="-SPI_I2C" pin="PG6@133" pad="133"/>
+<connect gate="-SPI_I2C" pin="PG7@134" pad="134"/>
+<connect gate="-SPI_I2C" pin="PH10@100" pad="100"/>
+<connect gate="-SPI_I2C" pin="PH11@101" pad="101"/>
+<connect gate="-SPI_I2C" pin="PH12@102" pad="102"/>
+<connect gate="-SPI_I2C" pin="PH13@151" pad="151"/>
+<connect gate="-SPI_I2C" pin="PH14@152" pad="152"/>
+<connect gate="-SPI_I2C" pin="PH15@153" pad="153"/>
+<connect gate="-SPI_I2C" pin="PH2@46" pad="46"/>
+<connect gate="-SPI_I2C" pin="PH3@47" pad="47"/>
+<connect gate="-SPI_I2C" pin="PH4@48" pad="48"/>
+<connect gate="-SPI_I2C" pin="PH6@96" pad="96"/>
+<connect gate="-SPI_I2C" pin="PH7@97" pad="97"/>
+<connect gate="-SPI_I2C" pin="PH8@98" pad="98"/>
+<connect gate="-SPI_I2C" pin="PH9@99" pad="99"/>
+<connect gate="-UNUSED" pin="PB0@61" pad="61"/>
+<connect gate="-UNUSED" pin="PB12@104" pad="104"/>
+<connect gate="-UNUSED" pin="PB2@63" pad="63"/>
+<connect gate="-UNUSED" pin="PB3@192" pad="192"/>
+<connect gate="-UNUSED" pin="PB4@193" pad="193"/>
+<connect gate="-UNUSED" pin="PF10@31" pad="31"/>
+<connect gate="-UNUSED" pin="PG10@179" pad="179"/>
+<connect gate="-UNUSED" pin="PG11@180" pad="180"/>
+<connect gate="-USART" pin="PA0@43" pad="43"/>
+<connect gate="-USART" pin="PA1@44" pad="44"/>
+<connect gate="-USART" pin="PA2@45" pad="45"/>
+<connect gate="-USART" pin="PA3@50" pad="50"/>
+<connect gate="-USART" pin="PG12@181" pad="181"/>
+<connect gate="-USART" pin="PG13@182" pad="182"/>
+<connect gate="-USART" pin="PG14@183" pad="183"/>
+<connect gate="-USART" pin="PG9@178" pad="178"/>
+<connect gate="-USB" pin="PA10@144" pad="144"/>
+<connect gate="-USB" pin="PA11@145" pad="145"/>
+<connect gate="-USB" pin="PA12@146" pad="146"/>
+<connect gate="-USB" pin="PA15@160" pad="160"/>
+<connect gate="-USB" pin="PA8@142" pad="142"/>
+<connect gate="-USB" pin="PA9@143" pad="143"/>
+<connect gate="-USB" pin="PB9@199" pad="199"/>
+<connect gate="-VHDCI" pin="PC0@35" pad="35"/>
+<connect gate="-VHDCI" pin="PC10@161" pad="161"/>
+<connect gate="-VHDCI" pin="PC11@162" pad="162"/>
+<connect gate="-VHDCI" pin="PC12@163" pad="163"/>
+<connect gate="-VHDCI" pin="PC13@8" pad="8"/>
+<connect gate="-VHDCI" pin="PC14@9" pad="9"/>
+<connect gate="-VHDCI" pin="PC15@10" pad="10"/>
+<connect gate="-VHDCI" pin="PC1@36" pad="36"/>
+<connect gate="-VHDCI" pin="PC2@37" pad="37"/>
+<connect gate="-VHDCI" pin="PC3@38" pad="38"/>
+<connect gate="-VHDCI" pin="PC4@57" pad="57"/>
+<connect gate="-VHDCI" pin="PC5@58" pad="58"/>
+<connect gate="-VHDCI" pin="PC6@138" pad="138"/>
+<connect gate="-VHDCI" pin="PC7@139" pad="139"/>
+<connect gate="-VHDCI" pin="PC8@140" pad="140"/>
+<connect gate="-VHDCI" pin="PC9@141" pad="141"/>
+<connect gate="-VHDCI" pin="PI0@154" pad="154"/>
+<connect gate="-VHDCI" pin="PI10@12" pad="12"/>
+<connect gate="-VHDCI" pin="PI11@13" pad="13"/>
+<connect gate="-VHDCI" pin="PI12@19" pad="19"/>
+<connect gate="-VHDCI" pin="PI13@20" pad="20"/>
+<connect gate="-VHDCI" pin="PI14@21" pad="21"/>
+<connect gate="-VHDCI" pin="PI15@64" pad="64"/>
+<connect gate="-VHDCI" pin="PI1@155" pad="155"/>
+<connect gate="-VHDCI" pin="PI2@156" pad="156"/>
+<connect gate="-VHDCI" pin="PI3@157" pad="157"/>
+<connect gate="-VHDCI" pin="PI4@205" pad="205"/>
+<connect gate="-VHDCI" pin="PI5@206" pad="206"/>
+<connect gate="-VHDCI" pin="PI6@207" pad="207"/>
+<connect gate="-VHDCI" pin="PI7@208" pad="208"/>
+<connect gate="-VHDCI" pin="PI8@7" pad="7"/>
+<connect gate="-VHDCI" pin="PI9@11" pad="11"/>
+<connect gate="-VHDCI" pin="PJ0@65" pad="65"/>
+<connect gate="-VHDCI" pin="PJ10@122" pad="122"/>
+<connect gate="-VHDCI" pin="PJ11@123" pad="123"/>
+<connect gate="-VHDCI" pin="PJ12@174" pad="174"/>
+<connect gate="-VHDCI" pin="PJ1@66" pad="66"/>
+<connect gate="-VHDCI" pin="PJ2@67" pad="67"/>
+<connect gate="-VHDCI" pin="PJ3@68" pad="68"/>
+<connect gate="-VHDCI" pin="PJ4@69" pad="69"/>
+<connect gate="-VHDCI" pin="PJ5@95" pad="95"/>
+<connect gate="-VHDCI" pin="PJ6@118" pad="118"/>
+<connect gate="-VHDCI" pin="PJ7@119" pad="119"/>
+<connect gate="-VHDCI" pin="PJ8@120" pad="120"/>
+<connect gate="-VHDCI" pin="PJ9@121" pad="121"/>
+<connect gate="-XSPI" pin="PA4@53" pad="53"/>
+<connect gate="-XSPI" pin="PA5@54" pad="54"/>
+<connect gate="-XSPI" pin="PA6@55" pad="55"/>
+<connect gate="-XSPI" pin="PA7@56" pad="56"/>
+<connect gate="-XSPI" pin="PB1@62" pad="62"/>
+<connect gate="-XSPI" pin="PB8@198" pad="198"/>
+<connect gate="-XSPI" pin="PE2@1" pad="1"/>
+<connect gate="-XSPI" pin="PE4@3" pad="3"/>
+<connect gate="-XSPI" pin="PE5@4" pad="4"/>
+<connect gate="-XSPI" pin="PE6@5" pad="5"/>
+<connect gate="-XSPI" pin="PF6@27" pad="27"/>
+<connect gate="-XSPI" pin="PF7@28" pad="28"/>
+<connect gate="-XSPI" pin="PF8@29" pad="29"/>
+<connect gate="-XSPI" pin="PF9@30" pad="30"/>
 </connects>
 <technologies>
 <technology name=""/>
