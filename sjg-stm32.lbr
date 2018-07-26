@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2147,6 +2147,7 @@ signals</text>
 <text x="-20.32" y="-22.86" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="STM32F746B-VID-SDRAM">
+<description>32-bit SDRAM (SDR). Eg: AS4C8M32S-7TCN</description>
 <pin name="PE1@201" x="-22.86" y="-68.58" length="middle"/>
 <pin name="PE0@200" x="-22.86" y="-66.04" length="middle"/>
 <pin name="PG15@191" x="-22.86" y="-83.82" length="middle"/>
@@ -3875,6 +3876,316 @@ Port B</text>
 <text x="-3.048" y="-8.128" size="1.27" layer="94">CTS</text>
 <text x="-17.78" y="23.368" size="1.778" layer="94">&gt;NAME</text>
 <text x="-17.78" y="-25.4" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F429B-XIO-CFG">
+<wire x1="-17.78" y1="2.54" x2="-17.78" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="7.62" x2="-15.24" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="7.62" x2="20.32" y2="7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="7.62" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="2.54" x2="20.32" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-7.62" x2="-17.78" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-7.62" x2="-17.78" y2="2.54" width="0.254" layer="94"/>
+<text x="-17.78" y="8.382" size="1.778" layer="94">&gt;NAME</text>
+<text x="-17.78" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<text x="0" y="0" size="1.27" layer="94">Periph ID</text>
+<pin name="PI8@7" x="-22.86" y="2.54" length="middle"/>
+<pin name="PI11@13" x="-22.86" y="0" length="middle"/>
+<pin name="PI14@21" x="-22.86" y="-2.54" length="middle"/>
+</symbol>
+<symbol name="STM32F429B-XIO-LED">
+<wire x1="-17.78" y1="10.16" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="15.24" x2="20.32" y2="15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="15.24" x2="20.32" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-15.24" x2="-17.78" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-15.24" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
+<text x="-17.78" y="15.494" size="1.4224" layer="94">&gt;NAME</text>
+<pin name="PD11@111" x="-22.86" y="10.16" length="middle"/>
+<pin name="PD12@112" x="-22.86" y="0" length="middle"/>
+<pin name="PD13@113" x="-22.86" y="-10.16" length="middle"/>
+<text x="-17.78" y="-17.78" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F429B-XIO-PWR">
+<description>STM32F777N Power and system config</description>
+<pin name="VBAT@6" x="10.16" y="48.26" length="middle" rot="R270"/>
+<pin name="PDR_ON@203" x="-45.72" y="25.4" length="middle"/>
+<pin name="BOOT0@197" x="-45.72" y="-2.54" length="middle"/>
+<pin name="VDD@204" x="5.08" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@185" x="2.54" y="48.26" length="middle" rot="R270"/>
+<pin name="VCAP2@148" x="-45.72" y="-12.7" length="middle"/>
+<pin name="VSS@14" x="-30.48" y="-53.34" length="middle" rot="R90"/>
+<pin name="VDD@171" x="0" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@158" x="-2.54" y="48.26" length="middle" rot="R270"/>
+<pin name="VSS@25" x="-27.94" y="-53.34" length="middle" rot="R90"/>
+<pin name="VSS@51" x="-25.4" y="-53.34" length="middle" rot="R90"/>
+<pin name="VSS@60" x="-22.86" y="-53.34" length="middle" rot="R90"/>
+<pin name="VSS@72" x="-20.32" y="-53.34" length="middle" rot="R90"/>
+<pin name="VSS@82" x="-17.78" y="-53.34" length="middle" rot="R90"/>
+<pin name="VDD@150" x="-5.08" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@124" x="-7.62" y="48.26" length="middle" rot="R270"/>
+<pin name="VSS@93" x="-15.24" y="-53.34" length="middle" rot="R90"/>
+<pin name="VSS@114" x="-12.7" y="-53.34" length="middle" rot="R90"/>
+<pin name="VDDUSB@137" x="25.4" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@115" x="-10.16" y="48.26" length="middle" rot="R270"/>
+<pin name="VSS@125" x="-10.16" y="-53.34" length="middle" rot="R90"/>
+<pin name="VSS@136" x="-7.62" y="-53.34" length="middle" rot="R90"/>
+<pin name="VDD@103" x="-12.7" y="48.26" length="middle" rot="R270"/>
+<pin name="!RST!@34" x="-45.72" y="17.78" length="middle"/>
+<pin name="VDD@94" x="-15.24" y="48.26" length="middle" rot="R270"/>
+<pin name="VSS@149" x="-5.08" y="-53.34" length="middle" rot="R90"/>
+<pin name="VSS@170" x="-2.54" y="-53.34" length="middle" rot="R90"/>
+<pin name="VDD@83" x="-17.78" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@73" x="-20.32" y="48.26" length="middle" rot="R270"/>
+<pin name="VSS@184" x="0" y="-53.34" length="middle" rot="R90"/>
+<pin name="VSS@202" x="2.54" y="-53.34" length="middle" rot="R90"/>
+<pin name="VDD@59" x="-22.86" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@52" x="-25.4" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@26" x="-30.48" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@39" x="-27.94" y="48.26" length="middle" rot="R270"/>
+<pin name="VDD@15" x="-33.02" y="48.26" length="middle" rot="R270"/>
+<pin name="VCAP1@92" x="-45.72" y="-22.86" length="middle"/>
+<pin name="VSSA@40" x="33.02" y="-53.34" length="middle" rot="R90"/>
+<pin name="VREF+@41" x="48.26" y="25.4" length="middle" rot="R180"/>
+<pin name="VDDA@42" x="35.56" y="48.26" length="middle" rot="R270"/>
+<wire x1="-40.64" y1="43.18" x2="43.18" y2="43.18" width="0.254" layer="94"/>
+<wire x1="43.18" y1="43.18" x2="43.18" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-48.26" x2="-40.64" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="-40.64" y1="-48.26" x2="-40.64" y2="43.18" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="94">&gt;NAME</text>
+<pin name="PA14@159" x="-45.72" y="12.7" length="middle"/>
+<pin name="PA13@147" x="-45.72" y="15.24" length="middle"/>
+<text x="-27.94" y="14.732" size="1.27" layer="94">SWD io</text>
+<text x="-27.94" y="12.192" size="1.27" layer="94">SWD clk</text>
+<text x="-27.94" y="9.652" size="1.27" layer="94">DBG tx</text>
+<text x="-27.94" y="7.112" size="1.27" layer="94">DBG rx</text>
+<text x="-27.94" y="17.272" size="1.27" layer="94">!RESET!</text>
+<pin name="PF7@28" x="-45.72" y="7.62" length="middle"/>
+<pin name="PF6@27" x="-45.72" y="10.16" length="middle"/>
+<pin name="PH0@32" x="48.26" y="-2.54" length="middle" rot="R180"/>
+<pin name="PH1@33" x="48.26" y="-25.4" length="middle" rot="R180"/>
+<text x="27.94" y="-3.048" size="1.27" layer="94">Osc In</text>
+<text x="27.94" y="-25.908" size="1.27" layer="94">Osc Out</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F429B-XIO-SDCARD">
+<pin name="PC12@163" x="-25.4" y="10.16" length="middle"/>
+<pin name="PC11@162" x="-25.4" y="-15.24" length="middle"/>
+<pin name="PC10@161" x="-25.4" y="-12.7" length="middle"/>
+<pin name="PD2@166" x="-25.4" y="5.08" length="middle"/>
+<pin name="PC9@141" x="-25.4" y="-10.16" length="middle"/>
+<pin name="PC8@140" x="-25.4" y="-7.62" length="middle"/>
+<wire x1="-20.32" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-20.32" x2="-20.32" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-20.32" x2="-20.32" y2="15.24" width="0.254" layer="94"/>
+<text x="-20.066" y="15.748" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="-2.54" y1="-7.62" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="-7.62" x2="0" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="-15.24" x2="-2.54" y2="-15.24" width="0.254" layer="94"/>
+<text x="2.54" y="-12.7" size="1.27" layer="94" rot="R90">Data</text>
+<text x="0" y="10.16" size="1.27" layer="94">Clk</text>
+<text x="0" y="5.08" size="1.27" layer="94">Cmd</text>
+<pin name="PC7@139" x="-25.4" y="0" length="middle"/>
+<text x="0" y="0" size="1.27" layer="94">Card detect</text>
+<text x="-20.32" y="-22.86" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F429B-XIO-SDRAM">
+<pin name="PE1@201" x="-22.86" y="-68.58" length="middle"/>
+<pin name="PE0@200" x="-22.86" y="-66.04" length="middle"/>
+<pin name="PG15@191" x="-22.86" y="-83.82" length="middle"/>
+<pin name="PD0@164" x="-22.86" y="25.4" length="middle"/>
+<pin name="PD1@165" x="-22.86" y="22.86" length="middle"/>
+<pin name="PF0@16" x="-22.86" y="78.74" length="middle"/>
+<pin name="PF1@17" x="-22.86" y="76.2" length="middle"/>
+<pin name="PF2@18" x="-22.86" y="73.66" length="middle"/>
+<pin name="PF3@22" x="-22.86" y="71.12" length="middle"/>
+<pin name="PG8@135" x="-22.86" y="-55.88" length="middle"/>
+<pin name="PF4@23" x="-22.86" y="68.58" length="middle"/>
+<pin name="PF5@24" x="-22.86" y="66.04" length="middle"/>
+<pin name="PD15@117" x="-22.86" y="27.94" length="middle"/>
+<pin name="PD10@110" x="-22.86" y="-7.62" length="middle"/>
+<pin name="PD14@116" x="-22.86" y="30.48" length="middle"/>
+<pin name="PD9@109" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PD8@108" x="-22.86" y="-2.54" length="middle"/>
+<pin name="PF12@71" x="-22.86" y="63.5" length="middle"/>
+<pin name="PG1@78" x="-22.86" y="50.8" length="middle"/>
+<pin name="PF15@76" x="-22.86" y="55.88" length="middle"/>
+<pin name="PF13@74" x="-22.86" y="60.96" length="middle"/>
+<pin name="PG0@77" x="-22.86" y="53.34" length="middle"/>
+<pin name="PE8@80" x="-22.86" y="17.78" length="middle"/>
+<pin name="PG5@132" x="-22.86" y="40.64" length="middle"/>
+<pin name="PG4@131" x="-22.86" y="43.18" length="middle"/>
+<pin name="PF14@75" x="-22.86" y="58.42" length="middle"/>
+<pin name="PF11@70" x="-22.86" y="-81.28" length="middle"/>
+<pin name="PE9@81" x="-22.86" y="15.24" length="middle"/>
+<pin name="PE11@85" x="-22.86" y="10.16" length="middle"/>
+<pin name="PE14@88" x="-22.86" y="2.54" length="middle"/>
+<pin name="PE7@79" x="-22.86" y="20.32" length="middle"/>
+<pin name="PE10@84" x="-22.86" y="12.7" length="middle"/>
+<pin name="PE12@86" x="-22.86" y="7.62" length="middle"/>
+<pin name="PE15@89" x="-22.86" y="0" length="middle"/>
+<pin name="PE13@87" x="-22.86" y="5.08" length="middle"/>
+<wire x1="-17.78" y1="78.74" x2="-17.78" y2="83.82" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="83.82" x2="17.78" y2="83.82" width="0.254" layer="94"/>
+<wire x1="17.78" y1="83.82" x2="20.32" y2="83.82" width="0.254" layer="94"/>
+<wire x1="20.32" y1="83.82" x2="20.32" y2="-91.44" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-91.44" x2="-17.78" y2="-91.44" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-91.44" x2="-17.78" y2="78.74" width="0.254" layer="94"/>
+<text x="-17.526" y="84.328" size="1.778" layer="94">&gt;NAME</text>
+<wire x1="-2.54" y1="78.74" x2="0" y2="78.74" width="0.254" layer="94"/>
+<wire x1="0" y1="78.74" x2="0" y2="50.8" width="0.254" layer="94"/>
+<wire x1="0" y1="50.8" x2="-2.54" y2="50.8" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="30.48" x2="0" y2="30.48" width="0.254" layer="94"/>
+<wire x1="0" y1="30.48" x2="0" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="0" y1="-48.26" x2="-2.54" y2="-48.26" width="0.254" layer="94"/>
+<text x="2.54" y="63.5" size="1.27" layer="94" rot="R270">Address</text>
+<text x="2.286" y="44.196" size="1.27" layer="94" rot="R270">Bank</text>
+<wire x1="-2.54" y1="43.18" x2="0" y2="43.18" width="0.254" layer="94"/>
+<wire x1="0" y1="43.18" x2="0" y2="40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="40.64" x2="-2.54" y2="40.64" width="0.254" layer="94"/>
+<text x="2.54" y="-5.08" size="1.27" layer="94" rot="R270">Data</text>
+<text x="2.54" y="-55.88" size="1.27" layer="94">Clk</text>
+<wire x1="-2.54" y1="-66.04" x2="0" y2="-66.04" width="0.254" layer="94"/>
+<wire x1="0" y1="-66.04" x2="0" y2="-73.66" width="0.254" layer="94"/>
+<wire x1="0" y1="-73.66" x2="-2.54" y2="-73.66" width="0.254" layer="94"/>
+<text x="2.54" y="-67.564" size="1.27" layer="94" rot="R270">Lanes</text>
+<text x="2.54" y="-81.28" size="1.27" layer="94">!RAS!</text>
+<text x="2.54" y="-83.82" size="1.27" layer="94">!CAS!</text>
+<text x="2.54" y="-88.9" size="1.27" layer="94">!WE!</text>
+<pin name="PH5@49" x="-22.86" y="-88.9" length="middle"/>
+<pin name="PH8@98" x="-22.86" y="-10.16" length="middle"/>
+<pin name="PH9@99" x="-22.86" y="-12.7" length="middle"/>
+<pin name="PH10@100" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PH11@101" x="-22.86" y="-17.78" length="middle"/>
+<pin name="PH12@102" x="-22.86" y="-20.32" length="middle"/>
+<pin name="PH13@151" x="-22.86" y="-22.86" length="middle"/>
+<pin name="PH14@152" x="-22.86" y="-25.4" length="middle"/>
+<pin name="PH15@153" x="-22.86" y="-27.94" length="middle"/>
+<pin name="PI0@154" x="-22.86" y="-30.48" length="middle"/>
+<pin name="PI1@155" x="-22.86" y="-33.02" length="middle"/>
+<pin name="PI2@156" x="-22.86" y="-35.56" length="middle"/>
+<pin name="PI3@157" x="-22.86" y="-38.1" length="middle"/>
+<pin name="PI6@207" x="-22.86" y="-40.64" length="middle"/>
+<pin name="PI7@208" x="-22.86" y="-43.18" length="middle"/>
+<pin name="PI9@11" x="-22.86" y="-45.72" length="middle"/>
+<pin name="PI10@12" x="-22.86" y="-48.26" length="middle"/>
+<pin name="PI4@205" x="-22.86" y="-71.12" length="middle"/>
+<pin name="PI5@206" x="-22.86" y="-73.66" length="middle"/>
+<text x="-17.78" y="-93.98" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F429B-XIO-SPI">
+<pin name="PE2@1" x="-22.86" y="17.78" length="middle"/>
+<pin name="PE5@4" x="-22.86" y="15.24" length="middle"/>
+<pin name="PE6@5" x="-22.86" y="12.7" length="middle"/>
+<wire x1="-17.78" y1="22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-27.94" x2="-17.78" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-27.94" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
+<text x="12.7" y="15.24" size="1.778" layer="94">SPI</text>
+<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<text x="2.54" y="-5.842" size="1.778" layer="94">SPI Slave
+select
+signals
+</text>
+<text x="-17.78" y="23.368" size="1.778" layer="94">&gt;NAME</text>
+<pin name="PH2@46" x="-22.86" y="5.08" length="middle"/>
+<pin name="PH3@47" x="-22.86" y="2.54" length="middle"/>
+<pin name="PH4@48" x="-22.86" y="0" length="middle"/>
+<pin name="PH6@96" x="-22.86" y="-2.54" length="middle"/>
+<pin name="PH7@97" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PC0@35" x="-22.86" y="-12.7" length="middle"/>
+<pin name="PC1@36" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PC2@37" x="-22.86" y="-17.78" length="middle"/>
+<pin name="PC3@38" x="-22.86" y="-20.32" length="middle"/>
+<pin name="PC4@57" x="-22.86" y="-22.86" length="middle"/>
+<wire x1="-2.54" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="-22.86" x2="-2.54" y2="-22.86" width="0.254" layer="94"/>
+<text x="2.54" y="-20.32" size="1.778" layer="94">SPI Slave
+wants attn
+signals</text>
+<text x="0" y="17.018" size="1.778" layer="94">SCK</text>
+<text x="0" y="14.478" size="1.778" layer="94">MISO</text>
+<text x="0" y="11.938" size="1.778" layer="94">MOSI</text>
+<text x="-17.78" y="-30.48" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F429B-XIO-UNUSED">
+<description>STM32F777N interface to peripherals</description>
+<wire x1="20.32" y1="17.78" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="17.78" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="20.32" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="20.32" y2="17.78" width="0.254" layer="94"/>
+<text x="-17.78" y="18.034" size="1.778" layer="94">&gt;NAME</text>
+<text x="-17.78" y="-20.32" size="1.778" layer="94">&gt;VALUE</text>
+<pin name="PE3@2" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="PE4@3" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="PF8@29" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="PF9@30" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="PF10@31" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PG2@129" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PG3@130" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PG7@134" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="PG10@179" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="PG6@133" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PG11@180" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="PC13@8" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="PI8@7" x="25.4" y="-15.24" length="middle" rot="R180"/>
+</symbol>
+<symbol name="STM32F429B-XIO-USART">
+<pin name="PG13@182" x="-22.86" y="-7.62" length="middle"/>
+<pin name="PD6@172" x="-22.86" y="12.7" length="middle"/>
+<pin name="PG12@181" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PD5@169" x="-22.86" y="10.16" length="middle"/>
+<pin name="PD3@167" x="-22.86" y="15.24" length="middle"/>
+<pin name="PD4@168" x="-22.86" y="7.62" length="middle"/>
+<pin name="PG9@178" x="-22.86" y="-10.16" length="middle"/>
+<pin name="PG14@183" x="-22.86" y="-12.7" length="middle"/>
+<wire x1="-17.78" y1="22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="-17.78" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-22.86" x2="-17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="0" x2="20.32" y2="0" width="0.254" layer="94" style="shortdash"/>
+<text x="7.62" y="12.7" size="1.778" layer="94">USART 2</text>
+<text x="7.62" y="-12.7" size="1.778" layer="94">USART 6</text>
+<text x="-3.048" y="9.652" size="1.27" layer="94">TX</text>
+<text x="-3.048" y="-13.208" size="1.27" layer="94">TX</text>
+<text x="-3.048" y="12.192" size="1.27" layer="94">RX</text>
+<text x="-3.048" y="-10.668" size="1.27" layer="94">RX</text>
+<text x="-3.048" y="7.112" size="1.27" layer="94">RTS</text>
+<text x="-3.048" y="-15.748" size="1.27" layer="94">RTS</text>
+<text x="-3.048" y="14.732" size="1.27" layer="94">CTS</text>
+<text x="-3.048" y="-8.128" size="1.27" layer="94">CTS</text>
+<text x="-17.78" y="23.368" size="1.778" layer="94">&gt;NAME</text>
+<text x="-17.78" y="-25.4" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F429B-XIO-USB">
+<pin name="PA12@146" x="-25.4" y="-10.16" length="middle"/>
+<pin name="PA11@145" x="-25.4" y="-5.08" length="middle"/>
+<pin name="PA10@144" x="-25.4" y="0" length="middle"/>
+<pin name="PA9@143" x="-25.4" y="7.62" length="middle"/>
+<pin name="PA8@142" x="-25.4" y="2.54" length="middle"/>
+<wire x1="-20.32" y1="5.08" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="20.32" x2="17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="17.78" y1="20.32" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="-20.32" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-12.7" x2="-20.32" y2="5.08" width="0.254" layer="94"/>
+<text x="-20.32" y="20.828" size="1.4224" layer="94">&gt;NAME</text>
+<text x="-4.572" y="2.032" size="1.27" layer="94">SOF</text>
+<text x="-4.572" y="7.112" size="1.27" layer="94">VBUS</text>
+<text x="-4.572" y="-0.508" size="1.27" layer="94">ID</text>
+<text x="-4.572" y="-5.588" size="1.27" layer="94">D-</text>
+<text x="-4.572" y="-10.668" size="1.27" layer="94">D+</text>
+<pin name="PA15@160" x="-25.4" y="17.78" length="middle"/>
+<pin name="PD7@173" x="-25.4" y="12.7" length="middle"/>
+<text x="-4.572" y="17.272" size="1.27" layer="94">VBUS_ENABLE</text>
+<text x="-4.572" y="12.192" size="1.27" layer="94">CURRENT_OVERLOAD</text>
+<text x="-20.32" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
