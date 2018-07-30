@@ -957,9 +957,9 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pin name="D6@11" x="20.32" y="-15.24" length="middle" rot="R180"/>
 <pin name="!S5!@12" x="20.32" y="-27.94" length="middle" rot="R180"/>
 <pin name="VCC5@13" x="20.32" y="45.72" length="middle" rot="R180"/>
-<pin name="RD5@14" x="20.32" y="-35.56" length="middle" rot="R180"/>
+<pin name="RD5@14" x="-20.32" y="-35.56" length="middle"/>
 <pin name="!CCTL!@15" x="20.32" y="-40.64" length="middle" rot="R180"/>
-<pin name="RD4@A" x="20.32" y="-33.02" length="middle" rot="R180"/>
+<pin name="RD4@A" x="-20.32" y="-33.02" length="middle"/>
 <pin name="GND@B" x="20.32" y="-53.34" length="middle" rot="R180"/>
 <pin name="A4@C" x="20.32" y="27.94" length="middle" rot="R180"/>
 <pin name="A5@D" x="20.32" y="25.4" length="middle" rot="R180"/>
