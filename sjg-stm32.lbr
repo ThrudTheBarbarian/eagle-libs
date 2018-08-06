@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3849,14 +3849,14 @@ Port B</text>
 <text x="-2.286" y="-29.21" size="1.778" layer="94" rot="R180">Misc</text>
 </symbol>
 <symbol name="XIO-USART">
-<pin name="PF9@30" x="-22.86" y="-7.62" length="middle"/>
+<pin name="PB13@105" x="-22.86" y="-7.62" length="middle"/>
 <pin name="PD6@172" x="-22.86" y="12.7" length="middle"/>
-<pin name="PF8@29" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PB14@106" x="-22.86" y="-15.24" length="middle"/>
 <pin name="PD5@169" x="-22.86" y="10.16" length="middle"/>
 <pin name="PD3@167" x="-22.86" y="15.24" length="middle"/>
 <pin name="PD4@168" x="-22.86" y="7.62" length="middle"/>
-<pin name="PF6@27" x="-22.86" y="-10.16" length="middle"/>
-<pin name="PF7@28" x="-22.86" y="-12.7" length="middle"/>
+<pin name="PB11@91" x="-22.86" y="-10.16" length="middle"/>
+<pin name="PB10@90" x="-22.86" y="-12.7" length="middle"/>
 <wire x1="-17.78" y1="22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
 <wire x1="20.32" y1="22.86" x2="20.32" y2="0" width="0.254" layer="94"/>
 <wire x1="20.32" y1="0" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
@@ -3865,7 +3865,7 @@ Port B</text>
 <wire x1="-17.78" y1="0" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="0" x2="20.32" y2="0" width="0.254" layer="94" style="shortdash"/>
 <text x="7.62" y="12.7" size="1.778" layer="94">USART 2</text>
-<text x="7.62" y="-12.7" size="1.778" layer="94">USART 7</text>
+<text x="7.62" y="-12.7" size="1.778" layer="94">USART 3</text>
 <text x="-3.048" y="9.652" size="1.27" layer="94">TX</text>
 <text x="-3.048" y="-13.208" size="1.27" layer="94">TX</text>
 <text x="-3.048" y="12.192" size="1.27" layer="94">RX</text>
@@ -3974,8 +3974,8 @@ Port B</text>
 <text x="-27.94" y="9.652" size="1.27" layer="94">DBG tx</text>
 <text x="-27.94" y="7.112" size="1.27" layer="94">DBG rx</text>
 <text x="-27.94" y="17.272" size="1.27" layer="94">!RESET!</text>
-<pin name="PF7@28" x="-45.72" y="7.62" length="middle"/>
-<pin name="PF6@27" x="-45.72" y="10.16" length="middle"/>
+<pin name="PA1@44" x="-45.72" y="7.62" length="middle"/>
+<pin name="PA0@43" x="-45.72" y="10.16" length="middle"/>
 <pin name="PH0@32" x="48.26" y="-2.54" length="middle" rot="R180"/>
 <pin name="PH1@33" x="48.26" y="-25.4" length="middle" rot="R180"/>
 <text x="27.94" y="-3.048" size="1.27" layer="94">Osc In</text>
@@ -4130,28 +4130,44 @@ signals</text>
 </symbol>
 <symbol name="STM32F429B-XIO-UNUSED">
 <description>STM32F777N interface to peripherals</description>
-<wire x1="20.32" y1="10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="10.16" x2="-17.78" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-7.62" x2="20.32" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-7.62" x2="20.32" y2="10.16" width="0.254" layer="94"/>
-<text x="-17.78" y="10.414" size="1.778" layer="94">&gt;NAME</text>
-<text x="-17.78" y="-10.16" size="1.778" layer="94">&gt;VALUE</text>
-<pin name="PE3@2" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="PE4@3" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="PF8@29" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="PF9@30" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="PF10@31" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="PC13@8" x="25.4" y="7.62" length="middle" rot="R180"/>
+<wire x1="20.32" y1="30.48" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="30.48" x2="-17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-33.02" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-33.02" x2="20.32" y2="30.48" width="0.254" layer="94"/>
+<text x="-17.78" y="30.734" size="1.778" layer="94">&gt;NAME</text>
+<text x="-17.78" y="-35.56" size="1.778" layer="94">&gt;VALUE</text>
+<pin name="PE3@2" x="25.4" y="-17.78" length="middle" rot="R180"/>
+<pin name="PE4@3" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="PF10@31" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="PC13@8" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="PA2@45" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="PA3@50" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="PA4@53" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="PB0@61" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PB1@62" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="PB2@63" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="PB6@195" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="PB7@196" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="PB8@198" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="PB9@199" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PB12@104" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="PB15@107" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="PC5@58" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="PC6@138" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="PC14@9" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="PC15@10" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="PG9@178" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="PF6@27" x="25.4" y="-22.86" length="middle" rot="R180"/>
 </symbol>
 <symbol name="STM32F429B-XIO-USART">
-<pin name="PG13@182" x="-22.86" y="-7.62" length="middle"/>
+<pin name="PB13@105" x="-22.86" y="-7.62" length="middle"/>
 <pin name="PD6@172" x="-22.86" y="12.7" length="middle"/>
-<pin name="PG12@181" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PB14@106" x="-22.86" y="-15.24" length="middle"/>
 <pin name="PD5@169" x="-22.86" y="10.16" length="middle"/>
 <pin name="PD3@167" x="-22.86" y="15.24" length="middle"/>
 <pin name="PD4@168" x="-22.86" y="7.62" length="middle"/>
-<pin name="PG9@178" x="-22.86" y="-10.16" length="middle"/>
-<pin name="PG14@183" x="-22.86" y="-12.7" length="middle"/>
+<pin name="PB11@91" x="-22.86" y="-10.16" length="middle"/>
+<pin name="PB10@90" x="-22.86" y="-12.7" length="middle"/>
 <wire x1="-17.78" y1="22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
 <wire x1="20.32" y1="22.86" x2="20.32" y2="0" width="0.254" layer="94"/>
 <wire x1="20.32" y1="0" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
@@ -4160,7 +4176,7 @@ signals</text>
 <wire x1="-17.78" y1="0" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="0" x2="20.32" y2="0" width="0.254" layer="94" style="shortdash"/>
 <text x="7.62" y="12.7" size="1.778" layer="94">USART 2</text>
-<text x="7.62" y="-12.7" size="1.778" layer="94">USART 6</text>
+<text x="7.62" y="-12.7" size="1.778" layer="94">USART 3</text>
 <text x="-3.048" y="9.652" size="1.27" layer="94">TX</text>
 <text x="-3.048" y="-13.208" size="1.27" layer="94">TX</text>
 <text x="-3.048" y="12.192" size="1.27" layer="94">RX</text>
@@ -4291,6 +4307,51 @@ signals</text>
 <text x="0" y="-38.862" size="1.6764" layer="94">Vsync</text>
 <text x="0" y="-43.942" size="1.6764" layer="94">HSync</text>
 <text x="-17.78" y="-48.26" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32F429B-XIO-XSPI">
+<pin name="PA5@54" x="-25.4" y="35.56" length="middle"/>
+<pin name="PA6@55" x="-25.4" y="33.02" length="middle"/>
+<pin name="PA7@56" x="-25.4" y="30.48" length="middle"/>
+<pin name="PB3@192" x="-25.4" y="15.24" length="middle"/>
+<pin name="PB4@193" x="-25.4" y="12.7" length="middle"/>
+<pin name="PB5@194" x="-25.4" y="10.16" length="middle"/>
+<pin name="PF7@28" x="-25.4" y="-5.08" length="middle"/>
+<pin name="PF8@29" x="-25.4" y="-7.62" length="middle"/>
+<pin name="PF9@30" x="-25.4" y="-10.16" length="middle"/>
+<pin name="PG13@182" x="-25.4" y="-25.4" length="middle"/>
+<pin name="PG12@181" x="-25.4" y="-27.94" length="middle"/>
+<pin name="PG14@183" x="-25.4" y="-30.48" length="middle"/>
+<wire x1="-20.32" y1="40.64" x2="27.94" y2="40.64" width="0.254" layer="94"/>
+<wire x1="27.94" y1="40.64" x2="27.94" y2="22.86" width="0.254" layer="94"/>
+<wire x1="27.94" y1="22.86" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="2.54" x2="27.94" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-17.78" x2="27.94" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-35.56" x2="-20.32" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-35.56" x2="-20.32" y2="-17.78" width="0.254" layer="94"/>
+<text x="-20.32" y="41.148" size="1.778" layer="94">&gt;NAME</text>
+<text x="-20.32" y="-38.1" size="1.778" layer="94">&gt;VALUE</text>
+<wire x1="-20.32" y1="-17.78" x2="-20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="2.54" x2="-20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="22.86" x2="-20.32" y2="40.64" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="22.86" x2="27.94" y2="22.86" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-20.32" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-20.32" y1="-17.78" x2="27.94" y2="-17.78" width="0.254" layer="94" style="shortdash"/>
+<text x="20.32" y="33.02" size="1.778" layer="94">SPI1</text>
+<text x="20.32" y="12.7" size="1.778" layer="94">SPI3</text>
+<text x="20.32" y="-7.62" size="1.778" layer="94">SPI5</text>
+<text x="20.32" y="-27.94" size="1.778" layer="94">SPI6</text>
+<text x="-5.08" y="35.052" size="1.778" layer="94">Sck</text>
+<text x="-5.08" y="14.732" size="1.778" layer="94">Sck</text>
+<text x="-5.08" y="-5.588" size="1.778" layer="94">Sck</text>
+<text x="-5.08" y="-25.908" size="1.778" layer="94">Sck</text>
+<text x="-5.08" y="-28.448" size="1.778" layer="94">Miso</text>
+<text x="-5.08" y="-8.128" size="1.778" layer="94">Miso</text>
+<text x="-5.08" y="12.192" size="1.778" layer="94">Miso</text>
+<text x="-5.08" y="32.512" size="1.778" layer="94">Miso</text>
+<text x="-5.08" y="29.972" size="1.778" layer="94">Mosi</text>
+<text x="-5.08" y="9.652" size="1.778" layer="94">Mosi</text>
+<text x="-5.08" y="-10.668" size="1.778" layer="94">Mosi</text>
+<text x="-5.08" y="-30.988" size="1.778" layer="94">Mosi</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5614,14 +5675,14 @@ signals</text>
 <connect gate="-SDRAM" pin="PG5@132" pad="132"/>
 <connect gate="-SDRAM" pin="PG8@135" pad="135"/>
 <connect gate="-SDRAM" pin="PH5@49" pad="49"/>
+<connect gate="-SERIAL" pin="PB10@90" pad="28"/>
+<connect gate="-SERIAL" pin="PB11@91" pad="27"/>
+<connect gate="-SERIAL" pin="PB13@105" pad="30"/>
+<connect gate="-SERIAL" pin="PB14@106" pad="29"/>
 <connect gate="-SERIAL" pin="PD3@167" pad="167"/>
 <connect gate="-SERIAL" pin="PD4@168" pad="168"/>
 <connect gate="-SERIAL" pin="PD5@169" pad="169"/>
 <connect gate="-SERIAL" pin="PD6@172" pad="172"/>
-<connect gate="-SERIAL" pin="PF6@27" pad="27"/>
-<connect gate="-SERIAL" pin="PF7@28" pad="28"/>
-<connect gate="-SERIAL" pin="PF8@29" pad="29"/>
-<connect gate="-SERIAL" pin="PF9@30" pad="30"/>
 <connect gate="-SPI" pin="PA5@54" pad="54"/>
 <connect gate="-SPI" pin="PA6@55" pad="55"/>
 <connect gate="-SPI" pin="PA7@56" pad="56"/>
@@ -5732,16 +5793,16 @@ signals</text>
 bus side of the LxLink bridge</description>
 <gates>
 <gate name="-CFG" symbol="STM32F429B-XIO-CFG" x="-10.16" y="-134.62"/>
-<gate name="-IOBUS" symbol="STM32F429B-XIO-IOBUS" x="-83.82" y="-10.16"/>
 <gate name="-VGA" symbol="STM32F429B-XIO-LCD" x="-83.82" y="-129.54"/>
 <gate name="-LED" symbol="STM32F429B-XIO-LED" x="-10.16" y="55.88"/>
 <gate name="-POWER" symbol="STM32F429B-XIO-PWR" x="83.82" y="27.94"/>
 <gate name="-SDCARD" symbol="STM32F429B-XIO-SDCARD" x="-7.62" y="10.16"/>
 <gate name="-SPI" symbol="STM32F429B-XIO-SPI" x="-10.16" y="-50.8"/>
-<gate name="-UNUSED" symbol="STM32F429B-XIO-UNUSED" x="-10.16" y="-114.3"/>
+<gate name="-UNUSED" symbol="STM32F429B-XIO-UNUSED" x="177.8" y="-147.32"/>
 <gate name="-SERIAL" symbol="STM32F429B-XIO-USART" x="60.96" y="-63.5"/>
 <gate name="-USB" symbol="STM32F429B-XIO-USB" x="63.5" y="-127"/>
 <gate name="-SDRAM" symbol="STM32F429B-XIO-SDRAM" x="177.8" y="-12.7"/>
+<gate name="G$1" symbol="STM32F429B-XIO-XSPI" x="-83.82" y="27.94"/>
 </gates>
 <devices>
 <device name="" package="PQFP208">
@@ -5755,44 +5816,16 @@ bus side of the LxLink bridge</description>
 <connect gate="-CFG" pin="PI11@13" pad="13"/>
 <connect gate="-CFG" pin="PI14@21" pad="21"/>
 <connect gate="-CFG" pin="PI8@7" pad="7"/>
-<connect gate="-IOBUS" pin="PA0@43" pad="43"/>
-<connect gate="-IOBUS" pin="PA1@44" pad="44"/>
-<connect gate="-IOBUS" pin="PA2@45" pad="45"/>
-<connect gate="-IOBUS" pin="PA3@50" pad="50"/>
-<connect gate="-IOBUS" pin="PA4@53" pad="53"/>
-<connect gate="-IOBUS" pin="PA5@54" pad="54"/>
-<connect gate="-IOBUS" pin="PA6@55" pad="55"/>
-<connect gate="-IOBUS" pin="PA6@56" pad="56"/>
-<connect gate="-IOBUS" pin="PB0@61" pad="61"/>
-<connect gate="-IOBUS" pin="PB10@90" pad="90"/>
-<connect gate="-IOBUS" pin="PB11@91" pad="91"/>
-<connect gate="-IOBUS" pin="PB12@104" pad="104"/>
-<connect gate="-IOBUS" pin="PB13@105" pad="105"/>
-<connect gate="-IOBUS" pin="PB14@106" pad="106"/>
-<connect gate="-IOBUS" pin="PB15@107" pad="107"/>
-<connect gate="-IOBUS" pin="PB1@62" pad="62"/>
-<connect gate="-IOBUS" pin="PB2@63" pad="63"/>
-<connect gate="-IOBUS" pin="PB3@192" pad="192"/>
-<connect gate="-IOBUS" pin="PB4@193" pad="193"/>
-<connect gate="-IOBUS" pin="PB5@194" pad="194"/>
-<connect gate="-IOBUS" pin="PB6@195" pad="195"/>
-<connect gate="-IOBUS" pin="PB7@196" pad="196"/>
-<connect gate="-IOBUS" pin="PB8@198" pad="198"/>
-<connect gate="-IOBUS" pin="PB9@199" pad="199"/>
-<connect gate="-IOBUS" pin="PC14@9" pad="9"/>
-<connect gate="-IOBUS" pin="PC15@10" pad="10"/>
-<connect gate="-IOBUS" pin="PC5@58" pad="58"/>
-<connect gate="-IOBUS" pin="PC6@138" pad="138"/>
 <connect gate="-LED" pin="PD11@111" pad="111"/>
 <connect gate="-LED" pin="PD12@112" pad="112"/>
 <connect gate="-LED" pin="PD13@113" pad="113"/>
 <connect gate="-POWER" pin="!RST!@34" pad="34"/>
 <connect gate="-POWER" pin="BOOT0@197" pad="197"/>
+<connect gate="-POWER" pin="PA0@43" pad="43"/>
 <connect gate="-POWER" pin="PA13@147" pad="147"/>
 <connect gate="-POWER" pin="PA14@159" pad="159"/>
+<connect gate="-POWER" pin="PA1@44" pad="44"/>
 <connect gate="-POWER" pin="PDR_ON@203" pad="203"/>
-<connect gate="-POWER" pin="PF6@27" pad="27"/>
-<connect gate="-POWER" pin="PF7@28" pad="28"/>
 <connect gate="-POWER" pin="PH0@32" pad="32"/>
 <connect gate="-POWER" pin="PH1@33" pad="33"/>
 <connect gate="-POWER" pin="VBAT@6" pad="6"/>
@@ -5893,14 +5926,14 @@ bus side of the LxLink bridge</description>
 <connect gate="-SDRAM" pin="PI6@207" pad="207"/>
 <connect gate="-SDRAM" pin="PI7@208" pad="208"/>
 <connect gate="-SDRAM" pin="PI9@11" pad="11"/>
+<connect gate="-SERIAL" pin="PB10@90" pad="90"/>
+<connect gate="-SERIAL" pin="PB11@91" pad="91"/>
+<connect gate="-SERIAL" pin="PB13@105" pad="105"/>
+<connect gate="-SERIAL" pin="PB14@106" pad="106"/>
 <connect gate="-SERIAL" pin="PD3@167" pad="167"/>
 <connect gate="-SERIAL" pin="PD4@168" pad="168"/>
 <connect gate="-SERIAL" pin="PD5@169" pad="169"/>
 <connect gate="-SERIAL" pin="PD6@172" pad="172"/>
-<connect gate="-SERIAL" pin="PG12@181" pad="181"/>
-<connect gate="-SERIAL" pin="PG13@182" pad="182"/>
-<connect gate="-SERIAL" pin="PG14@183" pad="183"/>
-<connect gate="-SERIAL" pin="PG9@178" pad="178"/>
 <connect gate="-SPI" pin="PC0@35" pad="35"/>
 <connect gate="-SPI" pin="PC1@36" pad="36"/>
 <connect gate="-SPI" pin="PC2@37" pad="37"/>
@@ -5915,12 +5948,28 @@ bus side of the LxLink bridge</description>
 <connect gate="-SPI" pin="PH6@96" pad="96"/>
 <connect gate="-SPI" pin="PH7@97" pad="97"/>
 <connect gate="-SPI" pin="PK7@190" pad="190"/>
+<connect gate="-UNUSED" pin="PA2@45" pad="45"/>
+<connect gate="-UNUSED" pin="PA3@50" pad="50"/>
+<connect gate="-UNUSED" pin="PA4@53" pad="53"/>
+<connect gate="-UNUSED" pin="PB0@61" pad="61"/>
+<connect gate="-UNUSED" pin="PB12@104" pad="104"/>
+<connect gate="-UNUSED" pin="PB15@107" pad="107"/>
+<connect gate="-UNUSED" pin="PB1@62" pad="62"/>
+<connect gate="-UNUSED" pin="PB2@63" pad="63"/>
+<connect gate="-UNUSED" pin="PB6@195" pad="195"/>
+<connect gate="-UNUSED" pin="PB7@196" pad="196"/>
+<connect gate="-UNUSED" pin="PB8@198" pad="198"/>
+<connect gate="-UNUSED" pin="PB9@199" pad="199"/>
 <connect gate="-UNUSED" pin="PC13@8" pad="8"/>
+<connect gate="-UNUSED" pin="PC14@9" pad="9"/>
+<connect gate="-UNUSED" pin="PC15@10" pad="10"/>
+<connect gate="-UNUSED" pin="PC5@58" pad="58"/>
+<connect gate="-UNUSED" pin="PC6@138" pad="138"/>
 <connect gate="-UNUSED" pin="PE3@2" pad="2"/>
 <connect gate="-UNUSED" pin="PE4@3" pad="3"/>
 <connect gate="-UNUSED" pin="PF10@31" pad="31"/>
-<connect gate="-UNUSED" pin="PF8@29" pad="29"/>
-<connect gate="-UNUSED" pin="PF9@30" pad="30"/>
+<connect gate="-UNUSED" pin="PF6@27" pad="27"/>
+<connect gate="-UNUSED" pin="PG9@178" pad="178"/>
 <connect gate="-USB" pin="PA10@144" pad="144"/>
 <connect gate="-USB" pin="PA11@145" pad="145"/>
 <connect gate="-USB" pin="PA12@146" pad="146"/>
@@ -5954,6 +6003,18 @@ bus side of the LxLink bridge</description>
 <connect gate="-VGA" pin="PK4@187" pad="187"/>
 <connect gate="-VGA" pin="PK5@188" pad="188"/>
 <connect gate="-VGA" pin="PK6@189" pad="189"/>
+<connect gate="G$1" pin="PA5@54" pad="54"/>
+<connect gate="G$1" pin="PA6@55" pad="55"/>
+<connect gate="G$1" pin="PA7@56" pad="56"/>
+<connect gate="G$1" pin="PB3@192" pad="192"/>
+<connect gate="G$1" pin="PB4@193" pad="193"/>
+<connect gate="G$1" pin="PB5@194" pad="194"/>
+<connect gate="G$1" pin="PF7@28" pad="28"/>
+<connect gate="G$1" pin="PF8@29" pad="29"/>
+<connect gate="G$1" pin="PF9@30" pad="30"/>
+<connect gate="G$1" pin="PG12@181" pad="181"/>
+<connect gate="G$1" pin="PG13@182" pad="182"/>
+<connect gate="G$1" pin="PG14@183" pad="183"/>
 </connects>
 <technologies>
 <technology name=""/>
