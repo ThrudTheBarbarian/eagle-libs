@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -429,6 +429,28 @@ Source: HITACHI .. 2SK439.pdf</description>
 <wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.0762" layer="21"/>
 <circle x="-1.5" y="-1.5" radius="0.1" width="0.0762" layer="21"/>
 </package>
+<package name="TO170P1420X457-6" urn="urn:adsk.eagle:footprint:4753053/1" locally_modified="yes">
+<description>6-TO, DPAK, 1.70 mm pitch, 14.20 mm span, 10.16 X 8.89 X 4.57 mm body
+&lt;p&gt;6-pin TO, DPAK package with 1.70 mm pitch, 14.20 mm span with body size 10.16 X 8.89 X 4.57 mm&lt;/p&gt;</description>
+<circle x="-6.3691" y="4.4009" radius="0.25" width="0" layer="21"/>
+<wire x1="5.515" y1="2.8734" x2="5.515" y2="5.335" width="0.12" layer="21"/>
+<wire x1="5.515" y1="5.335" x2="-4.015" y2="5.335" width="0.12" layer="21"/>
+<wire x1="-4.015" y1="5.335" x2="-4.015" y2="-5.335" width="0.12" layer="21"/>
+<wire x1="-4.015" y1="-5.335" x2="5.515" y2="-5.335" width="0.12" layer="21"/>
+<wire x1="5.515" y1="-5.335" x2="5.515" y2="-2.8734" width="0.12" layer="21"/>
+<wire x1="5.515" y1="-5.335" x2="-4.015" y2="-5.335" width="0.12" layer="51"/>
+<wire x1="-4.015" y1="-5.335" x2="-4.015" y2="5.335" width="0.12" layer="51"/>
+<wire x1="-4.015" y1="5.335" x2="5.515" y2="5.335" width="0.12" layer="51"/>
+<wire x1="5.515" y1="5.335" x2="5.515" y2="-5.335" width="0.12" layer="51"/>
+<smd name="1" x="-6.3691" y="3.4" dx="3.4399" dy="0.9939" layer="1"/>
+<smd name="2" x="-6.3691" y="1.7" dx="3.4399" dy="0.9939" layer="1"/>
+<smd name="3" x="-6.3691" y="0" dx="3.4399" dy="0.9939" layer="1"/>
+<smd name="4" x="-6.3691" y="-1.7" dx="3.4399" dy="0.9939" layer="1"/>
+<smd name="5" x="-6.3691" y="-3.4" dx="3.4399" dy="0.9939" layer="1"/>
+<smd name="6" x="2.76735" y="0" dx="7.2462" dy="7.874" layer="1"/>
+<text x="0" y="5.97" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.97" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SPAK" urn="urn:adsk.eagle:package:28551/1" type="box">
@@ -443,6 +465,13 @@ Source: HITACHI .. 2SK439.pdf</description>
 &lt;p&gt;6-pin TO, DPAK package with 1.70 mm pitch, 10.55 mm span with body size 9.43 X 8.00 X 2.05 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="TO170P1055X205-6"/>
+</packageinstances>
+</package3d>
+<package3d name="TO170P1420X457-6" urn="urn:adsk.eagle:package:4753045/1" locally_modified="yes" type="model">
+<description>6-TO, DPAK, 1.70 mm pitch, 14.20 mm span, 10.16 X 8.89 X 4.57 mm body
+&lt;p&gt;6-pin TO, DPAK package with 1.70 mm pitch, 14.20 mm span with body size 10.16 X 8.89 X 4.57 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TO170P1420X457-6"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -644,6 +673,20 @@ Fixed/Adjustable Current‐Limiting Power‐Distribution Switches</description>
 <wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
 <text x="-12.7" y="15.748" size="1.27" layer="94">&gt;NAME</text>
 <text x="-12.7" y="-15.24" size="1.27" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="NCP5662DS33R4G">
+<pin name="VIN@2" x="-17.78" y="12.7" length="middle"/>
+<pin name="EN@1" x="-17.78" y="-10.16" length="middle"/>
+<pin name="GND@2" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND@TAB" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="VOUT@4" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="EF@5" x="20.32" y="12.7" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<text x="-12.7" y="15.748" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1011,6 +1054,28 @@ http://www.digikey.com/product-detail/en/AP7363-10D-13/AP7363-10D-13CT-ND/382939
 <connect gate="G$1" pin="OUT@4" pad="P4"/>
 <connect gate="G$1" pin="SNS@5" pad="P5"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCP5662DS33R4G">
+<gates>
+<gate name="G$1" symbol="NCP5662DS33R4G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO170P1420X457-6">
+<connects>
+<connect gate="G$1" pin="EF@5" pad="5"/>
+<connect gate="G$1" pin="EN@1" pad="1"/>
+<connect gate="G$1" pin="GND@TAB" pad="6"/>
+<connect gate="G$1" pin="VIN@2" pad="2"/>
+<connect gate="G$1" pin="VOUT@4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:4753045/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
