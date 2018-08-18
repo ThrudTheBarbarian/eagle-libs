@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -527,6 +527,50 @@
 <text x="-2.54" y="71.628" size="1.27" layer="94">&gt;NAME</text>
 <text x="-2.54" y="-71.12" size="1.27" layer="94">&gt;VALUE</text>
 </symbol>
+<symbol name="XC7S25_FTBG196_B0">
+<pin name="DONE_0@P9" x="-27.94" y="33.02" length="middle"/>
+<pin name="TCK_0@A7" x="-27.94" y="2.54" length="middle"/>
+<pin name="CCLK_0@A8" x="-27.94" y="-35.56" length="middle"/>
+<pin name="M0_0@M7" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="M1_0@M8" x="25.4" y="-27.94" length="middle" rot="R180"/>
+<pin name="INIT_B_0@P8" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="TDI_0@P7" x="-27.94" y="-2.54" length="middle"/>
+<pin name="TDO_0@P6" x="-27.94" y="0" length="middle"/>
+<pin name="M2_0@M9" x="25.4" y="-30.48" length="middle" rot="R180"/>
+<pin name="CFGBVS_0@N7" x="25.4" y="38.1" length="middle" rot="R180"/>
+<pin name="PROGRAM_B_0@L7" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="TMS_0@M6" x="-27.94" y="5.08" length="middle"/>
+<pin name="DXP_0@J8" x="-27.94" y="22.86" length="middle"/>
+<pin name="DXN_0@J7" x="-27.94" y="20.32" length="middle"/>
+<pin name="VCCO_0@N6" x="25.4" y="43.18" length="middle" rot="R180"/>
+<pin name="VCCO_0@N8" x="25.4" y="45.72" length="middle" rot="R180"/>
+<pin name="VCC_BATT_0@B8" x="-27.94" y="-17.78" length="middle"/>
+<wire x1="-22.86" y1="50.8" x2="-22.86" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-55.88" x2="20.32" y2="-55.88" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-55.88" x2="20.32" y2="50.8" width="0.254" layer="94"/>
+<wire x1="20.32" y1="50.8" x2="-22.86" y2="50.8" width="0.254" layer="94"/>
+<text x="-22.86" y="51.308" size="1.778" layer="94">&gt;NAME</text>
+<text x="-22.86" y="-58.42" size="1.778" layer="94">&gt;VALUE</text>
+<pin name="IO_L1N_T0_D01_DIN_14@B12" x="-27.94" y="-53.34" length="middle"/>
+<pin name="IO_L2P_T0_D02_14@D10" x="-27.94" y="-50.8" length="middle"/>
+<pin name="IO_L2N_T0_D03_14@C10" x="-27.94" y="-48.26" length="middle"/>
+<pin name="IO_L6P_T0_FCS_B_14@C11" x="-27.94" y="-43.18" length="middle"/>
+<pin name="IO_L15N_T2_DQS_DOUT_CSO_B_14@L14" x="-27.94" y="-45.72" length="middle"/>
+</symbol>
+<symbol name="XC7S25_FTBG196_ADC">
+<pin name="GND_ADC_0@F7" x="-25.4" y="-7.62" length="middle"/>
+<pin name="VCC_ADC_0@F8" x="-25.4" y="7.62" length="middle"/>
+<pin name="VREF_N_0@G7" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="VP_0@G8" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="VN_0@H7" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="VREF_P_0@H8" x="27.94" y="5.08" length="middle" rot="R180"/>
+<wire x1="-20.32" y1="10.16" x2="22.86" y2="10.16" width="0.254" layer="94"/>
+<wire x1="22.86" y1="10.16" x2="22.86" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-10.16" x2="-20.32" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-10.16" x2="-20.32" y2="10.16" width="0.254" layer="94"/>
+<text x="-20.32" y="10.922" size="1.778" layer="94">&gt;NAME</text>
+<text x="-20.32" y="-12.7" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="XC7S15">
@@ -668,6 +712,223 @@
 <connect gate="-CFG" pin="TMS_0@M6" pad="M6"/>
 <connect gate="-CFG" pin="VCCO_0@N6" pad="N6"/>
 <connect gate="-CFG" pin="VCCO_0@N8" pad="N8"/>
+<connect gate="-PWR" pin="GND@A1" pad="A1"/>
+<connect gate="-PWR" pin="GND@A11" pad="A11"/>
+<connect gate="-PWR" pin="GND@A14" pad="A14"/>
+<connect gate="-PWR" pin="GND@A6" pad="A6"/>
+<connect gate="-PWR" pin="GND@A9" pad="A9"/>
+<connect gate="-PWR" pin="GND@B4" pad="B4"/>
+<connect gate="-PWR" pin="GND@B7" pad="B7"/>
+<connect gate="-PWR" pin="GND@B9" pad="B9"/>
+<connect gate="-PWR" pin="GND@C13" pad="C13"/>
+<connect gate="-PWR" pin="GND@C2" pad="C2"/>
+<connect gate="-PWR" pin="GND@C6" pad="C6"/>
+<connect gate="-PWR" pin="GND@C7" pad="C7"/>
+<connect gate="-PWR" pin="GND@C8" pad="C8"/>
+<connect gate="-PWR" pin="GND@C9" pad="C9"/>
+<connect gate="-PWR" pin="GND@D11" pad="D11"/>
+<connect gate="-PWR" pin="GND@D5" pad="D5"/>
+<connect gate="-PWR" pin="GND@D7" pad="D7"/>
+<connect gate="-PWR" pin="GND@D9" pad="D9"/>
+<connect gate="-PWR" pin="GND@E1" pad="E1"/>
+<connect gate="-PWR" pin="GND@E10" pad="E10"/>
+<connect gate="-PWR" pin="GND@E14" pad="E14"/>
+<connect gate="-PWR" pin="GND@E3" pad="E3"/>
+<connect gate="-PWR" pin="GND@E6" pad="E6"/>
+<connect gate="-PWR" pin="GND@E8" pad="E8"/>
+<connect gate="-PWR" pin="GND@F5" pad="F5"/>
+<connect gate="-PWR" pin="GND@F9" pad="F9"/>
+<connect gate="-PWR" pin="GND@G10" pad="G10"/>
+<connect gate="-PWR" pin="GND@G12" pad="G12"/>
+<connect gate="-PWR" pin="GND@G3" pad="G3"/>
+<connect gate="-PWR" pin="GND@G6" pad="G6"/>
+<connect gate="-PWR" pin="GND@H5" pad="H5"/>
+<connect gate="-PWR" pin="GND@H9" pad="H9"/>
+<connect gate="-PWR" pin="GND@J10" pad="J10"/>
+<connect gate="-PWR" pin="GND@J6" pad="J6"/>
+<connect gate="-PWR" pin="GND@K1" pad="K1"/>
+<connect gate="-PWR" pin="GND@K14" pad="K14"/>
+<connect gate="-PWR" pin="GND@K5" pad="K5"/>
+<connect gate="-PWR" pin="GND@K7" pad="K7"/>
+<connect gate="-PWR" pin="GND@K9" pad="K9"/>
+<connect gate="-PWR" pin="GND@L10" pad="L10"/>
+<connect gate="-PWR" pin="GND@L11" pad="L11"/>
+<connect gate="-PWR" pin="GND@L4" pad="L4"/>
+<connect gate="-PWR" pin="GND@L6" pad="L6"/>
+<connect gate="-PWR" pin="GND@L8" pad="L8"/>
+<connect gate="-PWR" pin="GND@N12" pad="N12"/>
+<connect gate="-PWR" pin="GND@N3" pad="N3"/>
+<connect gate="-PWR" pin="GND@N5" pad="N5"/>
+<connect gate="-PWR" pin="GND@N9" pad="N9"/>
+<connect gate="-PWR" pin="GND@P1" pad="P1"/>
+<connect gate="-PWR" pin="GND@P14" pad="P14"/>
+<connect gate="-PWR" pin="VCCAUX@F10" pad="F10"/>
+<connect gate="-PWR" pin="VCCAUX@H10" pad="H10"/>
+<connect gate="-PWR" pin="VCCAUX@K10" pad="K10"/>
+<connect gate="-PWR" pin="VCCAUX@L9" pad="L9"/>
+<connect gate="-PWR" pin="VCCBRAM@E5" pad="E5"/>
+<connect gate="-PWR" pin="VCCBRAM@G5" pad="G5"/>
+<connect gate="-PWR" pin="VCCBRAM@J5" pad="J5"/>
+<connect gate="-PWR" pin="VCCINT@D6" pad="D6"/>
+<connect gate="-PWR" pin="VCCINT@D8" pad="D8"/>
+<connect gate="-PWR" pin="VCCINT@E7" pad="E7"/>
+<connect gate="-PWR" pin="VCCINT@E9" pad="E9"/>
+<connect gate="-PWR" pin="VCCINT@F6" pad="F6"/>
+<connect gate="-PWR" pin="VCCINT@G9" pad="G9"/>
+<connect gate="-PWR" pin="VCCINT@H6" pad="H6"/>
+<connect gate="-PWR" pin="VCCINT@J9" pad="J9"/>
+<connect gate="-PWR" pin="VCCINT@K6" pad="K6"/>
+<connect gate="-PWR" pin="VCCINT@K8" pad="K8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:4654156/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XC7S25">
+<gates>
+<gate name="-BANK14" symbol="XC7S15_FTBG196_B14" x="-58.42" y="50.8"/>
+<gate name="-BANK34" symbol="XC7S15_FTBG196_B34" x="33.02" y="50.8"/>
+<gate name="-PWR" symbol="XC7S15_FTGB196_PWR" x="129.54" y="60.96"/>
+<gate name="-ADC" symbol="XC7S25_FTBG196_ADC" x="-40.64" y="-48.26"/>
+<gate name="-CFG" symbol="XC7S25_FTBG196_B0" x="-38.1" y="-116.84"/>
+</gates>
+<devices>
+<device name="" package="BGA196C100P14X14_1500X1500X146">
+<connects>
+<connect gate="-ADC" pin="GND_ADC_0@F7" pad="F7"/>
+<connect gate="-ADC" pin="VCC_ADC_0@F8" pad="F8"/>
+<connect gate="-ADC" pin="VN_0@H7" pad="H7"/>
+<connect gate="-ADC" pin="VP_0@G8" pad="G8"/>
+<connect gate="-ADC" pin="VREF_N_0@G7" pad="G7"/>
+<connect gate="-ADC" pin="VREF_P_0@H8" pad="H8"/>
+<connect gate="-BANK14" pin="IO_0_14@E11" pad="E11"/>
+<connect gate="-BANK14" pin="IO_25_14@M10" pad="M10"/>
+<connect gate="-BANK14" pin="IO_L10N_T1_D15_14@E13" pad="E13"/>
+<connect gate="-BANK14" pin="IO_L10P_T1_D14_14@F13" pad="F13"/>
+<connect gate="-BANK14" pin="IO_L11N_T1_SRCC_14@C14" pad="C14"/>
+<connect gate="-BANK14" pin="IO_L11P_T1_SRCC_14@D14" pad="D14"/>
+<connect gate="-BANK14" pin="IO_L12N_T1_MRCC_14@F11" pad="F11"/>
+<connect gate="-BANK14" pin="IO_L12P_T1_MRCC_14@G11" pad="G11"/>
+<connect gate="-BANK14" pin="IO_L13N_T2_MRCC_14@H12" pad="H12"/>
+<connect gate="-BANK14" pin="IO_L13P_T2_MRCC_14@H11" pad="H11"/>
+<connect gate="-BANK14" pin="IO_L14N_T2_SRCC_14@H14" pad="H14"/>
+<connect gate="-BANK14" pin="IO_L14P_T2_SRCC_14@H13" pad="H13"/>
+<connect gate="-BANK14" pin="IO_L15P_T2_DQS_RDWR_B_14@M13" pad="M13"/>
+<connect gate="-BANK14" pin="IO_L16N_T2_D31_14@L13" pad="L13"/>
+<connect gate="-BANK14" pin="IO_L16P_T2_CSI_B_14@L12" pad="L12"/>
+<connect gate="-BANK14" pin="IO_L17N_T2_D29_14@J12" pad="J12"/>
+<connect gate="-BANK14" pin="IO_L17P_T2_D30_14@J11" pad="J11"/>
+<connect gate="-BANK14" pin="IO_L18N_T2_D27_14@J14" pad="J14"/>
+<connect gate="-BANK14" pin="IO_L18P_T2_D28_14@J13" pad="J13"/>
+<connect gate="-BANK14" pin="IO_L19N_T3_D25_VREF_14@K12" pad="K12"/>
+<connect gate="-BANK14" pin="IO_L19P_T3_D26_14@K11" pad="K11"/>
+<connect gate="-BANK14" pin="IO_L1P_T0_D00_MOSI_14@B11" pad="B11"/>
+<connect gate="-BANK14" pin="IO_L20N_T3_D23_14@M12" pad="M12"/>
+<connect gate="-BANK14" pin="IO_L20P_T3_D24_14@M11" pad="M11"/>
+<connect gate="-BANK14" pin="IO_L21N_T3_DQS_D22_14@M14" pad="M14"/>
+<connect gate="-BANK14" pin="IO_L21P_T3_DQS_14@N14" pad="N14"/>
+<connect gate="-BANK14" pin="IO_L22N_T3_D20_14@P13" pad="P13"/>
+<connect gate="-BANK14" pin="IO_L22P_T3_D21_14@P12" pad="P12"/>
+<connect gate="-BANK14" pin="IO_L23N_T3_D18_14@N11" pad="N11"/>
+<connect gate="-BANK14" pin="IO_L23P_T3_D19_14@N10" pad="N10"/>
+<connect gate="-BANK14" pin="IO_L24N_T3_D16_14@P11" pad="P11"/>
+<connect gate="-BANK14" pin="IO_L24P_T3_D17_14@P10" pad="P10"/>
+<connect gate="-BANK14" pin="IO_L3N_T0_DQS_EMCCLK_14@A10" pad="A10"/>
+<connect gate="-BANK14" pin="IO_L3P_T0_DQS_PUDC_B_14@B10" pad="B10"/>
+<connect gate="-BANK14" pin="IO_L4N_T0_D05_14@A13" pad="A13"/>
+<connect gate="-BANK14" pin="IO_L4P_T0_D04_14@A12" pad="A12"/>
+<connect gate="-BANK14" pin="IO_L5N_T0_D07_14@B14" pad="B14"/>
+<connect gate="-BANK14" pin="IO_L5P_T0_D06_14@B13" pad="B13"/>
+<connect gate="-BANK14" pin="IO_L6N_T0_D08_VREF_14@C12" pad="C12"/>
+<connect gate="-BANK14" pin="IO_L7N_T1_D10_14@E12" pad="E12"/>
+<connect gate="-BANK14" pin="IO_L7P_T1_D09_14@F12" pad="F12"/>
+<connect gate="-BANK14" pin="IO_L8N_T1_D12_14@D13" pad="D13"/>
+<connect gate="-BANK14" pin="IO_L8P_T1_D11_14@D12" pad="D12"/>
+<connect gate="-BANK14" pin="IO_L9N_T1_DQS_D13_14@F14" pad="F14"/>
+<connect gate="-BANK14" pin="IO_L9P_T1_DQS_14@G14" pad="G14"/>
+<connect gate="-BANK14" pin="VCCO_14@G13" pad="G13"/>
+<connect gate="-BANK14" pin="VCCO_14@K13" pad="K13"/>
+<connect gate="-BANK14" pin="VCCO_14@N13" pad="N13"/>
+<connect gate="-BANK34" pin="IO_0_34@B6" pad="B6"/>
+<connect gate="-BANK34" pin="IO_25_34@L5" pad="L5"/>
+<connect gate="-BANK34" pin="IO_L10N_T1_34@D2" pad="D2"/>
+<connect gate="-BANK34" pin="IO_L10P_T1_34@E2" pad="E2"/>
+<connect gate="-BANK34" pin="IO_L11N_T1_SRCC_34@C1" pad="C1"/>
+<connect gate="-BANK34" pin="IO_L11P_T1_SRCC_34@D1" pad="D1"/>
+<connect gate="-BANK34" pin="IO_L12N_T1_MRCC_34@F4" pad="F4"/>
+<connect gate="-BANK34" pin="IO_L12P_T1_MRCC_34@G4" pad="G4"/>
+<connect gate="-BANK34" pin="IO_L13N_T2_MRCC_34@H3" pad="H3"/>
+<connect gate="-BANK34" pin="IO_L13P_T2_MRCC_34@H4" pad="H4"/>
+<connect gate="-BANK34" pin="IO_L14N_T2_SRCC_34@H1" pad="H1"/>
+<connect gate="-BANK34" pin="IO_L14P_T2_SRCC_34@H2" pad="H2"/>
+<connect gate="-BANK34" pin="IO_L15N_T2_DQS_34@J1" pad="J1"/>
+<connect gate="-BANK34" pin="IO_L15P_T2_DQS_34@J2" pad="J2"/>
+<connect gate="-BANK34" pin="IO_L16N_T2_34@K3" pad="K3"/>
+<connect gate="-BANK34" pin="IO_L16P_T2_34@K4" pad="K4"/>
+<connect gate="-BANK34" pin="IO_L17N_T2_34@J3" pad="J3"/>
+<connect gate="-BANK34" pin="IO_L17P_T2_34@J4" pad="J4"/>
+<connect gate="-BANK34" pin="IO_L18N_T2_34@L1" pad="L1"/>
+<connect gate="-BANK34" pin="IO_L18P_T2_34@M1" pad="M1"/>
+<connect gate="-BANK34" pin="IO_L19N_T3_VREF_34@M2" pad="M2"/>
+<connect gate="-BANK34" pin="IO_L19P_T3_34@M3" pad="M3"/>
+<connect gate="-BANK34" pin="IO_L1N_T0_34@C3" pad="C3"/>
+<connect gate="-BANK34" pin="IO_L1P_T0_34@D3" pad="D3"/>
+<connect gate="-BANK34" pin="IO_L20N_T3_34@N1" pad="N1"/>
+<connect gate="-BANK34" pin="IO_L20P_T3_34@P2" pad="P2"/>
+<connect gate="-BANK34" pin="IO_L21N_T3_DQS_34@P3" pad="P3"/>
+<connect gate="-BANK34" pin="IO_L21P_T3_DQS_34@P4" pad="P4"/>
+<connect gate="-BANK34" pin="IO_L22N_T3_34@L2" pad="L2"/>
+<connect gate="-BANK34" pin="IO_L22P_T3_34@L3" pad="L3"/>
+<connect gate="-BANK34" pin="IO_L23N_T3_34@M4" pad="M4"/>
+<connect gate="-BANK34" pin="IO_L23P_T3_34@M5" pad="M5"/>
+<connect gate="-BANK34" pin="IO_L24N_T3_34@N4" pad="N4"/>
+<connect gate="-BANK34" pin="IO_L24P_T3_34@P5" pad="P5"/>
+<connect gate="-BANK34" pin="IO_L2N_T0_34@A3" pad="A3"/>
+<connect gate="-BANK34" pin="IO_L2P_T0_34@A4" pad="A4"/>
+<connect gate="-BANK34" pin="IO_L3N_T0_DQS_34@A2" pad="A2"/>
+<connect gate="-BANK34" pin="IO_L3P_T0_DQS_34@B3" pad="B3"/>
+<connect gate="-BANK34" pin="IO_L4N_T0_34@A5" pad="A5"/>
+<connect gate="-BANK34" pin="IO_L4P_T0_34@B5" pad="B5"/>
+<connect gate="-BANK34" pin="IO_L5N_T0_34@B1" pad="B1"/>
+<connect gate="-BANK34" pin="IO_L5P_T0_34@B2" pad="B2"/>
+<connect gate="-BANK34" pin="IO_L6N_T0_VREF_34@C4" pad="C4"/>
+<connect gate="-BANK34" pin="IO_L6P_T0_34@C5" pad="C5"/>
+<connect gate="-BANK34" pin="IO_L7N_T1_34@D4" pad="D4"/>
+<connect gate="-BANK34" pin="IO_L7P_T1_34@E4" pad="E4"/>
+<connect gate="-BANK34" pin="IO_L8N_T1_34@F2" pad="F2"/>
+<connect gate="-BANK34" pin="IO_L8P_T1_34@F3" pad="F3"/>
+<connect gate="-BANK34" pin="IO_L9N_T1_DQS_34@F1" pad="F1"/>
+<connect gate="-BANK34" pin="IO_L9P_T1_DQS_34@G1" pad="G1"/>
+<connect gate="-BANK34" pin="VCCO_34@G2" pad="G2"/>
+<connect gate="-BANK34" pin="VCCO_34@K2" pad="K2"/>
+<connect gate="-BANK34" pin="VCCO_34@N2" pad="N2"/>
+<connect gate="-CFG" pin="CCLK_0@A8" pad="A8"/>
+<connect gate="-CFG" pin="CFGBVS_0@N7" pad="N7"/>
+<connect gate="-CFG" pin="DONE_0@P9" pad="P9"/>
+<connect gate="-CFG" pin="DXN_0@J7" pad="J7"/>
+<connect gate="-CFG" pin="DXP_0@J8" pad="J8"/>
+<connect gate="-CFG" pin="INIT_B_0@P8" pad="P8"/>
+<connect gate="-CFG" pin="IO_L15N_T2_DQS_DOUT_CSO_B_14@L14" pad="L14"/>
+<connect gate="-CFG" pin="IO_L1N_T0_D01_DIN_14@B12" pad="B12"/>
+<connect gate="-CFG" pin="IO_L2N_T0_D03_14@C10" pad="C10"/>
+<connect gate="-CFG" pin="IO_L2P_T0_D02_14@D10" pad="D10"/>
+<connect gate="-CFG" pin="IO_L6P_T0_FCS_B_14@C11" pad="C11"/>
+<connect gate="-CFG" pin="M0_0@M7" pad="M7"/>
+<connect gate="-CFG" pin="M1_0@M8" pad="M8"/>
+<connect gate="-CFG" pin="M2_0@M9" pad="M9"/>
+<connect gate="-CFG" pin="PROGRAM_B_0@L7" pad="L7"/>
+<connect gate="-CFG" pin="TCK_0@A7" pad="A7"/>
+<connect gate="-CFG" pin="TDI_0@P7" pad="P7"/>
+<connect gate="-CFG" pin="TDO_0@P6" pad="P6"/>
+<connect gate="-CFG" pin="TMS_0@M6" pad="M6"/>
+<connect gate="-CFG" pin="VCCO_0@N6" pad="N6"/>
+<connect gate="-CFG" pin="VCCO_0@N8" pad="N8"/>
+<connect gate="-CFG" pin="VCC_BATT_0@B8" pad="B8"/>
 <connect gate="-PWR" pin="GND@A1" pad="A1"/>
 <connect gate="-PWR" pin="GND@A11" pad="A11"/>
 <connect gate="-PWR" pin="GND@A14" pad="A14"/>
