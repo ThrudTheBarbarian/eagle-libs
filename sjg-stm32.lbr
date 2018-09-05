@@ -5695,8 +5695,8 @@ signals</text>
 <pin name="PB11@P12" x="-27.94" y="20.32" length="middle"/>
 <pin name="PB12@T14" x="-27.94" y="17.78" length="middle"/>
 <pin name="PB13@U14" x="-27.94" y="15.24" length="middle"/>
-<pin name="PB15@U15" x="-27.94" y="12.7" length="middle"/>
-<pin name="PB16@T15" x="-27.94" y="10.16" length="middle"/>
+<pin name="PB14@U15" x="-27.94" y="12.7" length="middle"/>
+<pin name="PB15@T15" x="-27.94" y="10.16" length="middle"/>
 <pin name="PA0@N5" x="-27.94" y="-5.08" length="middle"/>
 <pin name="PA1@N4" x="-27.94" y="-7.62" length="middle"/>
 <pin name="PA2@N3" x="-27.94" y="-10.16" length="middle"/>
@@ -7436,8 +7436,8 @@ bus side of the LxLink bridge</description>
 <connect gate="-HOST" pin="PB11@P12" pad="P12"/>
 <connect gate="-HOST" pin="PB12@T14" pad="T14"/>
 <connect gate="-HOST" pin="PB13@U14" pad="U14"/>
-<connect gate="-HOST" pin="PB15@U15" pad="U15"/>
-<connect gate="-HOST" pin="PB16@T15" pad="T15"/>
+<connect gate="-HOST" pin="PB14@U15" pad="U15"/>
+<connect gate="-HOST" pin="PB15@T15" pad="T15"/>
 <connect gate="-HOST" pin="PB1@T5" pad="T5"/>
 <connect gate="-HOST" pin="PB2@R6" pad="R6"/>
 <connect gate="-HOST" pin="PB3@C6" pad="C6"/>
