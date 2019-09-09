@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2582,30 +2582,30 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <text x="-12.7" y="-30.988" size="1.27" layer="94">N16</text>
 <text x="-12.7" y="-33.528" size="1.27" layer="94">M14</text>
 <text x="-12.7" y="-36.068" size="1.27" layer="94">M15</text>
-<text x="12.7" y="35.052" size="1.27" layer="94">B19</text>
-<text x="12.7" y="32.512" size="1.27" layer="94">A20</text>
-<text x="12.7" y="29.972" size="1.27" layer="94">D19</text>
-<text x="12.7" y="27.432" size="1.27" layer="94">D20</text>
-<text x="12.7" y="22.352" size="1.27" layer="94">F16</text>
-<text x="12.7" y="19.812" size="1.27" layer="94">F17</text>
-<text x="12.7" y="17.272" size="1.27" layer="94">M17</text>
-<text x="12.7" y="14.732" size="1.27" layer="94">M18</text>
-<text x="12.7" y="9.652" size="1.27" layer="94">K19</text>
-<text x="12.7" y="7.112" size="1.27" layer="94">J19</text>
-<text x="12.7" y="4.572" size="1.27" layer="94">K17</text>
-<text x="12.7" y="2.032" size="1.27" layer="94">K18</text>
-<text x="12.7" y="-3.048" size="1.27" layer="94">J18</text>
-<text x="12.7" y="-5.588" size="1.27" layer="94">H18</text>
-<text x="12.7" y="-8.128" size="1.27" layer="94">G17</text>
-<text x="12.7" y="-10.668" size="1.27" layer="94">G18</text>
-<text x="12.7" y="-15.748" size="1.27" layer="94">G19</text>
-<text x="12.7" y="-18.288" size="1.27" layer="94">G20</text>
-<text x="12.7" y="-20.828" size="1.27" layer="94">K14</text>
-<text x="12.7" y="-23.368" size="1.27" layer="94">J14</text>
-<text x="12.7" y="-28.448" size="1.27" layer="94">L14</text>
-<text x="12.7" y="-30.988" size="1.27" layer="94">L15</text>
-<text x="12.7" y="-33.528" size="1.27" layer="94">K16</text>
-<text x="12.7" y="-36.068" size="1.27" layer="94">J16</text>
+<text x="10.16" y="35.052" size="1.27" layer="94">B19</text>
+<text x="10.16" y="32.512" size="1.27" layer="94">A20</text>
+<text x="10.16" y="29.972" size="1.27" layer="94">D19</text>
+<text x="10.16" y="27.432" size="1.27" layer="94">D20</text>
+<text x="10.16" y="22.352" size="1.27" layer="94">F16</text>
+<text x="10.16" y="19.812" size="1.27" layer="94">F17</text>
+<text x="10.16" y="17.272" size="1.27" layer="94">M17</text>
+<text x="10.16" y="14.732" size="1.27" layer="94">M18</text>
+<text x="10.16" y="9.652" size="1.27" layer="94">K19</text>
+<text x="10.16" y="7.112" size="1.27" layer="94">J19</text>
+<text x="10.16" y="4.572" size="1.27" layer="94">K17</text>
+<text x="10.16" y="2.032" size="1.27" layer="94">K18</text>
+<text x="10.16" y="-3.048" size="1.27" layer="94">J18</text>
+<text x="10.16" y="-5.588" size="1.27" layer="94">H18</text>
+<text x="10.16" y="-8.128" size="1.27" layer="94">G17</text>
+<text x="10.16" y="-10.668" size="1.27" layer="94">G18</text>
+<text x="10.16" y="-15.748" size="1.27" layer="94">G19</text>
+<text x="10.16" y="-18.288" size="1.27" layer="94">G20</text>
+<text x="10.16" y="-20.828" size="1.27" layer="94">K14</text>
+<text x="10.16" y="-23.368" size="1.27" layer="94">J14</text>
+<text x="10.16" y="-28.448" size="1.27" layer="94">L14</text>
+<text x="10.16" y="-30.988" size="1.27" layer="94">L15</text>
+<text x="10.16" y="-33.528" size="1.27" layer="94">K16</text>
+<text x="10.16" y="-36.068" size="1.27" layer="94">J16</text>
 </symbol>
 <symbol name="ZTURN_CN1">
 <description>First connector on the ZTURN board</description>
