@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2884,7 +2884,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <pin name="IO_B35_LP10@CN2_42" x="35.56" y="10.16" length="middle" rot="R180"/>
 <pin name="IO_B35_LN10@CN2_44" x="35.56" y="7.62" length="middle" rot="R180"/>
 <pin name="IO_B35_LP12@CN2_46" x="35.56" y="5.08" length="middle" rot="R180"/>
-<pin name="IO_B35_LN10@CN2_48" x="35.56" y="2.54" length="middle" rot="R180"/>
+<pin name="IO_B35_LN12@CN2_48" x="35.56" y="2.54" length="middle" rot="R180"/>
 <pin name="IO_B35_LP14@CN2_52" x="35.56" y="-2.54" length="middle" rot="R180"/>
 <pin name="IO_B35_LP16@CN2_56" x="35.56" y="-7.62" length="middle" rot="R180"/>
 <pin name="IO_B35_LN14@CN2_54" x="35.56" y="-5.08" length="middle" rot="R180"/>
@@ -2956,7 +2956,7 @@ Source: http://www.leotronics.co.uk/Conexcon/Data%20Sheets/sec.%20A/1364ing.pdf<
 <description>First connector on the ZTURN board</description>
 <pin name="IO_B13_LP11@CN1_7" x="-35.56" y="25.4" length="middle"/>
 <pin name="IO_B13_LN11@CN1_9" x="-35.56" y="22.86" length="middle"/>
-<pin name="IO_B13_P12@CN1_11" x="-35.56" y="20.32" length="middle"/>
+<pin name="IO_B13_LP12@CN1_11" x="-35.56" y="20.32" length="middle"/>
 <pin name="IO_B13_LN12@CN1_13" x="-35.56" y="17.78" length="middle"/>
 <pin name="IO_B13_LP13@CN1_17" x="-35.56" y="12.7" length="middle"/>
 <pin name="IO_B13_LN13@CN1_19" x="-35.56" y="10.16" length="middle"/>
@@ -3619,11 +3619,11 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/bth-xxx-xx-x-d-xx-mkt.pd
 <connect gate="-CN1" pin="IO_B13_LN15@CN1_23" pad="CN1_23"/>
 <connect gate="-CN1" pin="IO_B13_LN21@CN1_22" pad="CN1_22"/>
 <connect gate="-CN1" pin="IO_B13_LP11@CN1_7" pad="CN1_7"/>
+<connect gate="-CN1" pin="IO_B13_LP12@CN1_11" pad="CN1_11"/>
 <connect gate="-CN1" pin="IO_B13_LP13@CN1_17" pad="CN1_17"/>
 <connect gate="-CN1" pin="IO_B13_LP14@CN1_16" pad="CN1_16"/>
 <connect gate="-CN1" pin="IO_B13_LP15@CN1_21" pad="CN1_21"/>
 <connect gate="-CN1" pin="IO_B13_LP21@CN1_20" pad="CN1_20"/>
-<connect gate="-CN1" pin="IO_B13_P12@CN1_11" pad="CN1_11"/>
 <connect gate="-CN1" pin="IO_B34_LN11@CN1_47" pad="CN1_47"/>
 <connect gate="-CN1" pin="IO_B34_LN1@CN1_28" pad="CN1_28"/>
 <connect gate="-CN1" pin="IO_B34_LN2@CN1_29" pad="CN1_29"/>
@@ -3643,8 +3643,8 @@ Source: &lt;a href="http://suddendocs.samtec.com/prints/bth-xxx-xx-x-d-xx-mkt.pd
 <connect gate="-CN1" pin="IO_B34_LP7@CN1_40" pad="CN1_40"/>
 <connect gate="-CN1" pin="IO_B34_LP8@CN1_41" pad="CN1_41"/>
 <connect gate="-CN2" pin="IO_B35_LN10@CN2_44" pad="CN2_44"/>
-<connect gate="-CN2" pin="IO_B35_LN10@CN2_48" pad="CN2_48"/>
 <connect gate="-CN2" pin="IO_B35_LN11@CN2_49" pad="CN2_49"/>
+<connect gate="-CN2" pin="IO_B35_LN12@CN2_48" pad="CN2_48"/>
 <connect gate="-CN2" pin="IO_B35_LN13@CN2_55" pad="CN2_55"/>
 <connect gate="-CN2" pin="IO_B35_LN14@CN2_54" pad="CN2_54"/>
 <connect gate="-CN2" pin="IO_B35_LN15@CN2_59" pad="CN2_59"/>
