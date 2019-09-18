@@ -1308,460 +1308,976 @@
 <pin name="SCL" x="-12.7" y="10.16" length="middle"/>
 </symbol>
 <symbol name="STM32MP157AAA3">
-<wire x1="5.08" y1="2.54" x2="53.34" y2="2.54" width="0.254" layer="94"/>
-<wire x1="53.34" y1="-568.96" x2="53.34" y2="2.54" width="0.254" layer="94"/>
-<wire x1="53.34" y1="-568.96" x2="5.08" y2="-568.96" width="0.254" layer="94"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="-568.96" width="0.254" layer="94"/>
-<text x="54.61" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="54.61" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="VSS_1" x="78.74" y="-238.76" length="middle"/>
-<pin name="PH5" x="-99.06" y="-53.34" length="middle"/>
-<pin name="PH4" x="-99.06" y="-50.8" length="middle"/>
-<pin name="PE13" x="-162.56" y="-73.66" length="middle"/>
-<pin name="PK6" x="-27.94" y="-55.88" length="middle"/>
-<pin name="PK4" x="-27.94" y="-50.8" length="middle"/>
-<pin name="PJ13" x="-53.34" y="-73.66" length="middle"/>
-<pin name="PD10" x="-185.42" y="-66.04" length="middle"/>
-<pin name="PD5" x="-185.42" y="-53.34" length="middle"/>
-<pin name="PE3" x="-162.56" y="-48.26" length="middle"/>
-<pin name="PA9" x="-243.84" y="-63.5" length="middle"/>
-<pin name="PB3" x="-223.52" y="-48.26" length="middle"/>
-<pin name="PB14" x="-223.52" y="-76.2" length="middle"/>
-<pin name="VDD__DSI" x="55.88" y="-238.76" length="middle"/>
-<pin name="DSI_D0N" x="-53.34" y="-149.86" length="middle"/>
-<pin name="DSI_CKN" x="-53.34" y="-165.1" length="middle"/>
-<pin name="DSI_D1N" x="-53.34" y="-157.48" length="middle"/>
-<pin name="VDD1_V2_DSI_PHY" x="55.88" y="-241.3" length="middle"/>
-<pin name="VSS_2" x="78.74" y="-241.3" length="middle"/>
-<pin name="DDR_DQ20" x="-147.32" y="-157.48" length="middle"/>
-<pin name="DDR_DQ23" x="-147.32" y="-165.1" length="middle"/>
-<pin name="VSS_3" x="78.74" y="-243.84" length="middle"/>
-<pin name="PH10" x="-99.06" y="-66.04" length="middle"/>
-<pin name="VSS_4" x="78.74" y="-246.38" length="middle"/>
-<pin name="PH11" x="-99.06" y="-68.58" length="middle"/>
-<pin name="PE14" x="-162.56" y="-76.2" length="middle"/>
-<pin name="PK7" x="-27.94" y="-58.42" length="middle"/>
-<pin name="PK3" x="-27.94" y="-48.26" length="middle"/>
-<pin name="PJ14" x="-53.34" y="-76.2" length="middle"/>
-<pin name="PJ12" x="-53.34" y="-71.12" length="middle"/>
-<pin name="PF1" x="-142.24" y="-43.18" length="middle"/>
-<pin name="PD1" x="-185.42" y="-43.18" length="middle"/>
-<pin name="PD3" x="-185.42" y="-48.26" length="middle"/>
-<pin name="PB15" x="-223.52" y="-78.74" length="middle"/>
-<pin name="PA8" x="-243.84" y="-60.96" length="middle"/>
-<pin name="VDDA_1V8_DSI" x="55.88" y="-246.38" length="middle"/>
-<pin name="DSI_D0P" x="-53.34" y="-147.32" length="middle"/>
-<pin name="DSI_CKP" x="-53.34" y="-162.56" length="middle"/>
-<pin name="DSI_D1P" x="-53.34" y="-154.94" length="middle"/>
-<pin name="VDD1V2_DSI_REG" x="55.88" y="-243.84" length="middle"/>
-<pin name="VSS_5" x="78.74" y="-248.92" length="middle"/>
-<pin name="DDR_DQ19" x="-147.32" y="-154.94" length="middle"/>
-<pin name="DDR_DQ16" x="-147.32" y="-147.32" length="middle"/>
-<pin name="DDR_DQS2N" x="-119.38" y="-165.1" length="middle"/>
-<pin name="PH15" x="-99.06" y="-78.74" length="middle"/>
-<pin name="PH14" x="-99.06" y="-76.2" length="middle"/>
-<pin name="VSS_6" x="78.74" y="-251.46" length="middle"/>
-<pin name="PE15" x="-162.56" y="-78.74" length="middle"/>
-<pin name="PE0" x="-162.56" y="-40.64" length="middle"/>
-<pin name="PK5" x="-27.94" y="-53.34" length="middle"/>
-<pin name="PJ15" x="-53.34" y="-78.74" length="middle"/>
-<pin name="VSS_7" x="78.74" y="-254" length="middle"/>
-<pin name="PD4" x="-185.42" y="-50.8" length="middle"/>
-<pin name="PD0" x="-185.42" y="-40.64" length="middle"/>
-<pin name="VSS_8" x="78.74" y="-256.54" length="middle"/>
-<pin name="PE5" x="-162.56" y="-53.34" length="middle"/>
-<pin name="PB4" x="-223.52" y="-50.8" length="middle"/>
-<pin name="VSS_DSI_1" x="78.74" y="-259.08" length="middle"/>
-<pin name="VSS_DSI_2" x="78.74" y="-261.62" length="middle"/>
-<pin name="VSS_DSI_3" x="78.74" y="-264.16" length="middle"/>
-<pin name="VSS_DSI_4" x="78.74" y="-266.7" length="middle"/>
-<pin name="VSS_DSI_5" x="78.74" y="-269.24" length="middle"/>
-<pin name="VSS_9" x="78.74" y="-271.78" length="middle"/>
-<pin name="VSS_10" x="78.74" y="-274.32" length="middle"/>
-<pin name="DDR_DQS2P" x="-119.38" y="-167.64" length="middle"/>
-<pin name="DDR_DQM2" x="-119.38" y="-147.32" length="middle"/>
-<pin name="PI0" x="-76.2" y="-40.64" length="middle"/>
-<pin name="PI14" x="-76.2" y="-76.2" length="middle"/>
-<pin name="PH13" x="-99.06" y="-73.66" length="middle"/>
-<pin name="VSS_11" x="78.74" y="-276.86" length="middle"/>
-<pin name="PE11" x="-162.56" y="-68.58" length="middle"/>
-<pin name="PH8" x="-99.06" y="-60.96" length="middle"/>
-<pin name="PE1" x="-162.56" y="-43.18" length="middle"/>
-<pin name="PK0" x="-27.94" y="-40.64" length="middle"/>
-<pin name="PF5" x="-142.24" y="-53.34" length="middle"/>
-<pin name="PG15" x="-121.92" y="-78.74" length="middle"/>
-<pin name="PG6" x="-121.92" y="-55.88" length="middle"/>
-<pin name="PD2" x="-185.42" y="-45.72" length="middle"/>
-<pin name="PC7" x="-205.74" y="-58.42" length="middle"/>
-<pin name="PC9" x="-205.74" y="-63.5" length="middle"/>
-<pin name="PC11" x="-205.74" y="-68.58" length="middle"/>
-<pin name="JTDI" x="-88.9" y="-147.32" length="middle"/>
-<pin name="JTCK/SWCLK" x="-88.9" y="-149.86" length="middle"/>
-<pin name="VDD_PLL2" x="55.88" y="-248.92" length="middle"/>
-<pin name="VSS_PLL2" x="78.74" y="-279.4" length="middle"/>
-<pin name="DDR_DQ22" x="-147.32" y="-162.56" length="middle"/>
-<pin name="DDR_DQ17" x="-147.32" y="-149.86" length="middle"/>
-<pin name="DDR_DQ18" x="-147.32" y="-152.4" length="middle"/>
-<pin name="PI2" x="-76.2" y="-45.72" length="middle"/>
-<pin name="PI1" x="-76.2" y="-43.18" length="middle"/>
-<pin name="PI3" x="-76.2" y="-48.26" length="middle"/>
-<pin name="PE12" x="-162.56" y="-71.12" length="middle"/>
-<pin name="VSS_12" x="78.74" y="-281.94" length="middle"/>
-<pin name="PH9" x="-99.06" y="-63.5" length="middle"/>
-<pin name="PK1" x="-27.94" y="-43.18" length="middle"/>
-<pin name="PK2" x="-27.94" y="-45.72" length="middle"/>
-<pin name="PE6" x="-162.56" y="-55.88" length="middle"/>
-<pin name="PF0" x="-142.24" y="-40.64" length="middle"/>
-<pin name="PA15" x="-243.84" y="-78.74" length="middle"/>
-<pin name="PC12" x="-205.74" y="-71.12" length="middle"/>
-<pin name="PC6" x="-205.74" y="-55.88" length="middle"/>
-<pin name="PC8" x="-205.74" y="-60.96" length="middle"/>
-<pin name="!JTRST!" x="-88.9" y="-152.4" length="middle"/>
-<pin name="JTDOTRACE/SWO" x="-88.9" y="-154.94" length="middle"/>
-<pin name="JTMS/SWDIO" x="-88.9" y="-157.48" length="middle"/>
-<pin name="VDDQ__DDR_1" x="55.88" y="-251.46" length="middle"/>
-<pin name="VSS_13" x="78.74" y="-284.48" length="middle"/>
-<pin name="DDR_DQ3" x="-147.32" y="-114.3" length="middle"/>
-<pin name="DDR_DQ0" x="-147.32" y="-106.68" length="middle"/>
-<pin name="DDR_DQ2" x="-147.32" y="-111.76" length="middle"/>
-<pin name="PI7" x="-76.2" y="-58.42" length="middle"/>
-<pin name="PI5" x="-76.2" y="-53.34" length="middle"/>
-<pin name="PI15" x="-76.2" y="-78.74" length="middle"/>
-<pin name="PZ3" x="-7.62" y="-48.26" length="middle"/>
-<pin name="PH12" x="-99.06" y="-71.12" length="middle"/>
-<pin name="VSS_14" x="78.74" y="-287.02" length="middle"/>
-<pin name="VSS_15" x="78.74" y="-289.56" length="middle"/>
-<pin name="VSS_16" x="78.74" y="-292.1" length="middle"/>
-<pin name="PF4" x="-142.24" y="-50.8" length="middle"/>
-<pin name="PD7" x="-185.42" y="-58.42" length="middle"/>
-<pin name="PB7" x="-223.52" y="-58.42" length="middle"/>
-<pin name="PB9" x="-223.52" y="-63.5" length="middle"/>
-<pin name="PF2" x="-142.24" y="-45.72" length="middle"/>
-<pin name="PC10" x="-205.74" y="-66.04" length="middle"/>
-<pin name="PE4" x="-162.56" y="-50.8" length="middle"/>
-<pin name="VSS_17" x="78.74" y="-294.64" length="middle"/>
-<pin name="VDDQ_DDR_1" x="55.88" y="-254" length="middle"/>
-<pin name="DDR_A7" x="-205.74" y="-124.46" length="middle"/>
-<pin name="!DDR_RESET!" x="-119.38" y="-137.16" length="middle"/>
-<pin name="VSS_18" x="78.74" y="-297.18" length="middle"/>
-<pin name="DDR_DQ1" x="-147.32" y="-109.22" length="middle"/>
-<pin name="PZ4" x="-7.62" y="-50.8" length="middle"/>
-<pin name="PZ0" x="-7.62" y="-40.64" length="middle"/>
-<pin name="PZ6" x="-7.62" y="-55.88" length="middle"/>
-<pin name="VSS_19" x="78.74" y="-299.72" length="middle"/>
-<pin name="PI6" x="-76.2" y="-55.88" length="middle"/>
-<pin name="VSS_20" x="78.74" y="-302.26" length="middle"/>
-<pin name="VSS_21" x="78.74" y="-304.8" length="middle"/>
-<pin name="VSS_22" x="78.74" y="-307.34" length="middle"/>
-<pin name="VSS_23" x="78.74" y="-309.88" length="middle"/>
-<pin name="VSS_24" x="78.74" y="-312.42" length="middle"/>
-<pin name="VDDQ__DDR_2" x="55.88" y="-256.54" length="middle"/>
-<pin name="VSS_25" x="78.74" y="-314.96" length="middle"/>
-<pin name="DDR_A1" x="-205.74" y="-109.22" length="middle"/>
-<pin name="DDR_DQ7" x="-147.32" y="-124.46" length="middle"/>
-<pin name="DDR_DQM0" x="-119.38" y="-142.24" length="middle"/>
-<pin name="DDR_DQS0N" x="-119.38" y="-172.72" length="middle"/>
-<pin name="DDR_DQS0P" x="-119.38" y="-175.26" length="middle"/>
-<pin name="PI13" x="-76.2" y="-73.66" length="middle"/>
-<pin name="PI12" x="-76.2" y="-71.12" length="middle"/>
-<pin name="PZ7" x="-7.62" y="-58.42" length="middle"/>
-<pin name="PZ5" x="-7.62" y="-53.34" length="middle"/>
-<pin name="PZ1" x="-7.62" y="-43.18" length="middle"/>
-<pin name="PJ8" x="-53.34" y="-60.96" length="middle"/>
-<pin name="VSS_26" x="78.74" y="-317.5" length="middle"/>
-<pin name="VDDCORE_1" x="55.88" y="-259.08" length="middle"/>
-<pin name="VDDCORE_2" x="55.88" y="-261.62" length="middle"/>
-<pin name="VDDCORE_3" x="55.88" y="-264.16" length="middle"/>
-<pin name="VDDCORE_4" x="55.88" y="-266.7" length="middle"/>
-<pin name="VDDQ__DDR_3" x="55.88" y="-269.24" length="middle"/>
-<pin name="DDR_A9" x="-205.74" y="-129.54" length="middle"/>
-<pin name="DDR_A5" x="-205.74" y="-119.38" length="middle"/>
-<pin name="DDR_DQ5" x="-147.32" y="-119.38" length="middle"/>
-<pin name="DDR_DQ21" x="-147.32" y="-160.02" length="middle"/>
-<pin name="DDR_DQ6" x="-147.32" y="-121.92" length="middle"/>
-<pin name="PJ3" x="-53.34" y="-48.26" length="middle"/>
-<pin name="PJ0" x="-53.34" y="-40.64" length="middle"/>
-<pin name="PJ10" x="-53.34" y="-66.04" length="middle"/>
-<pin name="PG12" x="-121.92" y="-71.12" length="middle"/>
-<pin name="PI9" x="-76.2" y="-63.5" length="middle"/>
-<pin name="PI4" x="-76.2" y="-50.8" length="middle"/>
-<pin name="VDDCORE_5" x="55.88" y="-271.78" length="middle"/>
-<pin name="VSS_27" x="78.74" y="-320.04" length="middle"/>
-<pin name="VDDCORE_6" x="55.88" y="-274.32" length="middle"/>
-<pin name="VSS_28" x="78.74" y="-322.58" length="middle"/>
-<pin name="VDDCORE_7" x="55.88" y="-276.86" length="middle"/>
-<pin name="VSS_29" x="78.74" y="-325.12" length="middle"/>
-<pin name="VDDCORE_8" x="55.88" y="-279.4" length="middle"/>
-<pin name="VDDQ__DDR_4" x="55.88" y="-281.94" length="middle"/>
-<pin name="VSS_30" x="78.74" y="-327.66" length="middle"/>
-<pin name="DDR_A2" x="-205.74" y="-111.76" length="middle"/>
-<pin name="DDR_A3" x="-205.74" y="-114.3" length="middle"/>
-<pin name="VSS_31" x="78.74" y="-330.2" length="middle"/>
-<pin name="DDR_DQ4" x="-147.32" y="-116.84" length="middle"/>
-<pin name="PJ5" x="-53.34" y="-53.34" length="middle"/>
-<pin name="PJ4" x="-53.34" y="-50.8" length="middle"/>
-<pin name="VSS_32" x="78.74" y="-332.74" length="middle"/>
-<pin name="PJ2" x="-53.34" y="-45.72" length="middle"/>
-<pin name="PZ2" x="-7.62" y="-45.72" length="middle"/>
-<pin name="PJ11" x="-53.34" y="-68.58" length="middle"/>
-<pin name="VSS_33" x="78.74" y="-335.28" length="middle"/>
-<pin name="VDDCORE_9" x="55.88" y="-284.48" length="middle"/>
-<pin name="VSS_34" x="78.74" y="-337.82" length="middle"/>
-<pin name="VDDCORE_10" x="55.88" y="-287.02" length="middle"/>
-<pin name="VSS_35" x="78.74" y="-340.36" length="middle"/>
-<pin name="VDDCORE_11" x="55.88" y="-289.56" length="middle"/>
-<pin name="VSS_36" x="78.74" y="-342.9" length="middle"/>
-<pin name="VDDCORE_12" x="55.88" y="-292.1" length="middle"/>
-<pin name="VDDQ_DDR_2" x="55.88" y="-294.64" length="middle"/>
-<pin name="DDR_BA2" x="-180.34" y="-160.02" length="middle"/>
-<pin name="DDR_A0" x="-205.74" y="-106.68" length="middle"/>
-<pin name="DDR_BA0" x="-180.34" y="-154.94" length="middle"/>
-<pin name="DDR_DTO1" x="-231.14" y="-106.68" length="middle"/>
-<pin name="DDR_ZQ" x="-231.14" y="-109.22" length="middle"/>
-<pin name="PD15" x="-185.42" y="-78.74" length="middle"/>
-<pin name="PJ9" x="-53.34" y="-63.5" length="middle"/>
-<pin name="PD6" x="-185.42" y="-55.88" length="middle"/>
-<pin name="PJ7" x="-53.34" y="-58.42" length="middle"/>
-<pin name="PJ6" x="-53.34" y="-55.88" length="middle"/>
-<pin name="PJ1" x="-53.34" y="-43.18" length="middle"/>
-<pin name="VDDCORE_13" x="55.88" y="-297.18" length="middle"/>
-<pin name="VSS_37" x="78.74" y="-345.44" length="middle"/>
-<pin name="VDDCORE_14" x="55.88" y="-299.72" length="middle"/>
-<pin name="VSS_38" x="78.74" y="-347.98" length="middle"/>
-<pin name="VDDCORE_15" x="55.88" y="-302.26" length="middle"/>
-<pin name="VSS_39" x="78.74" y="-350.52" length="middle"/>
-<pin name="VDDCORE_16" x="55.88" y="-304.8" length="middle"/>
-<pin name="VDDQ_DDR_3" x="55.88" y="-307.34" length="middle"/>
-<pin name="VSS_40" x="78.74" y="-353.06" length="middle"/>
-<pin name="DDR_CSN" x="-231.14" y="-111.76" length="middle"/>
-<pin name="VSS_41" x="78.74" y="-355.6" length="middle"/>
-<pin name="VSS_42" x="78.74" y="-358.14" length="middle"/>
-<pin name="DDR_ODT" x="-231.14" y="-114.3" length="middle"/>
-<pin name="DDR_DTO0" x="-231.14" y="-104.14" length="middle"/>
-<pin name="PD8" x="-185.42" y="-60.96" length="middle"/>
-<pin name="PD9" x="-185.42" y="-63.5" length="middle"/>
-<pin name="PD14" x="-185.42" y="-76.2" length="middle"/>
-<pin name="VBAT" x="66.04" y="-5.08" length="middle"/>
-<pin name="VSS_PLL" x="78.74" y="-360.68" length="middle"/>
-<pin name="VDD_PLL" x="55.88" y="-309.88" length="middle"/>
-<pin name="VSS_43" x="78.74" y="-363.22" length="middle"/>
-<pin name="VDD_1" x="55.88" y="-312.42" length="middle"/>
-<pin name="VSS_44" x="78.74" y="-365.76" length="middle"/>
-<pin name="VDDCORE_17" x="55.88" y="-314.96" length="middle"/>
-<pin name="VSS_45" x="78.74" y="-368.3" length="middle"/>
-<pin name="VDDCORE_18" x="55.88" y="-317.5" length="middle"/>
-<pin name="VSS_46" x="78.74" y="-370.84" length="middle"/>
-<pin name="VDDCORE_19" x="55.88" y="-320.04" length="middle"/>
-<pin name="VDDQ_DDR_4" x="55.88" y="-322.58" length="middle"/>
-<pin name="DDR_A13" x="-205.74" y="-139.7" length="middle"/>
-<pin name="DDR_A15" x="-205.74" y="-144.78" length="middle"/>
-<pin name="!DDR_RAS!" x="-231.14" y="-116.84" length="middle"/>
-<pin name="!DDR_WE!" x="-231.14" y="-119.38" length="middle"/>
-<pin name="!DDR_CAS!" x="-231.14" y="-121.92" length="middle"/>
-<pin name="PI8" x="-76.2" y="-60.96" length="middle"/>
-<pin name="PC13" x="-205.74" y="-73.66" length="middle"/>
-<pin name="BOOT0" x="-88.9" y="-165.1" length="middle"/>
-<pin name="BOOT1" x="-88.9" y="-167.64" length="middle"/>
-<pin name="VDD_ANA" x="55.88" y="-325.12" length="middle"/>
-<pin name="VREF-" x="78.74" y="-373.38" length="middle"/>
-<pin name="VDD_2" x="55.88" y="-327.66" length="middle"/>
-<pin name="VSS_47" x="78.74" y="-375.92" length="middle"/>
-<pin name="VDD_3" x="55.88" y="-330.2" length="middle"/>
-<pin name="VSS_48" x="78.74" y="-378.46" length="middle"/>
-<pin name="VDDCORE_20" x="55.88" y="-332.74" length="middle"/>
-<pin name="VSS_49" x="78.74" y="-381" length="middle"/>
-<pin name="VDDCORE_21" x="55.88" y="-335.28" length="middle"/>
-<pin name="VDDQ__DDR_5" x="55.88" y="-337.82" length="middle"/>
-<pin name="VSS_50" x="78.74" y="-383.54" length="middle"/>
-<pin name="DDR_A10" x="-205.74" y="-132.08" length="middle"/>
-<pin name="DDR_A12" x="-205.74" y="-137.16" length="middle"/>
-<pin name="DDR_CLK" x="-256.54" y="-124.46" length="middle"/>
-<pin name="!DDR_CLK!" x="-256.54" y="-127" length="middle"/>
-<pin name="DDR_DQ8" x="-147.32" y="-127" length="middle"/>
-<pin name="PC14-_OSC32__IN" x="-205.74" y="-76.2" length="middle"/>
-<pin name="PC15-_OSC32__OUT" x="-205.74" y="-78.74" length="middle"/>
-<pin name="VSS_51" x="78.74" y="-386.08" length="middle"/>
-<pin name="BOOT2" x="-88.9" y="-170.18" length="middle"/>
-<pin name="VSS_ANA" x="78.74" y="-388.62" length="middle"/>
-<pin name="VREF+" x="55.88" y="-340.36" length="middle"/>
-<pin name="VSS_52" x="78.74" y="-391.16" length="middle"/>
-<pin name="VDD_4" x="55.88" y="-342.9" length="middle"/>
-<pin name="VSS_53" x="78.74" y="-236.22" length="middle"/>
-<pin name="VDD_5" x="55.88" y="-236.22" length="middle"/>
-<pin name="VSS_54" x="78.74" y="-233.68" length="middle"/>
-<pin name="VDDCORE_22" x="55.88" y="-233.68" length="middle"/>
-<pin name="VSS_55" x="78.74" y="-231.14" length="middle"/>
-<pin name="VDDCORE_23" x="55.88" y="-231.14" length="middle"/>
-<pin name="VDDQ__DDR_6" x="55.88" y="-228.6" length="middle"/>
-<pin name="DDR_A14" x="-205.74" y="-142.24" length="middle"/>
-<pin name="DDR_A11" x="-205.74" y="-134.62" length="middle"/>
-<pin name="VSS_56" x="78.74" y="-228.6" length="middle"/>
-<pin name="DDR_DQ10" x="-147.32" y="-132.08" length="middle"/>
-<pin name="!RST_CORE!" x="-88.9" y="-142.24" length="middle"/>
-<pin name="!RST!" x="-88.9" y="-144.78" length="middle"/>
-<pin name="PA14" x="-243.84" y="-76.2" length="middle"/>
-<pin name="ANA0" x="-53.34" y="-172.72" length="middle"/>
-<pin name="VDDA" x="55.88" y="-226.06" length="middle"/>
-<pin name="VSSA_1" x="78.74" y="-226.06" length="middle"/>
-<pin name="VSS_57" x="78.74" y="-223.52" length="middle"/>
-<pin name="VDD_6" x="55.88" y="-223.52" length="middle"/>
-<pin name="VDD_7" x="55.88" y="-220.98" length="middle"/>
-<pin name="VDDCORE_24" x="55.88" y="-218.44" length="middle"/>
-<pin name="VDDQ__DDR_7" x="55.88" y="-215.9" length="middle"/>
-<pin name="VSS_58" x="78.74" y="-220.98" length="middle"/>
-<pin name="DDR_BA1" x="-180.34" y="-157.48" length="middle"/>
-<pin name="DDR_CKE" x="-256.54" y="-129.54" length="middle"/>
-<pin name="DDR_DQ13" x="-147.32" y="-139.7" length="middle"/>
-<pin name="DDR_DQ9" x="-147.32" y="-129.54" length="middle"/>
-<pin name="DDR_DQS1N" x="-119.38" y="-180.34" length="middle"/>
-<pin name="PH0-_OSC_IN" x="-99.06" y="-40.64" length="middle"/>
-<pin name="PH1-_OSC__OUT" x="-99.06" y="-43.18" length="middle"/>
-<pin name="PI11" x="-76.2" y="-68.58" length="middle"/>
-<pin name="PA3" x="-243.84" y="-48.26" length="middle"/>
-<pin name="ANA1" x="-53.34" y="-175.26" length="middle"/>
-<pin name="VSSA_2" x="78.74" y="-218.44" length="middle"/>
-<pin name="VSS_59" x="78.74" y="-215.9" length="middle"/>
-<pin name="VSS_60" x="78.74" y="-213.36" length="middle"/>
-<pin name="VSS_61" x="78.74" y="-210.82" length="middle"/>
-<pin name="VDD_8" x="55.88" y="-213.36" length="middle"/>
-<pin name="VDDCORE_25" x="55.88" y="-210.82" length="middle"/>
-<pin name="VDDQ__DDR_8" x="55.88" y="-208.28" length="middle"/>
-<pin name="DDR_A4" x="-205.74" y="-116.84" length="middle"/>
-<pin name="VSS_62" x="78.74" y="-208.28" length="middle"/>
-<pin name="DDR_DQ11" x="-147.32" y="-134.62" length="middle"/>
-<pin name="DRR_DQM1" x="-119.38" y="-144.78" length="middle"/>
-<pin name="DDR_DQS1P" x="-119.38" y="-182.88" length="middle"/>
-<pin name="PWR_LP" x="-53.34" y="-139.7" length="middle"/>
-<pin name="PDR_ON_CORE" x="-53.34" y="-137.16" length="middle"/>
-<pin name="PC3" x="-205.74" y="-48.26" length="middle"/>
-<pin name="PG3" x="-121.92" y="-48.26" length="middle"/>
-<pin name="PA5" x="-243.84" y="-53.34" length="middle"/>
-<pin name="VSSA_3" x="78.74" y="-205.74" length="middle"/>
-<pin name="VSS_63" x="78.74" y="-203.2" length="middle"/>
-<pin name="PG5" x="-121.92" y="-53.34" length="middle"/>
-<pin name="VDD_9" x="55.88" y="-205.74" length="middle"/>
-<pin name="PC0" x="-205.74" y="-40.64" length="middle"/>
-<pin name="PG11" x="-121.92" y="-68.58" length="middle"/>
-<pin name="VDD_10" x="55.88" y="-203.2" length="middle"/>
-<pin name="VSS_64" x="78.74" y="-200.66" length="middle"/>
-<pin name="VDD_11" x="55.88" y="-200.66" length="middle"/>
-<pin name="VSS_65" x="78.74" y="-198.12" length="middle"/>
-<pin name="VDDQ_DDR_5" x="55.88" y="-198.12" length="middle"/>
-<pin name="VSS_66" x="78.74" y="-195.58" length="middle"/>
-<pin name="DDR_A8" x="-205.74" y="-127" length="middle"/>
-<pin name="DDR_A6" x="-205.74" y="-121.92" length="middle"/>
-<pin name="VSS_67" x="78.74" y="-193.04" length="middle"/>
-<pin name="DDR_DQ14" x="-147.32" y="-142.24" length="middle"/>
-<pin name="PWR_ON" x="-53.34" y="-134.62" length="middle"/>
-<pin name="PDR_ON" x="-53.34" y="-132.08" length="middle"/>
-<pin name="PF3" x="-142.24" y="-48.26" length="middle"/>
-<pin name="PA1" x="-243.84" y="-43.18" length="middle"/>
-<pin name="VSS_68" x="78.74" y="-190.5" length="middle"/>
-<pin name="PA4" x="-243.84" y="-50.8" length="middle"/>
-<pin name="PF14" x="-142.24" y="-76.2" length="middle"/>
-<pin name="PF12" x="-142.24" y="-71.12" length="middle"/>
-<pin name="PB10" x="-223.52" y="-66.04" length="middle"/>
-<pin name="PB13" x="-223.52" y="-73.66" length="middle"/>
-<pin name="PH6" x="-99.06" y="-55.88" length="middle"/>
-<pin name="PF10" x="-142.24" y="-66.04" length="middle"/>
-<pin name="PB2" x="-223.52" y="-45.72" length="middle"/>
-<pin name="PD13" x="-185.42" y="-73.66" length="middle"/>
-<pin name="OTG_VBUS" x="-53.34" y="-127" length="middle"/>
-<pin name="VSS_69" x="78.74" y="-187.96" length="middle"/>
-<pin name="VDDQ__DDR_9" x="55.88" y="-195.58" length="middle"/>
-<pin name="VSS_70" x="78.74" y="-185.42" length="middle"/>
-<pin name="VSS_71" x="78.74" y="-182.88" length="middle"/>
-<pin name="DDR_DQ12" x="-147.32" y="-137.16" length="middle"/>
-<pin name="DDR_DQ15" x="-147.32" y="-144.78" length="middle"/>
-<pin name="DDR_DQ24" x="-147.32" y="-167.64" length="middle"/>
-<pin name="PI10" x="-76.2" y="-66.04" length="middle"/>
-<pin name="PH7" x="-99.06" y="-58.42" length="middle"/>
-<pin name="PA13" x="-243.84" y="-73.66" length="middle"/>
-<pin name="PG2" x="-121.92" y="-45.72" length="middle"/>
-<pin name="PG0" x="-121.92" y="-40.64" length="middle"/>
-<pin name="PF15" x="-142.24" y="-78.74" length="middle"/>
-<pin name="PF13" x="-142.24" y="-73.66" length="middle"/>
-<pin name="PF11" x="-142.24" y="-68.58" length="middle"/>
-<pin name="PA6" x="-243.84" y="-55.88" length="middle"/>
-<pin name="PE7" x="-162.56" y="-58.42" length="middle"/>
-<pin name="PE9" x="-162.56" y="-63.5" length="middle"/>
-<pin name="PD12" x="-185.42" y="-71.12" length="middle"/>
-<pin name="PB6" x="-223.52" y="-55.88" length="middle"/>
-<pin name="PE10" x="-162.56" y="-66.04" length="middle"/>
-<pin name="PG9" x="-121.92" y="-63.5" length="middle"/>
-<pin name="PA12" x="-243.84" y="-71.12" length="middle"/>
-<pin name="VSS_72" x="78.74" y="-180.34" length="middle"/>
-<pin name="VDDQ__DDR_10" x="55.88" y="-193.04" length="middle"/>
-<pin name="VSS_73" x="78.74" y="-177.8" length="middle"/>
-<pin name="DDR_DQ25" x="-147.32" y="-170.18" length="middle"/>
-<pin name="DDR_DQ31" x="-147.32" y="-185.42" length="middle"/>
-<pin name="DDR_DQ30" x="-147.32" y="-182.88" length="middle"/>
-<pin name="PC2" x="-205.74" y="-45.72" length="middle"/>
-<pin name="PE2" x="-162.56" y="-45.72" length="middle"/>
-<pin name="VSS_74" x="78.74" y="-175.26" length="middle"/>
-<pin name="PG1" x="-121.92" y="-43.18" length="middle"/>
-<pin name="PB11" x="-223.52" y="-68.58" length="middle"/>
-<pin name="PH3" x="-99.06" y="-48.26" length="middle"/>
-<pin name="VSS_75" x="78.74" y="-172.72" length="middle"/>
-<pin name="PG8" x="-121.92" y="-60.96" length="middle"/>
-<pin name="PA7" x="-243.84" y="-58.42" length="middle"/>
-<pin name="VSS_76" x="78.74" y="-170.18" length="middle"/>
-<pin name="PG7" x="-121.92" y="-58.42" length="middle"/>
-<pin name="PE8" x="-162.56" y="-60.96" length="middle"/>
-<pin name="VSS_USBHS_1" x="78.74" y="-167.64" length="middle"/>
-<pin name="VSS_USBHS_2" x="78.74" y="-165.1" length="middle"/>
-<pin name="VSS_USBHS_3" x="78.74" y="-162.56" length="middle"/>
-<pin name="PA11" x="-243.84" y="-68.58" length="middle"/>
-<pin name="PA10" x="-243.84" y="-66.04" length="middle"/>
-<pin name="VSS_77" x="78.74" y="-160.02" length="middle"/>
-<pin name="VDDQ__DDR_11" x="55.88" y="-190.5" length="middle"/>
-<pin name="VSS_78" x="78.74" y="-157.48" length="middle"/>
-<pin name="DDR_DQS3P" x="-119.38" y="-187.96" length="middle"/>
-<pin name="DDR_DQS3N" x="-119.38" y="-190.5" length="middle"/>
-<pin name="PG13" x="-121.92" y="-73.66" length="middle"/>
-<pin name="PG14" x="-121.92" y="-76.2" length="middle"/>
-<pin name="PA0" x="-243.84" y="-40.64" length="middle"/>
-<pin name="VSS_79" x="78.74" y="-154.94" length="middle"/>
-<pin name="PB1" x="-223.52" y="-43.18" length="middle"/>
-<pin name="PC5" x="-205.74" y="-53.34" length="middle"/>
-<pin name="PB12" x="-223.52" y="-71.12" length="middle"/>
-<pin name="PB5" x="-223.52" y="-53.34" length="middle"/>
-<pin name="PG10" x="-121.92" y="-66.04" length="middle"/>
-<pin name="PF7" x="-142.24" y="-58.42" length="middle"/>
-<pin name="PF6" x="-142.24" y="-55.88" length="middle"/>
-<pin name="BYPAS_S_REG_1V8" x="66.04" y="-10.16" length="middle"/>
-<pin name="VSS__USBHS_1" x="78.74" y="-152.4" length="middle"/>
-<pin name="USB_DM2" x="-53.34" y="-121.92" length="middle"/>
-<pin name="USB_DP1" x="-53.34" y="-116.84" length="middle"/>
-<pin name="VSS__USBHS_2" x="78.74" y="-149.86" length="middle"/>
-<pin name="USB_RREF" x="-53.34" y="-114.3" length="middle"/>
-<pin name="VSS_80" x="78.74" y="-147.32" length="middle"/>
-<pin name="DDR_ATO" x="-231.14" y="-124.46" length="middle"/>
-<pin name="DDR_DQ29" x="-147.32" y="-180.34" length="middle"/>
-<pin name="DDR_DQ28" x="-147.32" y="-177.8" length="middle"/>
-<pin name="DDR_DQM3" x="-119.38" y="-149.86" length="middle"/>
-<pin name="VSS_81" x="78.74" y="-144.78" length="middle"/>
-<pin name="PA2" x="-243.84" y="-45.72" length="middle"/>
-<pin name="PC1" x="-205.74" y="-43.18" length="middle"/>
-<pin name="PG4" x="-121.92" y="-50.8" length="middle"/>
-<pin name="PB0" x="-223.52" y="-40.64" length="middle"/>
-<pin name="PC4" x="-205.74" y="-50.8" length="middle"/>
-<pin name="PH2" x="-99.06" y="-45.72" length="middle"/>
-<pin name="PB8" x="-223.52" y="-60.96" length="middle"/>
-<pin name="PD11" x="-185.42" y="-68.58" length="middle"/>
-<pin name="PF8" x="-142.24" y="-60.96" length="middle"/>
-<pin name="PF9" x="-142.24" y="-63.5" length="middle"/>
-<pin name="VDDA_1V8__REG" x="55.88" y="-187.96" length="middle"/>
-<pin name="VDD_3V3__USBHS" x="55.88" y="-185.42" length="middle"/>
-<pin name="USB_DP2" x="-53.34" y="-124.46" length="middle"/>
-<pin name="USB_DM1" x="-53.34" y="-119.38" length="middle"/>
-<pin name="VDD_3V3__USBFS" x="55.88" y="-182.88" length="middle"/>
-<pin name="VDDA_1V1__REG" x="55.88" y="-180.34" length="middle"/>
-<pin name="VSS_82" x="78.74" y="-142.24" length="middle"/>
-<pin name="DDR__VREF" x="55.88" y="-177.8" length="middle"/>
-<pin name="DDR_DQ27" x="-147.32" y="-175.26" length="middle"/>
-<pin name="DDR_DQ26" x="-147.32" y="-172.72" length="middle"/>
-<pin name="VSS_83" x="78.74" y="-139.7" length="middle"/>
+<pin name="VSS_1" x="218.44" y="-182.88" length="middle" rot="R180"/>
+<pin name="PH5" x="-142.24" y="-55.88" length="middle"/>
+<pin name="PH4" x="-142.24" y="-53.34" length="middle"/>
+<pin name="PE13" x="-193.04" y="-76.2" length="middle"/>
+<pin name="PK6" x="-93.98" y="-58.42" length="middle"/>
+<pin name="PK4" x="-93.98" y="-53.34" length="middle"/>
+<pin name="PJ13" x="-93.98" y="-30.48" length="middle"/>
+<pin name="PD10" x="-193.04" y="-22.86" length="middle"/>
+<pin name="PD5" x="-193.04" y="-10.16" length="middle"/>
+<pin name="PE3" x="-193.04" y="-50.8" length="middle"/>
+<pin name="PA9" x="-246.38" y="-20.32" length="middle"/>
+<pin name="PB3" x="-246.38" y="-50.8" length="middle"/>
+<pin name="PB14" x="-246.38" y="-78.74" length="middle"/>
+<pin name="VDD__DSI" x="157.48" y="-101.6" length="middle"/>
+<pin name="DSI_D0N" x="236.22" y="5.08" length="middle"/>
+<pin name="DSI_CKN" x="236.22" y="-10.16" length="middle"/>
+<pin name="DSI_D1N" x="236.22" y="-2.54" length="middle"/>
+<pin name="VDD1_V2_DSI_PHY" x="157.48" y="-228.6" length="middle"/>
+<pin name="VSS_2" x="218.44" y="-185.42" length="middle" rot="R180"/>
+<pin name="DDR_DQ20" x="236.22" y="-203.2" length="middle"/>
+<pin name="DDR_DQ23" x="236.22" y="-210.82" length="middle"/>
+<pin name="VSS_3" x="218.44" y="-187.96" length="middle" rot="R180"/>
+<pin name="PH10" x="-142.24" y="-68.58" length="middle"/>
+<pin name="VSS_4" x="218.44" y="-190.5" length="middle" rot="R180"/>
+<pin name="PH11" x="-142.24" y="-71.12" length="middle"/>
+<pin name="PE14" x="-193.04" y="-78.74" length="middle"/>
+<pin name="PK7" x="-93.98" y="-60.96" length="middle"/>
+<pin name="PK3" x="-93.98" y="-50.8" length="middle"/>
+<pin name="PJ14" x="-93.98" y="-33.02" length="middle"/>
+<pin name="PJ12" x="-93.98" y="-27.94" length="middle"/>
+<pin name="PF1" x="-193.04" y="-91.44" length="middle"/>
+<pin name="PD1" x="-193.04" y="0" length="middle"/>
+<pin name="PD3" x="-193.04" y="-5.08" length="middle"/>
+<pin name="PB15" x="-246.38" y="-81.28" length="middle"/>
+<pin name="PA8" x="-246.38" y="-17.78" length="middle"/>
+<pin name="VDDA_1V8_DSI" x="157.48" y="-220.98" length="middle"/>
+<pin name="DSI_D0P" x="236.22" y="7.62" length="middle"/>
+<pin name="DSI_CKP" x="236.22" y="-7.62" length="middle"/>
+<pin name="DSI_D1P" x="236.22" y="0" length="middle"/>
+<pin name="VDD1V2_DSI_REG" x="157.48" y="-231.14" length="middle"/>
+<pin name="VSS_5" x="218.44" y="-193.04" length="middle" rot="R180"/>
+<pin name="DDR_DQ19" x="236.22" y="-200.66" length="middle"/>
+<pin name="DDR_DQ16" x="236.22" y="-193.04" length="middle"/>
+<pin name="DDR_DQS2N" x="236.22" y="-218.44" length="middle"/>
+<pin name="PH15" x="-142.24" y="-81.28" length="middle"/>
+<pin name="PH14" x="-142.24" y="-78.74" length="middle"/>
+<pin name="VSS_6" x="218.44" y="-195.58" length="middle" rot="R180"/>
+<pin name="PE15" x="-193.04" y="-81.28" length="middle"/>
+<pin name="PE0" x="-193.04" y="-43.18" length="middle"/>
+<pin name="PK5" x="-93.98" y="-55.88" length="middle"/>
+<pin name="PJ15" x="-93.98" y="-35.56" length="middle"/>
+<pin name="VSS_7" x="218.44" y="-198.12" length="middle" rot="R180"/>
+<pin name="PD4" x="-193.04" y="-7.62" length="middle"/>
+<pin name="PD0" x="-193.04" y="2.54" length="middle"/>
+<pin name="VSS_8" x="218.44" y="-200.66" length="middle" rot="R180"/>
+<pin name="PE5" x="-193.04" y="-55.88" length="middle"/>
+<pin name="PB4" x="-246.38" y="-53.34" length="middle"/>
+<pin name="VSS_DSI_1" x="218.44" y="-218.44" length="middle" rot="R180"/>
+<pin name="VSS_DSI_2" x="218.44" y="-220.98" length="middle" rot="R180"/>
+<pin name="VSS_DSI_3" x="218.44" y="-223.52" length="middle" rot="R180"/>
+<pin name="VSS_DSI_4" x="218.44" y="-226.06" length="middle" rot="R180"/>
+<pin name="VSS_DSI_5" x="218.44" y="-228.6" length="middle" rot="R180"/>
+<pin name="VSS_9" x="218.44" y="7.62" length="middle" rot="R180"/>
+<pin name="VSS_10" x="218.44" y="5.08" length="middle" rot="R180"/>
+<pin name="DDR_DQS2P" x="236.22" y="-215.9" length="middle"/>
+<pin name="DDR_DQM2" x="236.22" y="-223.52" length="middle"/>
+<pin name="PI0" x="-142.24" y="-88.9" length="middle"/>
+<pin name="PI14" x="-142.24" y="-124.46" length="middle"/>
+<pin name="PH13" x="-142.24" y="-76.2" length="middle"/>
+<pin name="VSS_11" x="218.44" y="2.54" length="middle" rot="R180"/>
+<pin name="PE11" x="-193.04" y="-71.12" length="middle"/>
+<pin name="PH8" x="-142.24" y="-63.5" length="middle"/>
+<pin name="PE1" x="-193.04" y="-45.72" length="middle"/>
+<pin name="PK0" x="-93.98" y="-43.18" length="middle"/>
+<pin name="PF5" x="-193.04" y="-101.6" length="middle"/>
+<pin name="PG15" x="-142.24" y="-35.56" length="middle"/>
+<pin name="PG6" x="-142.24" y="-12.7" length="middle"/>
+<pin name="PD2" x="-193.04" y="-2.54" length="middle"/>
+<pin name="PC7" x="-246.38" y="-106.68" length="middle"/>
+<pin name="PC9" x="-246.38" y="-111.76" length="middle"/>
+<pin name="PC11" x="-246.38" y="-116.84" length="middle"/>
+<pin name="JTDI" x="289.56" y="-45.72" length="middle" rot="R180"/>
+<pin name="JTCK/SWCLK" x="289.56" y="-48.26" length="middle" rot="R180"/>
+<pin name="VDD_PLL2" x="157.48" y="-111.76" length="middle"/>
+<pin name="VSS_PLL2" x="218.44" y="-259.08" length="middle" rot="R180"/>
+<pin name="DDR_DQ22" x="236.22" y="-208.28" length="middle"/>
+<pin name="DDR_DQ17" x="236.22" y="-195.58" length="middle"/>
+<pin name="DDR_DQ18" x="236.22" y="-198.12" length="middle"/>
+<pin name="PI2" x="-142.24" y="-93.98" length="middle"/>
+<pin name="PI1" x="-142.24" y="-91.44" length="middle"/>
+<pin name="PI3" x="-142.24" y="-96.52" length="middle"/>
+<pin name="PE12" x="-193.04" y="-73.66" length="middle"/>
+<pin name="VSS_12" x="218.44" y="0" length="middle" rot="R180"/>
+<pin name="PH9" x="-142.24" y="-66.04" length="middle"/>
+<pin name="PK1" x="-93.98" y="-45.72" length="middle"/>
+<pin name="PK2" x="-93.98" y="-48.26" length="middle"/>
+<pin name="PE6" x="-193.04" y="-58.42" length="middle"/>
+<pin name="PF0" x="-193.04" y="-88.9" length="middle"/>
+<pin name="PA15" x="-246.38" y="-35.56" length="middle"/>
+<pin name="PC12" x="-246.38" y="-119.38" length="middle"/>
+<pin name="PC6" x="-246.38" y="-104.14" length="middle"/>
+<pin name="PC8" x="-246.38" y="-109.22" length="middle"/>
+<pin name="!JTRST!" x="289.56" y="-50.8" length="middle" rot="R180"/>
+<pin name="JTDO/TRACE/SWO" x="289.56" y="-53.34" length="middle" rot="R180"/>
+<pin name="JTMS/SWDIO" x="289.56" y="-55.88" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR_12" x="157.48" y="-157.48" length="middle"/>
+<pin name="VSS_13" x="218.44" y="-2.54" length="middle" rot="R180"/>
+<pin name="DDR_DQ3" x="236.22" y="-114.3" length="middle"/>
+<pin name="DDR_DQ0" x="236.22" y="-106.68" length="middle"/>
+<pin name="DDR_DQ2" x="236.22" y="-111.76" length="middle"/>
+<pin name="PI7" x="-142.24" y="-106.68" length="middle"/>
+<pin name="PI5" x="-142.24" y="-101.6" length="middle"/>
+<pin name="PI15" x="-142.24" y="-127" length="middle"/>
+<pin name="PZ3" x="-93.98" y="-76.2" length="middle"/>
+<pin name="PH12" x="-142.24" y="-73.66" length="middle"/>
+<pin name="VSS_14" x="218.44" y="-5.08" length="middle" rot="R180"/>
+<pin name="VSS_15" x="218.44" y="-7.62" length="middle" rot="R180"/>
+<pin name="VSS_16" x="218.44" y="-10.16" length="middle" rot="R180"/>
+<pin name="PF4" x="-193.04" y="-99.06" length="middle"/>
+<pin name="PD7" x="-193.04" y="-15.24" length="middle"/>
+<pin name="PB7" x="-246.38" y="-60.96" length="middle"/>
+<pin name="PB9" x="-246.38" y="-66.04" length="middle"/>
+<pin name="PF2" x="-193.04" y="-93.98" length="middle"/>
+<pin name="PC10" x="-246.38" y="-114.3" length="middle"/>
+<pin name="PE4" x="-193.04" y="-53.34" length="middle"/>
+<pin name="VSS_17" x="218.44" y="-12.7" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR_1" x="157.48" y="-121.92" length="middle"/>
+<pin name="DDR_A7" x="292.1" y="-139.7" length="middle" rot="R180"/>
+<pin name="!DDR_RESET!" x="292.1" y="-215.9" length="middle" rot="R180"/>
+<pin name="VSS_18" x="218.44" y="-15.24" length="middle" rot="R180"/>
+<pin name="DDR_DQ1" x="236.22" y="-109.22" length="middle"/>
+<pin name="PZ4" x="-93.98" y="-78.74" length="middle"/>
+<pin name="PZ0" x="-93.98" y="-68.58" length="middle"/>
+<pin name="PZ6" x="-93.98" y="-83.82" length="middle"/>
+<pin name="VSS_19" x="218.44" y="-17.78" length="middle" rot="R180"/>
+<pin name="PI6" x="-142.24" y="-104.14" length="middle"/>
+<pin name="VSS_20" x="218.44" y="-20.32" length="middle" rot="R180"/>
+<pin name="VSS_21" x="218.44" y="-22.86" length="middle" rot="R180"/>
+<pin name="VSS_22" x="218.44" y="-25.4" length="middle" rot="R180"/>
+<pin name="VSS_23" x="218.44" y="-27.94" length="middle" rot="R180"/>
+<pin name="VSS_24" x="218.44" y="-30.48" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR_13" x="157.48" y="-160.02" length="middle"/>
+<pin name="VSS_25" x="218.44" y="-33.02" length="middle" rot="R180"/>
+<pin name="DDR_A1" x="292.1" y="-124.46" length="middle" rot="R180"/>
+<pin name="DDR_DQ7" x="236.22" y="-124.46" length="middle"/>
+<pin name="DDR_DQM0" x="236.22" y="-137.16" length="middle"/>
+<pin name="DDR_DQS0N" x="236.22" y="-132.08" length="middle"/>
+<pin name="DDR_DQS0P" x="236.22" y="-129.54" length="middle"/>
+<pin name="PI13" x="-142.24" y="-121.92" length="middle"/>
+<pin name="PI12" x="-142.24" y="-119.38" length="middle"/>
+<pin name="PZ7" x="-93.98" y="-86.36" length="middle"/>
+<pin name="PZ5" x="-93.98" y="-81.28" length="middle"/>
+<pin name="PZ1" x="-93.98" y="-71.12" length="middle"/>
+<pin name="PJ8" x="-93.98" y="-17.78" length="middle"/>
+<pin name="VSS_26" x="218.44" y="-35.56" length="middle" rot="R180"/>
+<pin name="VDDCORE_1" x="157.48" y="-35.56" length="middle"/>
+<pin name="VDDCORE_2" x="157.48" y="-38.1" length="middle"/>
+<pin name="VDDCORE_3" x="157.48" y="-40.64" length="middle"/>
+<pin name="VDDCORE_4" x="157.48" y="-43.18" length="middle"/>
+<pin name="VDDQ_DDR_15" x="157.48" y="-139.7" length="middle"/>
+<pin name="DDR_A9" x="292.1" y="-144.78" length="middle" rot="R180"/>
+<pin name="DDR_A5" x="292.1" y="-134.62" length="middle" rot="R180"/>
+<pin name="DDR_DQ5" x="236.22" y="-119.38" length="middle"/>
+<pin name="DDR_DQ21" x="236.22" y="-205.74" length="middle"/>
+<pin name="DDR_DQ6" x="236.22" y="-121.92" length="middle"/>
+<pin name="PJ3" x="-93.98" y="-5.08" length="middle"/>
+<pin name="PJ0" x="-93.98" y="2.54" length="middle"/>
+<pin name="PJ10" x="-93.98" y="-22.86" length="middle"/>
+<pin name="PG12" x="-142.24" y="-27.94" length="middle"/>
+<pin name="PI9" x="-142.24" y="-111.76" length="middle"/>
+<pin name="PI4" x="-142.24" y="-99.06" length="middle"/>
+<pin name="VDDCORE_5" x="157.48" y="-25.4" length="middle"/>
+<pin name="VSS_27" x="218.44" y="-38.1" length="middle" rot="R180"/>
+<pin name="VDDCORE_6" x="157.48" y="-27.94" length="middle"/>
+<pin name="VSS_28" x="218.44" y="-40.64" length="middle" rot="R180"/>
+<pin name="VDDCORE_7" x="157.48" y="-30.48" length="middle"/>
+<pin name="VSS_29" x="218.44" y="-43.18" length="middle" rot="R180"/>
+<pin name="VDDCORE_8" x="157.48" y="-33.02" length="middle"/>
+<pin name="VDDQ_DDR_16" x="157.48" y="-142.24" length="middle"/>
+<pin name="VSS_30" x="218.44" y="-45.72" length="middle" rot="R180"/>
+<pin name="DDR_A2" x="292.1" y="-127" length="middle" rot="R180"/>
+<pin name="DDR_A3" x="292.1" y="-129.54" length="middle" rot="R180"/>
+<pin name="VSS_31" x="218.44" y="-48.26" length="middle" rot="R180"/>
+<pin name="DDR_DQ4" x="236.22" y="-116.84" length="middle"/>
+<pin name="PJ5" x="-93.98" y="-10.16" length="middle"/>
+<pin name="PJ4" x="-93.98" y="-7.62" length="middle"/>
+<pin name="VSS_32" x="218.44" y="-50.8" length="middle" rot="R180"/>
+<pin name="PJ2" x="-93.98" y="-2.54" length="middle"/>
+<pin name="PZ2" x="-93.98" y="-73.66" length="middle"/>
+<pin name="PJ11" x="-93.98" y="-25.4" length="middle"/>
+<pin name="VSS_33" x="218.44" y="-53.34" length="middle" rot="R180"/>
+<pin name="VDDCORE_9" x="157.48" y="-15.24" length="middle"/>
+<pin name="VSS_34" x="218.44" y="-55.88" length="middle" rot="R180"/>
+<pin name="VDDCORE_10" x="157.48" y="-17.78" length="middle"/>
+<pin name="VSS_35" x="218.44" y="-58.42" length="middle" rot="R180"/>
+<pin name="VDDCORE_11" x="157.48" y="-20.32" length="middle"/>
+<pin name="VSS_36" x="218.44" y="-60.96" length="middle" rot="R180"/>
+<pin name="VDDCORE_12" x="157.48" y="-22.86" length="middle"/>
+<pin name="VDDQ_DDR_2" x="157.48" y="-124.46" length="middle"/>
+<pin name="DDR_BA2" x="292.1" y="-175.26" length="middle" rot="R180"/>
+<pin name="DDR_A0" x="292.1" y="-121.92" length="middle" rot="R180"/>
+<pin name="DDR_BA0" x="292.1" y="-170.18" length="middle" rot="R180"/>
+<pin name="DDR_DTO1" x="292.1" y="-266.7" length="middle" rot="R180"/>
+<pin name="DDR_ZQ" x="292.1" y="-241.3" length="middle" rot="R180"/>
+<pin name="PD15" x="-193.04" y="-35.56" length="middle"/>
+<pin name="PJ9" x="-93.98" y="-20.32" length="middle"/>
+<pin name="PD6" x="-193.04" y="-12.7" length="middle"/>
+<pin name="PJ7" x="-93.98" y="-15.24" length="middle"/>
+<pin name="PJ6" x="-93.98" y="-12.7" length="middle"/>
+<pin name="PJ1" x="-93.98" y="0" length="middle"/>
+<pin name="VDDCORE_13" x="157.48" y="-5.08" length="middle"/>
+<pin name="VSS_37" x="218.44" y="-63.5" length="middle" rot="R180"/>
+<pin name="VDDCORE_14" x="157.48" y="-7.62" length="middle"/>
+<pin name="VSS_38" x="218.44" y="-66.04" length="middle" rot="R180"/>
+<pin name="VDDCORE_15" x="157.48" y="-10.16" length="middle"/>
+<pin name="VSS_39" x="218.44" y="-68.58" length="middle" rot="R180"/>
+<pin name="VDDCORE_16" x="157.48" y="-12.7" length="middle"/>
+<pin name="VDDQ_DDR_3" x="157.48" y="-127" length="middle"/>
+<pin name="VSS_40" x="218.44" y="-71.12" length="middle" rot="R180"/>
+<pin name="!DDR_CS!" x="292.1" y="-195.58" length="middle" rot="R180"/>
+<pin name="VSS_41" x="218.44" y="-73.66" length="middle" rot="R180"/>
+<pin name="VSS_42" x="218.44" y="-76.2" length="middle" rot="R180"/>
+<pin name="DDR_ODT" x="292.1" y="-210.82" length="middle" rot="R180"/>
+<pin name="DDR_DTO0" x="292.1" y="-264.16" length="middle" rot="R180"/>
+<pin name="PD8" x="-193.04" y="-17.78" length="middle"/>
+<pin name="PD9" x="-193.04" y="-20.32" length="middle"/>
+<pin name="PD14" x="-193.04" y="-33.02" length="middle"/>
+<pin name="VBAT" x="157.48" y="-170.18" length="middle"/>
+<pin name="VSS_PLL" x="218.44" y="-256.54" length="middle" rot="R180"/>
+<pin name="VDD_PLL" x="157.48" y="-109.22" length="middle"/>
+<pin name="VSS_43" x="218.44" y="-78.74" length="middle" rot="R180"/>
+<pin name="VDD_1" x="157.48" y="-63.5" length="middle"/>
+<pin name="VSS_44" x="218.44" y="-81.28" length="middle" rot="R180"/>
+<pin name="VDDCORE_17" x="157.48" y="2.54" length="middle"/>
+<pin name="VSS_45" x="218.44" y="-83.82" length="middle" rot="R180"/>
+<pin name="VDDCORE_18" x="157.48" y="0" length="middle"/>
+<pin name="VSS_46" x="218.44" y="-86.36" length="middle" rot="R180"/>
+<pin name="VDDCORE_19" x="157.48" y="-2.54" length="middle"/>
+<pin name="VDDQ_DDR_4" x="157.48" y="-129.54" length="middle"/>
+<pin name="DDR_A13" x="292.1" y="-154.94" length="middle" rot="R180"/>
+<pin name="DDR_A15" x="292.1" y="-160.02" length="middle" rot="R180"/>
+<pin name="!DDR_RAS!" x="292.1" y="-185.42" length="middle" rot="R180"/>
+<pin name="!DDR_WE!" x="292.1" y="-205.74" length="middle" rot="R180"/>
+<pin name="!DDR_CAS!" x="292.1" y="-190.5" length="middle" rot="R180"/>
+<pin name="PI8" x="-142.24" y="-109.22" length="middle"/>
+<pin name="PC13" x="-246.38" y="-121.92" length="middle"/>
+<pin name="BOOT0" x="289.56" y="-71.12" length="middle" rot="R180"/>
+<pin name="BOOT1" x="289.56" y="-73.66" length="middle" rot="R180"/>
+<pin name="VDD_ANA" x="157.48" y="-99.06" length="middle"/>
+<pin name="VREF-" x="218.44" y="-266.7" length="middle" rot="R180"/>
+<pin name="VDD_2" x="157.48" y="-83.82" length="middle"/>
+<pin name="VSS_47" x="218.44" y="-88.9" length="middle" rot="R180"/>
+<pin name="VDD_3" x="157.48" y="-86.36" length="middle"/>
+<pin name="VSS_48" x="218.44" y="-91.44" length="middle" rot="R180"/>
+<pin name="VDDCORE_20" x="157.48" y="5.08" length="middle"/>
+<pin name="VSS_49" x="218.44" y="-93.98" length="middle" rot="R180"/>
+<pin name="VDDCORE_21" x="157.48" y="7.62" length="middle"/>
+<pin name="VDDQ_DDR_14" x="157.48" y="-144.78" length="middle"/>
+<pin name="VSS_50" x="218.44" y="-96.52" length="middle" rot="R180"/>
+<pin name="DDR_A10" x="292.1" y="-147.32" length="middle" rot="R180"/>
+<pin name="DDR_A12" x="292.1" y="-152.4" length="middle" rot="R180"/>
+<pin name="DDR_CLKP" x="292.1" y="-106.68" length="middle" rot="R180"/>
+<pin name="DDR_CLKN" x="292.1" y="-109.22" length="middle" rot="R180"/>
+<pin name="DDR_DQ8" x="236.22" y="-149.86" length="middle"/>
+<pin name="PC14-_OSC32__IN" x="-246.38" y="-124.46" length="middle"/>
+<pin name="PC15-_OSC32__OUT" x="-246.38" y="-127" length="middle"/>
+<pin name="VSS_51" x="218.44" y="-99.06" length="middle" rot="R180"/>
+<pin name="BOOT2" x="289.56" y="-76.2" length="middle" rot="R180"/>
+<pin name="VSS_ANA" x="218.44" y="-210.82" length="middle" rot="R180"/>
+<pin name="VREF+" x="157.48" y="-187.96" length="middle"/>
+<pin name="VSS_52" x="218.44" y="-101.6" length="middle" rot="R180"/>
+<pin name="VDD_4" x="157.48" y="-88.9" length="middle"/>
+<pin name="VSS_53" x="218.44" y="-180.34" length="middle" rot="R180"/>
+<pin name="VDD_5" x="157.48" y="-66.04" length="middle"/>
+<pin name="VSS_54" x="218.44" y="-177.8" length="middle" rot="R180"/>
+<pin name="VDDCORE_22" x="157.48" y="-45.72" length="middle"/>
+<pin name="VSS_55" x="218.44" y="-175.26" length="middle" rot="R180"/>
+<pin name="VDDCORE_23" x="157.48" y="-48.26" length="middle"/>
+<pin name="VDDQ_DDR_6" x="157.48" y="-134.62" length="middle"/>
+<pin name="DDR_A14" x="292.1" y="-157.48" length="middle" rot="R180"/>
+<pin name="DDR_A11" x="292.1" y="-149.86" length="middle" rot="R180"/>
+<pin name="VSS_56" x="218.44" y="-172.72" length="middle" rot="R180"/>
+<pin name="DDR_DQ10" x="236.22" y="-154.94" length="middle"/>
+<pin name="!RST_CORE!" x="236.22" y="-68.58" length="middle"/>
+<pin name="!RST!" x="236.22" y="-43.18" length="middle"/>
+<pin name="PA14" x="-246.38" y="-33.02" length="middle"/>
+<pin name="ANA0" x="236.22" y="-25.4" length="middle"/>
+<pin name="VDDA" x="157.48" y="-180.34" length="middle"/>
+<pin name="VSSA_1" x="157.48" y="-195.58" length="middle"/>
+<pin name="VSS_57" x="218.44" y="-170.18" length="middle" rot="R180"/>
+<pin name="VDD_6" x="157.48" y="-68.58" length="middle"/>
+<pin name="VDD_7" x="157.48" y="-71.12" length="middle"/>
+<pin name="VDDCORE_24" x="157.48" y="-50.8" length="middle"/>
+<pin name="VDDQ_DDR_7" x="157.48" y="-137.16" length="middle"/>
+<pin name="VSS_58" x="218.44" y="-167.64" length="middle" rot="R180"/>
+<pin name="DDR_BA1" x="292.1" y="-172.72" length="middle" rot="R180"/>
+<pin name="DDR_CKE" x="292.1" y="-200.66" length="middle" rot="R180"/>
+<pin name="DDR_DQ13" x="236.22" y="-162.56" length="middle"/>
+<pin name="DDR_DQ9" x="236.22" y="-152.4" length="middle"/>
+<pin name="DDR_DQS1N" x="236.22" y="-175.26" length="middle"/>
+<pin name="PH0-_OSC_IN" x="-142.24" y="-43.18" length="middle"/>
+<pin name="PH1-_OSC__OUT" x="-142.24" y="-45.72" length="middle"/>
+<pin name="PI11" x="-142.24" y="-116.84" length="middle"/>
+<pin name="PA3" x="-246.38" y="-5.08" length="middle"/>
+<pin name="ANA1" x="236.22" y="-27.94" length="middle"/>
+<pin name="VSSA_2" x="157.48" y="-198.12" length="middle"/>
+<pin name="VSS_59" x="218.44" y="-165.1" length="middle" rot="R180"/>
+<pin name="VSS_60" x="218.44" y="-162.56" length="middle" rot="R180"/>
+<pin name="VSS_61" x="218.44" y="-160.02" length="middle" rot="R180"/>
+<pin name="VDD_8" x="157.48" y="-73.66" length="middle"/>
+<pin name="VDDCORE_25" x="157.48" y="-53.34" length="middle"/>
+<pin name="VDDQ_DDR_8" x="157.48" y="-147.32" length="middle"/>
+<pin name="DDR_A4" x="292.1" y="-132.08" length="middle" rot="R180"/>
+<pin name="VSS_62" x="218.44" y="-157.48" length="middle" rot="R180"/>
+<pin name="DDR_DQ11" x="236.22" y="-157.48" length="middle"/>
+<pin name="DRR_DQM1" x="236.22" y="-180.34" length="middle"/>
+<pin name="DDR_DQS1P" x="236.22" y="-172.72" length="middle"/>
+<pin name="PWR_LP" x="236.22" y="-55.88" length="middle"/>
+<pin name="PDR_ON_CORE" x="236.22" y="-63.5" length="middle"/>
+<pin name="PC3" x="-246.38" y="-96.52" length="middle"/>
+<pin name="PG3" x="-142.24" y="-5.08" length="middle"/>
+<pin name="PA5" x="-246.38" y="-10.16" length="middle"/>
+<pin name="VSSA_3" x="157.48" y="-200.66" length="middle"/>
+<pin name="VSS_63" x="218.44" y="-154.94" length="middle" rot="R180"/>
+<pin name="PG5" x="-142.24" y="-10.16" length="middle"/>
+<pin name="VDD_9" x="157.48" y="-76.2" length="middle"/>
+<pin name="PC0" x="-246.38" y="-88.9" length="middle"/>
+<pin name="PG11" x="-142.24" y="-25.4" length="middle"/>
+<pin name="VDD_10" x="157.48" y="-78.74" length="middle"/>
+<pin name="VSS_64" x="218.44" y="-152.4" length="middle" rot="R180"/>
+<pin name="VDD_11" x="157.48" y="-81.28" length="middle"/>
+<pin name="VSS_65" x="218.44" y="-149.86" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR_5" x="157.48" y="-132.08" length="middle"/>
+<pin name="VSS_66" x="218.44" y="-147.32" length="middle" rot="R180"/>
+<pin name="DDR_A8" x="292.1" y="-142.24" length="middle" rot="R180"/>
+<pin name="DDR_A6" x="292.1" y="-137.16" length="middle" rot="R180"/>
+<pin name="VSS_67" x="218.44" y="-144.78" length="middle" rot="R180"/>
+<pin name="DDR_DQ14" x="236.22" y="-165.1" length="middle"/>
+<pin name="PWR_ON" x="236.22" y="-38.1" length="middle"/>
+<pin name="PDR_ON" x="236.22" y="-60.96" length="middle"/>
+<pin name="PF3" x="-193.04" y="-96.52" length="middle"/>
+<pin name="PA1" x="-246.38" y="0" length="middle"/>
+<pin name="VSS_68" x="218.44" y="-142.24" length="middle" rot="R180"/>
+<pin name="PA4" x="-246.38" y="-7.62" length="middle"/>
+<pin name="PF14" x="-193.04" y="-124.46" length="middle"/>
+<pin name="PF12" x="-193.04" y="-119.38" length="middle"/>
+<pin name="PB10" x="-246.38" y="-68.58" length="middle"/>
+<pin name="PB13" x="-246.38" y="-76.2" length="middle"/>
+<pin name="PH6" x="-142.24" y="-58.42" length="middle"/>
+<pin name="PF10" x="-193.04" y="-114.3" length="middle"/>
+<pin name="PB2" x="-246.38" y="-48.26" length="middle"/>
+<pin name="PD13" x="-193.04" y="-30.48" length="middle"/>
+<pin name="OTG_VBUS" x="289.56" y="7.62" length="middle" rot="R180"/>
+<pin name="VSS_69" x="218.44" y="-139.7" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR_9" x="157.48" y="-154.94" length="middle"/>
+<pin name="VSS_70" x="218.44" y="-137.16" length="middle" rot="R180"/>
+<pin name="VSS_71" x="218.44" y="-134.62" length="middle" rot="R180"/>
+<pin name="DDR_DQ12" x="236.22" y="-160.02" length="middle"/>
+<pin name="DDR_DQ15" x="236.22" y="-167.64" length="middle"/>
+<pin name="DDR_DQ24" x="236.22" y="-236.22" length="middle"/>
+<pin name="PI10" x="-142.24" y="-114.3" length="middle"/>
+<pin name="PH7" x="-142.24" y="-60.96" length="middle"/>
+<pin name="PA13" x="-246.38" y="-30.48" length="middle"/>
+<pin name="PG2" x="-142.24" y="-2.54" length="middle"/>
+<pin name="PG0" x="-142.24" y="2.54" length="middle"/>
+<pin name="PF15" x="-193.04" y="-127" length="middle"/>
+<pin name="PF13" x="-193.04" y="-121.92" length="middle"/>
+<pin name="PF11" x="-193.04" y="-116.84" length="middle"/>
+<pin name="PA6" x="-246.38" y="-12.7" length="middle"/>
+<pin name="PE7" x="-193.04" y="-60.96" length="middle"/>
+<pin name="PE9" x="-193.04" y="-66.04" length="middle"/>
+<pin name="PD12" x="-193.04" y="-27.94" length="middle"/>
+<pin name="PB6" x="-246.38" y="-58.42" length="middle"/>
+<pin name="PE10" x="-193.04" y="-68.58" length="middle"/>
+<pin name="PG9" x="-142.24" y="-20.32" length="middle"/>
+<pin name="PA12" x="-246.38" y="-27.94" length="middle"/>
+<pin name="VSS_72" x="218.44" y="-132.08" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR_10" x="157.48" y="-152.4" length="middle"/>
+<pin name="VSS_73" x="218.44" y="-129.54" length="middle" rot="R180"/>
+<pin name="DDR_DQ25" x="236.22" y="-238.76" length="middle"/>
+<pin name="DDR_DQ31" x="236.22" y="-254" length="middle"/>
+<pin name="DDR_DQ30" x="236.22" y="-251.46" length="middle"/>
+<pin name="PC2" x="-246.38" y="-93.98" length="middle"/>
+<pin name="PE2" x="-193.04" y="-48.26" length="middle"/>
+<pin name="VSS_74" x="218.44" y="-127" length="middle" rot="R180"/>
+<pin name="PG1" x="-142.24" y="0" length="middle"/>
+<pin name="PB11" x="-246.38" y="-71.12" length="middle"/>
+<pin name="PH3" x="-142.24" y="-50.8" length="middle"/>
+<pin name="VSS_75" x="218.44" y="-124.46" length="middle" rot="R180"/>
+<pin name="PG8" x="-142.24" y="-17.78" length="middle"/>
+<pin name="PA7" x="-246.38" y="-15.24" length="middle"/>
+<pin name="VSS_76" x="218.44" y="-121.92" length="middle" rot="R180"/>
+<pin name="PG7" x="-142.24" y="-15.24" length="middle"/>
+<pin name="PE8" x="-193.04" y="-63.5" length="middle"/>
+<pin name="VSS_USBHS_1" x="218.44" y="-246.38" length="middle" rot="R180"/>
+<pin name="VSS_USBHS_2" x="218.44" y="-243.84" length="middle" rot="R180"/>
+<pin name="VSS_USBHS_3" x="218.44" y="-241.3" length="middle" rot="R180"/>
+<pin name="PA11" x="-246.38" y="-25.4" length="middle"/>
+<pin name="PA10" x="-246.38" y="-22.86" length="middle"/>
+<pin name="VSS_77" x="218.44" y="-119.38" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR_11" x="157.48" y="-149.86" length="middle"/>
+<pin name="VSS_78" x="218.44" y="-116.84" length="middle" rot="R180"/>
+<pin name="DDR_DQS3P" x="236.22" y="-259.08" length="middle"/>
+<pin name="DDR_DQS3N" x="236.22" y="-261.62" length="middle"/>
+<pin name="PG13" x="-142.24" y="-30.48" length="middle"/>
+<pin name="PG14" x="-142.24" y="-33.02" length="middle"/>
+<pin name="PA0" x="-246.38" y="2.54" length="middle"/>
+<pin name="VSS_79" x="218.44" y="-114.3" length="middle" rot="R180"/>
+<pin name="PB1" x="-246.38" y="-45.72" length="middle"/>
+<pin name="PC5" x="-246.38" y="-101.6" length="middle"/>
+<pin name="PB12" x="-246.38" y="-73.66" length="middle"/>
+<pin name="PB5" x="-246.38" y="-55.88" length="middle"/>
+<pin name="PG10" x="-142.24" y="-22.86" length="middle"/>
+<pin name="PF7" x="-193.04" y="-106.68" length="middle"/>
+<pin name="PF6" x="-193.04" y="-104.14" length="middle"/>
+<pin name="BYPAS_S_REG_1V8" x="236.22" y="-78.74" length="middle"/>
+<pin name="VSS_USBHS_4" x="218.44" y="-238.76" length="middle" rot="R180"/>
+<pin name="USB_DM2" x="289.56" y="-10.16" length="middle" rot="R180"/>
+<pin name="USB_DP1" x="289.56" y="0" length="middle" rot="R180"/>
+<pin name="VSS_USBHS_5" x="218.44" y="-236.22" length="middle" rot="R180"/>
+<pin name="USB_RREF" x="289.56" y="-15.24" length="middle" rot="R180"/>
+<pin name="VSS_80" x="218.44" y="-111.76" length="middle" rot="R180"/>
+<pin name="DDR_ATO" x="292.1" y="-259.08" length="middle" rot="R180"/>
+<pin name="DDR_DQ29" x="236.22" y="-248.92" length="middle"/>
+<pin name="DDR_DQ28" x="236.22" y="-246.38" length="middle"/>
+<pin name="DDR_DQM3" x="236.22" y="-266.7" length="middle"/>
+<pin name="VSS_81" x="218.44" y="-109.22" length="middle" rot="R180"/>
+<pin name="PA2" x="-246.38" y="-2.54" length="middle"/>
+<pin name="PC1" x="-246.38" y="-91.44" length="middle"/>
+<pin name="PG4" x="-142.24" y="-7.62" length="middle"/>
+<pin name="PB0" x="-246.38" y="-43.18" length="middle"/>
+<pin name="PC4" x="-246.38" y="-99.06" length="middle"/>
+<pin name="PH2" x="-142.24" y="-48.26" length="middle"/>
+<pin name="PB8" x="-246.38" y="-63.5" length="middle"/>
+<pin name="PD11" x="-193.04" y="-25.4" length="middle"/>
+<pin name="PF8" x="-193.04" y="-109.22" length="middle"/>
+<pin name="PF9" x="-193.04" y="-111.76" length="middle"/>
+<pin name="VDDA_1V8__REG" x="157.48" y="-215.9" length="middle"/>
+<pin name="VDD_3V3__USBHS" x="157.48" y="-243.84" length="middle"/>
+<pin name="USB_DP2" x="289.56" y="-7.62" length="middle" rot="R180"/>
+<pin name="USB_DM1" x="289.56" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDD_3V3__USBFS" x="157.48" y="-241.3" length="middle"/>
+<pin name="VDDA_1V1__REG" x="157.48" y="-210.82" length="middle"/>
+<pin name="VSS_82" x="218.44" y="-106.68" length="middle" rot="R180"/>
+<pin name="DDR__VREF" x="292.1" y="-226.06" length="middle" rot="R180"/>
+<pin name="DDR_DQ27" x="236.22" y="-243.84" length="middle"/>
+<pin name="DDR_DQ26" x="236.22" y="-241.3" length="middle"/>
+<pin name="VSS_83" x="218.44" y="-104.14" length="middle" rot="R180"/>
+<wire x1="162.56" y1="12.7" x2="213.36" y2="12.7" width="0.254" layer="94"/>
+<wire x1="213.36" y1="12.7" x2="213.36" y2="-271.78" width="0.254" layer="94"/>
+<wire x1="213.36" y1="-271.78" x2="162.56" y2="-271.78" width="0.254" layer="94"/>
+<wire x1="162.56" y1="-271.78" x2="162.56" y2="12.7" width="0.254" layer="94"/>
+<wire x1="241.3" y1="12.7" x2="284.48" y2="12.7" width="0.254" layer="94"/>
+<wire x1="284.48" y1="12.7" x2="284.48" y2="-83.82" width="0.254" layer="94"/>
+<wire x1="284.48" y1="-83.82" x2="241.3" y2="-83.82" width="0.254" layer="94"/>
+<wire x1="241.3" y1="-83.82" x2="241.3" y2="12.7" width="0.254" layer="94"/>
+<text x="241.3" y="13.208" size="1.778" layer="94">&gt;NAME</text>
+<text x="241.3" y="-86.36" size="1.778" layer="94">&gt;VALUE</text>
+<wire x1="241.3" y1="-101.6" x2="287.02" y2="-101.6" width="0.254" layer="94"/>
+<wire x1="287.02" y1="-101.6" x2="287.02" y2="-271.78" width="0.254" layer="94"/>
+<wire x1="287.02" y1="-271.78" x2="241.3" y2="-271.78" width="0.254" layer="94"/>
+<wire x1="241.3" y1="-271.78" x2="241.3" y2="-101.6" width="0.254" layer="94"/>
+<text x="241.3" y="-101.092" size="1.778" layer="94">&gt;NAME</text>
+<text x="241.3" y="-274.32" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32MP157AAA3-POWER">
+<pin name="VSS@Y3" x="30.48" y="-53.34" length="middle" rot="R180"/>
+<pin name="VDD_DSI@A14" x="-30.48" y="27.94" length="middle"/>
+<pin name="VDD_1V2_DSI_PHY@A18" x="-30.48" y="-99.06" length="middle"/>
+<pin name="VSS@Y10" x="30.48" y="-55.88" length="middle" rot="R180"/>
+<pin name="VSS@Y18" x="30.48" y="-58.42" length="middle" rot="R180"/>
+<pin name="VSS@Y20" x="30.48" y="-60.96" length="middle" rot="R180"/>
+<pin name="VDDA_1V8_DSI@B14" x="-30.48" y="-91.44" length="middle"/>
+<pin name="VDD_1V2_DSI_REG@B18" x="-30.48" y="-101.6" length="middle"/>
+<pin name="VSS@AA4" x="30.48" y="-63.5" length="middle" rot="R180"/>
+<pin name="VSS@AA18" x="30.48" y="-66.04" length="middle" rot="R180"/>
+<pin name="VSS@AB1" x="30.48" y="-68.58" length="middle" rot="R180"/>
+<pin name="VSS@AB18" x="30.48" y="-71.12" length="middle" rot="R180"/>
+<pin name="VSS_DSI@C15" x="30.48" y="-88.9" length="middle" rot="R180"/>
+<pin name="VSS_DSI@C16" x="30.48" y="-91.44" length="middle" rot="R180"/>
+<pin name="VSS_DSI@C17" x="30.48" y="-93.98" length="middle" rot="R180"/>
+<pin name="VSS_DSI@C18" x="30.48" y="-96.52" length="middle" rot="R180"/>
+<pin name="VSS_DSI@C14" x="30.48" y="-99.06" length="middle" rot="R180"/>
+<pin name="VSS@A1" x="30.48" y="137.16" length="middle" rot="R180"/>
+<pin name="VSS@A19" x="30.48" y="134.62" length="middle" rot="R180"/>
+<pin name="VSS@A22" x="30.48" y="132.08" length="middle" rot="R180"/>
+<pin name="VDD_PLL@D18" x="-30.48" y="17.78" length="middle"/>
+<pin name="VSS_PLL_2@D19" x="30.48" y="-129.54" length="middle" rot="R180"/>
+<pin name="VSS@B2" x="30.48" y="129.54" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR@W18" x="-30.48" y="-27.94" length="middle"/>
+<pin name="VSS@B19" x="30.48" y="127" length="middle" rot="R180"/>
+<pin name="VSS@C3" x="30.48" y="124.46" length="middle" rot="R180"/>
+<pin name="VSS@AB22" x="30.48" y="121.92" length="middle" rot="R180"/>
+<pin name="VSS@C8" x="30.48" y="119.38" length="middle" rot="R180"/>
+<pin name="VSS@C11" x="30.48" y="116.84" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR@E18" x="-30.48" y="7.62" length="middle"/>
+<pin name="VSS@C19" x="30.48" y="114.3" length="middle" rot="R180"/>
+<pin name="VSS@C20" x="30.48" y="111.76" length="middle" rot="R180"/>
+<pin name="VSS@D4" x="30.48" y="109.22" length="middle" rot="R180"/>
+<pin name="VSS@E5" x="30.48" y="106.68" length="middle" rot="R180"/>
+<pin name="VSS@E19" x="30.48" y="104.14" length="middle" rot="R180"/>
+<pin name="VSS@F6" x="30.48" y="101.6" length="middle" rot="R180"/>
+<pin name="VSS@F7" x="30.48" y="99.06" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR@Y19" x="-30.48" y="-30.48" length="middle"/>
+<pin name="VSS@F8" x="30.48" y="96.52" length="middle" rot="R180"/>
+<pin name="VSS@F16" x="30.48" y="93.98" length="middle" rot="R180"/>
+<pin name="VDDCORE@M13" x="-30.48" y="93.98" length="middle"/>
+<pin name="VDDCORE@M15" x="-30.48" y="91.44" length="middle"/>
+<pin name="VDDCORE@N12" x="-30.48" y="88.9" length="middle"/>
+<pin name="VDDCORE@N14" x="-30.48" y="86.36" length="middle"/>
+<pin name="VDDQ_DDR@M17" x="-30.48" y="-10.16" length="middle"/>
+<pin name="VDDCORE@L10" x="-30.48" y="104.14" length="middle"/>
+<pin name="VSS@F20" x="30.48" y="91.44" length="middle" rot="R180"/>
+<pin name="VDDCORE@L12" x="-30.48" y="101.6" length="middle"/>
+<pin name="VSS@G4" x="30.48" y="88.9" length="middle" rot="R180"/>
+<pin name="VDDCORE@L14" x="-30.48" y="99.06" length="middle"/>
+<pin name="VSS@G6" x="30.48" y="86.36" length="middle" rot="R180"/>
+<pin name="VDDCORE@M11" x="-30.48" y="96.52" length="middle"/>
+<pin name="VDDQ_DDR@N16" x="-30.48" y="-12.7" length="middle"/>
+<pin name="VSS@G8" x="30.48" y="83.82" length="middle" rot="R180"/>
+<pin name="VSS@G10" x="30.48" y="81.28" length="middle" rot="R180"/>
+<pin name="VSS@G12" x="30.48" y="78.74" length="middle" rot="R180"/>
+<pin name="VSS@G14" x="30.48" y="76.2" length="middle" rot="R180"/>
+<pin name="VDDCORE@K11" x="-30.48" y="114.3" length="middle"/>
+<pin name="VSS@G17" x="30.48" y="73.66" length="middle" rot="R180"/>
+<pin name="VDDCORE@K13" x="-30.48" y="111.76" length="middle"/>
+<pin name="VSS@H7" x="30.48" y="71.12" length="middle" rot="R180"/>
+<pin name="VDDCORE@K15" x="-30.48" y="109.22" length="middle"/>
+<pin name="VSS@J9" x="30.48" y="68.58" length="middle" rot="R180"/>
+<pin name="VDDCORE@L8" x="-30.48" y="106.68" length="middle"/>
+<pin name="VDDQ_DDR@F17" x="-30.48" y="5.08" length="middle"/>
+<pin name="VDDCORE@J10" x="-30.48" y="124.46" length="middle"/>
+<pin name="VSS@J11" x="30.48" y="66.04" length="middle" rot="R180"/>
+<pin name="VDDCORE@J12" x="-30.48" y="121.92" length="middle"/>
+<pin name="VSS@J13" x="30.48" y="63.5" length="middle" rot="R180"/>
+<pin name="VDDCORE@J14" x="-30.48" y="119.38" length="middle"/>
+<pin name="VSS@J17" x="30.48" y="60.96" length="middle" rot="R180"/>
+<pin name="VDDCORE@K9" x="-30.48" y="116.84" length="middle"/>
+<pin name="VDDQ_DDR@G16" x="-30.48" y="2.54" length="middle"/>
+<pin name="VSS@J20" x="30.48" y="58.42" length="middle" rot="R180"/>
+<pin name="VSS@K3" x="30.48" y="55.88" length="middle" rot="R180"/>
+<pin name="VSS@K7" x="30.48" y="53.34" length="middle" rot="R180"/>
+<pin name="VBAT@M4" x="-30.48" y="-40.64" length="middle"/>
+<pin name="VSS_PLL@M5" x="30.48" y="-127" length="middle" rot="R180"/>
+<pin name="VDD_PLL@M6" x="-30.48" y="20.32" length="middle"/>
+<pin name="VSS@K10" x="30.48" y="50.8" length="middle" rot="R180"/>
+<pin name="VDD@M9" x="-30.48" y="66.04" length="middle"/>
+<pin name="VSS@K12" x="30.48" y="48.26" length="middle" rot="R180"/>
+<pin name="VDDCORE@H13" x="-30.48" y="132.08" length="middle"/>
+<pin name="VSS@K14" x="30.48" y="45.72" length="middle" rot="R180"/>
+<pin name="VDDCORE@H15" x="-30.48" y="129.54" length="middle"/>
+<pin name="VSS@L9" x="30.48" y="43.18" length="middle" rot="R180"/>
+<pin name="VDDCORE@J8" x="-30.48" y="127" length="middle"/>
+<pin name="VDDQ_DDR@H17" x="-30.48" y="0" length="middle"/>
+<pin name="VDD_ANA@N5" x="-30.48" y="30.48" length="middle"/>
+<pin name="VREF-@N6" x="30.48" y="-137.16" length="middle" rot="R180"/>
+<pin name="VDD@T13" x="-30.48" y="45.72" length="middle"/>
+<pin name="VSS@L11" x="30.48" y="40.64" length="middle" rot="R180"/>
+<pin name="VDD@U12" x="-30.48" y="43.18" length="middle"/>
+<pin name="VSS@L13" x="30.48" y="38.1" length="middle" rot="R180"/>
+<pin name="VDDCORE@H11" x="-30.48" y="134.62" length="middle"/>
+<pin name="VSS@L17" x="30.48" y="35.56" length="middle" rot="R180"/>
+<pin name="VDDCORE@H9" x="-30.48" y="137.16" length="middle"/>
+<pin name="VDDQ_DDR@P17" x="-30.48" y="-15.24" length="middle"/>
+<pin name="VSS@L19" x="30.48" y="33.02" length="middle" rot="R180"/>
+<pin name="VSS@L20" x="30.48" y="30.48" length="middle" rot="R180"/>
+<pin name="VSS_ANA@P5" x="30.48" y="-81.28" length="middle" rot="R180"/>
+<pin name="VREF+@P6" x="-30.48" y="-58.42" length="middle"/>
+<pin name="VSS@M7" x="30.48" y="27.94" length="middle" rot="R180"/>
+<pin name="VDD@U14" x="-30.48" y="40.64" length="middle"/>
+<pin name="VSS@Y7" x="30.48" y="-50.8" length="middle" rot="R180"/>
+<pin name="VDD@N8" x="-30.48" y="63.5" length="middle"/>
+<pin name="VSS@W19" x="30.48" y="-48.26" length="middle" rot="R180"/>
+<pin name="VDDCORE@P13" x="-30.48" y="83.82" length="middle"/>
+<pin name="VSS@W17" x="30.48" y="-45.72" length="middle" rot="R180"/>
+<pin name="VDDCORE@P15" x="-30.48" y="81.28" length="middle"/>
+<pin name="VDDQ_DDR@K17" x="-30.48" y="-5.08" length="middle"/>
+<pin name="VSS@V19" x="30.48" y="-43.18" length="middle" rot="R180"/>
+<pin name="VDDA@R5" x="-30.48" y="-50.8" length="middle"/>
+<pin name="VSSA@R6" x="-30.48" y="-66.04" length="middle"/>
+<pin name="VSS@V18" x="30.48" y="-40.64" length="middle" rot="R180"/>
+<pin name="VDD@N10" x="-30.48" y="60.96" length="middle"/>
+<pin name="VDD@P9" x="-30.48" y="58.42" length="middle"/>
+<pin name="VDDCORE@R14" x="-30.48" y="78.74" length="middle"/>
+<pin name="VDDQ_DDR@L16" x="-30.48" y="-7.62" length="middle"/>
+<pin name="VSS@V16" x="30.48" y="-38.1" length="middle" rot="R180"/>
+<pin name="VSSA@T6" x="-30.48" y="-68.58" length="middle"/>
+<pin name="VSS@V5" x="30.48" y="-35.56" length="middle" rot="R180"/>
+<pin name="VSS@U20" x="30.48" y="-33.02" length="middle" rot="R180"/>
+<pin name="VSS@U17" x="30.48" y="-30.48" length="middle" rot="R180"/>
+<pin name="VDD@U9" x="-30.48" y="55.88" length="middle"/>
+<pin name="VDDCORE@T15" x="-30.48" y="76.2" length="middle"/>
+<pin name="VDDQ_DDR@R16" x="-30.48" y="-17.78" length="middle"/>
+<pin name="VSS@U15" x="30.48" y="-27.94" length="middle" rot="R180"/>
+<pin name="VSSA@U6" x="-30.48" y="-71.12" length="middle"/>
+<pin name="VSS@U13" x="30.48" y="-25.4" length="middle" rot="R180"/>
+<pin name="VDD@P11" x="-30.48" y="53.34" length="middle"/>
+<pin name="VDD@R10" x="-30.48" y="50.8" length="middle"/>
+<pin name="VSS@U7" x="30.48" y="-22.86" length="middle" rot="R180"/>
+<pin name="VDD@R12" x="-30.48" y="48.26" length="middle"/>
+<pin name="VSS@T19" x="30.48" y="-20.32" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR@J16" x="-30.48" y="-2.54" length="middle"/>
+<pin name="VSS@T11" x="30.48" y="-17.78" length="middle" rot="R180"/>
+<pin name="VSS@T9" x="30.48" y="-15.24" length="middle" rot="R180"/>
+<pin name="VSS@T7" x="30.48" y="-12.7" length="middle" rot="R180"/>
+<pin name="VSS@R17" x="30.48" y="-10.16" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR@V17" x="-30.48" y="-25.4" length="middle"/>
+<pin name="VSS@R8" x="30.48" y="-7.62" length="middle" rot="R180"/>
+<pin name="VSS@P20" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="VSS@P14" x="30.48" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR@U16" x="-30.48" y="-22.86" length="middle"/>
+<pin name="VSS@P12" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="VSS@P10" x="30.48" y="2.54" length="middle" rot="R180"/>
+<pin name="VSS@P7" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="VSS@P3" x="30.48" y="7.62" length="middle" rot="R180"/>
+<pin name="VSS_USBHS@AA16" x="30.48" y="-116.84" length="middle" rot="R180"/>
+<pin name="VSS_USBHS@AA13" x="30.48" y="-114.3" length="middle" rot="R180"/>
+<pin name="VSS_USBHS@Y15" x="30.48" y="-111.76" length="middle" rot="R180"/>
+<pin name="VSS@N17" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="VDDQ_DDR@T17" x="-30.48" y="-20.32" length="middle"/>
+<pin name="VSS@N13" x="30.48" y="12.7" length="middle" rot="R180"/>
+<pin name="VSS@N11" x="30.48" y="15.24" length="middle" rot="R180"/>
+<pin name="VSS_USBHS@Y14" x="30.48" y="-109.22" length="middle" rot="R180"/>
+<pin name="VSS_USBHS@Y13" x="30.48" y="-106.68" length="middle" rot="R180"/>
+<pin name="VSS@N9" x="30.48" y="17.78" length="middle" rot="R180"/>
+<pin name="VSS@M14" x="30.48" y="20.32" length="middle" rot="R180"/>
+<pin name="VDDA_1V8_REG@AB12" x="-30.48" y="-86.36" length="middle"/>
+<pin name="VDD_3V3__USBHS@AB13" x="-30.48" y="-114.3" length="middle"/>
+<pin name="VDD_3V3__USBFS@AB16" x="-30.48" y="-111.76" length="middle"/>
+<pin name="VDDA_1V1_REG@AB17" x="-30.48" y="-81.28" length="middle"/>
+<pin name="VSS@M12" x="30.48" y="22.86" length="middle" rot="R180"/>
+<pin name="VSS@M10" x="30.48" y="25.4" length="middle" rot="R180"/>
+<wire x1="-25.4" y1="142.24" x2="25.4" y2="142.24" width="0.254" layer="94"/>
+<wire x1="25.4" y1="142.24" x2="25.4" y2="-142.24" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-142.24" x2="-25.4" y2="-142.24" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-142.24" x2="-25.4" y2="142.24" width="0.254" layer="94"/>
+<text x="-25.4" y="142.748" size="1.778" layer="94">&gt;NAME</text>
+<text x="-25.4" y="-144.78" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32MP157AAA3-CFG">
+<pin name="DSI_D0N@A15" x="-25.4" y="38.1" length="middle"/>
+<pin name="DSI_CKN@A16" x="-25.4" y="22.86" length="middle"/>
+<pin name="DSI_D1N@A17" x="-25.4" y="30.48" length="middle"/>
+<pin name="DSI_D0P@B15" x="-25.4" y="40.64" length="middle"/>
+<pin name="DSI_CKP@B16" x="-25.4" y="25.4" length="middle"/>
+<pin name="DSI_D1P@B17" x="-25.4" y="33.02" length="middle"/>
+<pin name="JTDI@D16" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="JTCK/SWCLK@D17" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="!JTRST@E15" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="JTDO/TRACE/SWO@E16" x="27.94" y="-10.16" length="middle" rot="R180"/>
+<pin name="JTMS/SWDIO@E17" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="BOOT0@N3" x="27.94" y="-38.1" length="middle" rot="R180"/>
+<pin name="BOOT1@N4" x="27.94" y="-40.64" length="middle" rot="R180"/>
+<pin name="@P4" x="27.94" y="-43.18" length="middle" rot="R180"/>
+<pin name="!RST_CORE!@R1" x="-25.4" y="-35.56" length="middle"/>
+<pin name="!RST!@R2" x="-25.4" y="-10.16" length="middle"/>
+<pin name="ANA0@R4" x="-25.4" y="7.62" length="middle"/>
+<pin name="ANA1@T5" x="-25.4" y="5.08" length="middle"/>
+<pin name="PWR_LP@U1" x="-25.4" y="-22.86" length="middle"/>
+<pin name="PDR_ON_CORE@U2" x="-25.4" y="-30.48" length="middle"/>
+<pin name="PWR_ON@V1" x="-25.4" y="-5.08" length="middle"/>
+<pin name="PDR_ON@V2" x="-25.4" y="-27.94" length="middle"/>
+<pin name="OTG_VBUS@V15" x="27.94" y="40.64" length="middle" rot="R180"/>
+<pin name="BYPASS_REG1V8@AA12" x="-25.4" y="-45.72" length="middle"/>
+<pin name="USB_DM2@AA14" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="USB_DP1@AA15" x="27.94" y="33.02" length="middle" rot="R180"/>
+<pin name="USB_RREF@AA17" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="USB_DP2@AB14" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="USB_DM1@AB15" x="27.94" y="30.48" length="middle" rot="R180"/>
+<wire x1="-20.32" y1="45.72" x2="22.86" y2="45.72" width="0.254" layer="94"/>
+<wire x1="22.86" y1="45.72" x2="22.86" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-50.8" x2="-20.32" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-50.8" x2="-20.32" y2="45.72" width="0.254" layer="94"/>
+<text x="-20.32" y="46.228" size="1.778" layer="94">&gt;NAME</text>
+<text x="-20.32" y="-53.34" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32MP157AAA3-DDR">
+<pin name="DDR_DQ20@A20" x="-27.94" y="-20.32" length="middle"/>
+<pin name="DDR_DQ23@A21" x="-27.94" y="-27.94" length="middle"/>
+<pin name="DDR_DQ19@B20" x="-27.94" y="-17.78" length="middle"/>
+<pin name="DDR_DQ16@B21" x="-27.94" y="-10.16" length="middle"/>
+<pin name="DDR_DQS2N@B22" x="-27.94" y="-35.56" length="middle"/>
+<pin name="DDR_DQS2P@C21" x="-27.94" y="-33.02" length="middle"/>
+<pin name="DDR_DQM2@C22" x="-27.94" y="-40.64" length="middle"/>
+<pin name="DDR_DQ22@D20" x="-27.94" y="-25.4" length="middle"/>
+<pin name="DDR_DQ17@D21" x="-27.94" y="-12.7" length="middle"/>
+<pin name="DDR_DQ18@D22" x="-27.94" y="-15.24" length="middle"/>
+<pin name="DDR_DQ3@E20" x="-27.94" y="68.58" length="middle"/>
+<pin name="DDR_DQ0@E21" x="-27.94" y="76.2" length="middle"/>
+<pin name="DDR_DQ2@H21" x="-27.94" y="71.12" length="middle"/>
+<pin name="DDR_A7@F18" x="27.94" y="43.18" length="middle" rot="R180"/>
+<pin name="!DDR_RESET!@F19" x="27.94" y="-33.02" length="middle" rot="R180"/>
+<pin name="DDR_DQ1@F21" x="-27.94" y="73.66" length="middle"/>
+<pin name="DDR_A1@M18" x="27.94" y="58.42" length="middle" rot="R180"/>
+<pin name="DDR_DQ7@G19" x="-27.94" y="58.42" length="middle"/>
+<pin name="DDR_DQM0@G20" x="-27.94" y="45.72" length="middle"/>
+<pin name="DDR_DQS0N@G21" x="-27.94" y="50.8" length="middle"/>
+<pin name="DDR_DQS0P@G22" x="-27.94" y="53.34" length="middle"/>
+<pin name="DDR_A9@H18" x="27.94" y="38.1" length="middle" rot="R180"/>
+<pin name="DDR_A5@H19" x="27.94" y="48.26" length="middle" rot="R180"/>
+<pin name="DDR_DQ5@H20" x="-27.94" y="63.5" length="middle"/>
+<pin name="DDR_DQ21@E22" x="-27.94" y="-22.86" length="middle"/>
+<pin name="DDR_DQ6@H22" x="-27.94" y="60.96" length="middle"/>
+<pin name="DDR_A2@J18" x="27.94" y="55.88" length="middle" rot="R180"/>
+<pin name="DDR_A3@J19" x="27.94" y="53.34" length="middle" rot="R180"/>
+<pin name="DDR_DQ4@J21" x="-27.94" y="66.04" length="middle"/>
+<pin name="DDR_BA2@K18" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="DDR_A0@K19" x="27.94" y="60.96" length="middle" rot="R180"/>
+<pin name="DDR_BA0@K20" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="DDR_DTO1@K21" x="27.94" y="-83.82" length="middle" rot="R180"/>
+<pin name="DDR_ZQ@K22" x="27.94" y="-58.42" length="middle" rot="R180"/>
+<pin name="!DDR_CS!@L18" x="27.94" y="-12.7" length="middle" rot="R180"/>
+<pin name="DDR_ODT@L21" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="DDR_DTO0@L22" x="27.94" y="-81.28" length="middle" rot="R180"/>
+<pin name="DDR_A13@G18" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="DDR_A15@M19" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="!DDR_RAS!@M20" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="!DDR_WE!@M21" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="!DDR_CAS!@M22" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="DDR_A10@N18" x="27.94" y="35.56" length="middle" rot="R180"/>
+<pin name="DDR_A12@N19" x="27.94" y="30.48" length="middle" rot="R180"/>
+<pin name="DDR_CLKP@N20" x="27.94" y="76.2" length="middle" rot="R180"/>
+<pin name="DDR_CLKN@N21" x="27.94" y="73.66" length="middle" rot="R180"/>
+<pin name="DDR_DQ8@N22" x="-27.94" y="33.02" length="middle"/>
+<pin name="DDR_A14@P18" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="DDR_A11@P19" x="27.94" y="33.02" length="middle" rot="R180"/>
+<pin name="DDR_DQ10@P21" x="-27.94" y="27.94" length="middle"/>
+<pin name="DDR_BA1@R18" x="27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="DDR_CKE@R19" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="DDR_DQ13@T23" x="-27.94" y="20.32" length="middle"/>
+<pin name="DDR_DQ9@R21" x="-27.94" y="30.48" length="middle"/>
+<pin name="DDR_DQS1N@R22" x="-27.94" y="7.62" length="middle"/>
+<pin name="DDR_A4@T18" x="27.94" y="50.8" length="middle" rot="R180"/>
+<pin name="DDR_DQ11@T20" x="-27.94" y="25.4" length="middle"/>
+<pin name="DRR_DQM1@T21" x="-27.94" y="2.54" length="middle"/>
+<pin name="DDR_DQS1P@T22" x="-27.94" y="10.16" length="middle"/>
+<pin name="DDR_A8@U18" x="27.94" y="40.64" length="middle" rot="R180"/>
+<pin name="DDR_A6@U19" x="27.94" y="45.72" length="middle" rot="R180"/>
+<pin name="DDR_DQ14@U21" x="-27.94" y="17.78" length="middle"/>
+<pin name="DDR_DQ12@V20" x="-27.94" y="22.86" length="middle"/>
+<pin name="DDR_DQ15@V21" x="-27.94" y="15.24" length="middle"/>
+<pin name="DDR_DQ24@V22" x="-27.94" y="-53.34" length="middle"/>
+<pin name="DDR_DQ25@W20" x="-27.94" y="-55.88" length="middle"/>
+<pin name="DDR_DQ31@W21" x="-27.94" y="-71.12" length="middle"/>
+<pin name="DDR_DQ30@W22" x="-27.94" y="-68.58" length="middle"/>
+<pin name="DDR_DQS3P@Y21" x="-27.94" y="-76.2" length="middle"/>
+<pin name="DDR_DQS3N@Y22" x="-27.94" y="-78.74" length="middle"/>
+<pin name="DDR_ATO@AA19" x="27.94" y="-76.2" length="middle" rot="R180"/>
+<pin name="DDR_DQ29@AA20" x="-27.94" y="-66.04" length="middle"/>
+<pin name="DDR_DQ28@AA21" x="-27.94" y="-63.5" length="middle"/>
+<pin name="DDR_DQM3@AA22" x="-27.94" y="-83.82" length="middle"/>
+<pin name="DDR__VREF@AB19" x="27.94" y="-43.18" length="middle" rot="R180"/>
+<pin name="DDR_DQ27@AB20" x="-27.94" y="-60.96" length="middle"/>
+<pin name="DDR_DQ26@AB21" x="-27.94" y="-58.42" length="middle"/>
+<wire x1="-22.86" y1="81.28" x2="22.86" y2="81.28" width="0.254" layer="94"/>
+<wire x1="22.86" y1="81.28" x2="22.86" y2="-88.9" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-88.9" x2="-22.86" y2="-88.9" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-88.9" x2="-22.86" y2="81.28" width="0.254" layer="94"/>
+<text x="-22.86" y="81.788" size="1.778" layer="94">&gt;NAME</text>
+<text x="-22.86" y="-91.44" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32MP157AAA3-PORTABC">
+<pin name="PA9@A11" x="-25.4" y="40.64" length="middle"/>
+<pin name="PB3@A12" x="-25.4" y="10.16" length="middle"/>
+<pin name="PB14@A13" x="-25.4" y="-17.78" length="middle"/>
+<pin name="PB15@B12" x="-25.4" y="-20.32" length="middle"/>
+<pin name="PA8@B13" x="-25.4" y="43.18" length="middle"/>
+<pin name="PB4@C13" x="-25.4" y="7.62" length="middle"/>
+<pin name="PC7@D13" x="-25.4" y="-45.72" length="middle"/>
+<pin name="PC9@D14" x="-25.4" y="-50.8" length="middle"/>
+<pin name="PC11@D15" x="-25.4" y="-55.88" length="middle"/>
+<pin name="PA15@E11" x="-25.4" y="25.4" length="middle"/>
+<pin name="PC12@E12" x="-25.4" y="-58.42" length="middle"/>
+<pin name="PC6@E13" x="-25.4" y="-43.18" length="middle"/>
+<pin name="PC8@E14" x="-25.4" y="-48.26" length="middle"/>
+<pin name="PB7@F11" x="-25.4" y="0" length="middle"/>
+<pin name="PB9@F12" x="-25.4" y="-5.08" length="middle"/>
+<pin name="PC10@F14" x="-25.4" y="-53.34" length="middle"/>
+<pin name="PC13@N2" x="-25.4" y="-60.96" length="middle"/>
+<pin name="PC14-_OSC32__IN@P1" x="-25.4" y="-63.5" length="middle"/>
+<pin name="PC15-_OSC32__OUT@P2" x="-25.4" y="-66.04" length="middle"/>
+<pin name="PA14@R3" x="-25.4" y="27.94" length="middle"/>
+<pin name="PA3@T4" x="-25.4" y="55.88" length="middle"/>
+<pin name="PC3@U3" x="-25.4" y="-35.56" length="middle"/>
+<pin name="PA5@U5" x="-25.4" y="50.8" length="middle"/>
+<pin name="PC0@AB5" x="-25.4" y="-27.94" length="middle"/>
+<pin name="PA1@V4" x="-25.4" y="60.96" length="middle"/>
+<pin name="PA4@V6" x="-25.4" y="53.34" length="middle"/>
+<pin name="PB10@V9" x="-25.4" y="-7.62" length="middle"/>
+<pin name="PB13@V10" x="-25.4" y="-15.24" length="middle"/>
+<pin name="PB2@V13" x="-25.4" y="12.7" length="middle"/>
+<pin name="PA13@W3" x="-25.4" y="30.48" length="middle"/>
+<pin name="PA6@W9" x="-25.4" y="48.26" length="middle"/>
+<pin name="PB6@W13" x="-25.4" y="2.54" length="middle"/>
+<pin name="PA12@W16" x="-25.4" y="33.02" length="middle"/>
+<pin name="PC2@Y1" x="-25.4" y="-33.02" length="middle"/>
+<pin name="PB11@Y5" x="-25.4" y="-10.16" length="middle"/>
+<pin name="PA7@Y9" x="-25.4" y="45.72" length="middle"/>
+<pin name="PA11@Y16" x="-25.4" y="35.56" length="middle"/>
+<pin name="PA10@Y17" x="-25.4" y="38.1" length="middle"/>
+<pin name="PA0@AA3" x="-25.4" y="63.5" length="middle"/>
+<pin name="PB1@Y5" x="-25.4" y="15.24" length="middle"/>
+<pin name="PC5@AA6" x="-25.4" y="-40.64" length="middle"/>
+<pin name="PB12@AA7" x="-25.4" y="-12.7" length="middle"/>
+<pin name="PB5@AA8" x="-25.4" y="5.08" length="middle"/>
+<pin name="PA2@AB2" x="-25.4" y="58.42" length="middle"/>
+<pin name="PC1@AB3" x="-25.4" y="-30.48" length="middle"/>
+<pin name="PB0@AB5" x="-25.4" y="17.78" length="middle"/>
+<pin name="PC4@AB6" x="-25.4" y="-38.1" length="middle"/>
+<pin name="PB8@AB8" x="-25.4" y="-2.54" length="middle"/>
+<wire x1="-20.32" y1="68.58" x2="15.24" y2="68.58" width="0.254" layer="94"/>
+<wire x1="15.24" y1="68.58" x2="15.24" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-71.12" x2="-20.32" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-71.12" x2="-20.32" y2="68.58" width="0.254" layer="94"/>
+<text x="-20.32" y="69.088" size="1.778" layer="94">&gt;NAME</text>
+<text x="-20.32" y="-73.66" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-7.62" y="50.546" size="1.016" layer="94">not 5v-tolerant</text>
+<text x="-7.62" y="53.086" size="1.016" layer="94">not 5v-tolerant</text>
+</symbol>
+<symbol name="STM32MP157AAA3-PORTDEF">
+<pin name="PE13@A4" x="-20.32" y="-17.78" length="middle"/>
+<pin name="PD10@A8" x="-20.32" y="35.56" length="middle"/>
+<pin name="PD5@A9" x="-20.32" y="48.26" length="middle"/>
+<pin name="PE3@A10" x="-20.32" y="7.62" length="middle"/>
+<pin name="PE14@B4" x="-20.32" y="-20.32" length="middle"/>
+<pin name="PF1@B9" x="-20.32" y="-33.02" length="middle"/>
+<pin name="PD1@B10" x="-20.32" y="58.42" length="middle"/>
+<pin name="PD3@B11" x="-20.32" y="53.34" length="middle"/>
+<pin name="PE15@C4" x="-20.32" y="-22.86" length="middle"/>
+<pin name="PE0@C5" x="-20.32" y="15.24" length="middle"/>
+<pin name="PD4@C9" x="-20.32" y="50.8" length="middle"/>
+<pin name="PD0@C10" x="-20.32" y="60.96" length="middle"/>
+<pin name="PE5@C12" x="-20.32" y="2.54" length="middle"/>
+<pin name="PE11@D5" x="-20.32" y="-12.7" length="middle"/>
+<pin name="PE1@D7" x="-20.32" y="12.7" length="middle"/>
+<pin name="PF5@D9" x="-20.32" y="-43.18" length="middle"/>
+<pin name="PD2@D12" x="-20.32" y="55.88" length="middle"/>
+<pin name="PE12@E4" x="-20.32" y="-15.24" length="middle"/>
+<pin name="PE6@E9" x="-20.32" y="0" length="middle"/>
+<pin name="PF0@E10" x="-20.32" y="-30.48" length="middle"/>
+<pin name="PF4@F9" x="-20.32" y="-40.64" length="middle"/>
+<pin name="PD7@F10" x="-20.32" y="43.18" length="middle"/>
+<pin name="PF2@F13" x="-20.32" y="-35.56" length="middle"/>
+<pin name="PE4@F15" x="-20.32" y="5.08" length="middle"/>
+<pin name="PD15@L1" x="-20.32" y="22.86" length="middle"/>
+<pin name="PD6@L3" x="-20.32" y="45.72" length="middle"/>
+<pin name="PD8@M1" x="-20.32" y="40.64" length="middle"/>
+<pin name="PD9@M2" x="-20.32" y="38.1" length="middle"/>
+<pin name="PD14@M3" x="-20.32" y="25.4" length="middle"/>
+<pin name="PF3@V3" x="-20.32" y="-38.1" length="middle"/>
+<pin name="PF14@V7" x="-20.32" y="-66.04" length="middle"/>
+<pin name="PF12@V8" x="-20.32" y="-60.96" length="middle"/>
+<pin name="PF10@V12" x="-20.32" y="-55.88" length="middle"/>
+<pin name="PD13@V14" x="-20.32" y="27.94" length="middle"/>
+<pin name="PF15@W6" x="-20.32" y="-68.58" length="middle"/>
+<pin name="PF13@W7" x="-20.32" y="-63.5" length="middle"/>
+<pin name="PF11@W8" x="-20.32" y="-58.42" length="middle"/>
+<pin name="PE7@W10" x="-20.32" y="-2.54" length="middle"/>
+<pin name="PE9@W11" x="-20.32" y="-7.62" length="middle"/>
+<pin name="PD12@W12" x="-20.32" y="30.48" length="middle"/>
+<pin name="PE10@W14" x="-20.32" y="-10.16" length="middle"/>
+<pin name="PE2@Y2" x="-20.32" y="10.16" length="middle"/>
+<pin name="PE8@Y12" x="-20.32" y="-5.08" length="middle"/>
+<pin name="PF7@AA10" x="-20.32" y="-48.26" length="middle"/>
+<pin name="PF6@AA11" x="-20.32" y="-45.72" length="middle"/>
+<pin name="PD11@AB9" x="-20.32" y="33.02" length="middle"/>
+<pin name="PF8@AB10" x="-20.32" y="-50.8" length="middle"/>
+<pin name="PF9@AB11" x="-20.32" y="-53.34" length="middle"/>
+<wire x1="-15.24" y1="66.04" x2="15.24" y2="66.04" width="0.254" layer="94"/>
+<wire x1="15.24" y1="66.04" x2="15.24" y2="-73.66" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-73.66" x2="-15.24" y2="-73.66" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-73.66" x2="-15.24" y2="66.04" width="0.254" layer="94"/>
+<text x="-15.24" y="66.548" size="1.778" layer="94">&gt;NAME</text>
+<text x="-15.24" y="-76.2" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32MP157AAA3-PORTGHI">
+<pin name="PH5@A2" x="-22.86" y="5.08" length="middle"/>
+<pin name="PH4@A3" x="-22.86" y="7.62" length="middle"/>
+<pin name="PH10@B1" x="-22.86" y="-7.62" length="middle"/>
+<pin name="PH11@B3" x="-22.86" y="-10.16" length="middle"/>
+<pin name="PH15@C1" x="-22.86" y="-20.32" length="middle"/>
+<pin name="PH14@C2" x="-22.86" y="-17.78" length="middle"/>
+<pin name="PI0@D1" x="-22.86" y="-27.94" length="middle"/>
+<pin name="PI14@D2" x="-22.86" y="-63.5" length="middle"/>
+<pin name="PH13@D3" x="-22.86" y="-15.24" length="middle"/>
+<pin name="PH8@D6" x="-22.86" y="-2.54" length="middle"/>
+<pin name="PG15@D10" x="-22.86" y="25.4" length="middle"/>
+<pin name="PG6@D11" x="-22.86" y="48.26" length="middle"/>
+<pin name="PI2@E1" x="-22.86" y="-33.02" length="middle"/>
+<pin name="PI1@E2" x="-22.86" y="-30.48" length="middle"/>
+<pin name="PI3@E3" x="-22.86" y="-35.56" length="middle"/>
+<pin name="PH9@E6" x="-22.86" y="-5.08" length="middle"/>
+<pin name="PI7@F1" x="-22.86" y="-45.72" length="middle"/>
+<pin name="PI5@F2" x="-22.86" y="-40.64" length="middle"/>
+<pin name="PI15@F3" x="-22.86" y="-66.04" length="middle"/>
+<pin name="PH12@F5" x="-22.86" y="-12.7" length="middle"/>
+<pin name="PI6@G5" x="-22.86" y="-43.18" length="middle"/>
+<pin name="PI13@H1" x="-22.86" y="-60.96" length="middle"/>
+<pin name="PI12@H2" x="-22.86" y="-58.42" length="middle"/>
+<pin name="PG12@J4" x="-22.86" y="33.02" length="middle"/>
+<pin name="PI9@J5" x="-22.86" y="-50.8" length="middle"/>
+<pin name="PI4@J6" x="-22.86" y="-38.1" length="middle"/>
+<pin name="PI8@N1" x="-22.86" y="-48.26" length="middle"/>
+<pin name="PH0-_OSC_IN@T1" x="-22.86" y="17.78" length="middle"/>
+<pin name="PH1-_OSC__OUT@T2" x="-22.86" y="15.24" length="middle"/>
+<pin name="PI11@T3" x="-22.86" y="-55.88" length="middle"/>
+<pin name="PG3@U4" x="-22.86" y="55.88" length="middle"/>
+<pin name="PG5@U8" x="-22.86" y="50.8" length="middle"/>
+<pin name="PG11@U11" x="-22.86" y="35.56" length="middle"/>
+<pin name="PH6@V11" x="-22.86" y="2.54" length="middle"/>
+<pin name="PI10@W1" x="-22.86" y="-53.34" length="middle"/>
+<pin name="PH7@W2" x="-22.86" y="0" length="middle"/>
+<pin name="PG2@W4" x="-22.86" y="58.42" length="middle"/>
+<pin name="PG0@W5" x="-22.86" y="63.5" length="middle"/>
+<pin name="PG9@W15" x="-22.86" y="40.64" length="middle"/>
+<pin name="PG1@Y4" x="-22.86" y="60.96" length="middle"/>
+<pin name="PH3@Y6" x="-22.86" y="10.16" length="middle"/>
+<pin name="PG8@Y8" x="-22.86" y="43.18" length="middle"/>
+<pin name="PG7@Y11" x="-22.86" y="45.72" length="middle"/>
+<pin name="PG13@AA1" x="-22.86" y="30.48" length="middle"/>
+<pin name="PG14@AA2" x="-22.86" y="27.94" length="middle"/>
+<pin name="PG10@AA9" x="-22.86" y="38.1" length="middle"/>
+<pin name="PG4@AB4" x="-22.86" y="53.34" length="middle"/>
+<pin name="PH2@AB7" x="-22.86" y="12.7" length="middle"/>
+<wire x1="-17.78" y1="68.58" x2="15.24" y2="68.58" width="0.254" layer="94"/>
+<wire x1="15.24" y1="68.58" x2="15.24" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-71.12" x2="-17.78" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-71.12" x2="-17.78" y2="68.58" width="0.254" layer="94"/>
+<text x="-17.78" y="69.088" size="1.778" layer="94">&gt;NAME</text>
+<text x="-17.78" y="-73.66" size="1.778" layer="94">&gt;VALUE</text>
+</symbol>
+<symbol name="STM32MP157AAA3-PORTJKL">
+<pin name="PK6@A5" x="-17.78" y="-17.78" length="middle"/>
+<pin name="PK4@A6" x="-17.78" y="-12.7" length="middle"/>
+<pin name="PJ13@A7" x="-17.78" y="10.16" length="middle"/>
+<pin name="PK7@B5" x="-17.78" y="-20.32" length="middle"/>
+<pin name="PK3@B6" x="-17.78" y="-10.16" length="middle"/>
+<pin name="PJ14@B7" x="-17.78" y="7.62" length="middle"/>
+<pin name="PJ12@B8" x="-17.78" y="12.7" length="middle"/>
+<pin name="PK5@C6" x="-17.78" y="-15.24" length="middle"/>
+<pin name="PJ15@C7" x="-17.78" y="5.08" length="middle"/>
+<pin name="PK0@D8" x="-17.78" y="-2.54" length="middle"/>
+<pin name="PK1@E7" x="-17.78" y="-5.08" length="middle"/>
+<pin name="PK2@E8" x="-17.78" y="-7.62" length="middle"/>
+<pin name="PZ3@F4" x="-17.78" y="-35.56" length="middle"/>
+<pin name="PZ4@G1" x="-17.78" y="-38.1" length="middle"/>
+<pin name="PZ0@G2" x="-17.78" y="-27.94" length="middle"/>
+<pin name="PZ6@G3" x="-17.78" y="-43.18" length="middle"/>
+<pin name="PZ7@H3" x="-17.78" y="-45.72" length="middle"/>
+<pin name="PZ5@H4" x="-17.78" y="-40.64" length="middle"/>
+<pin name="PZ1@H5" x="-17.78" y="-30.48" length="middle"/>
+<pin name="PJ8@H6" x="-17.78" y="22.86" length="middle"/>
+<pin name="PJ3@J1" x="-17.78" y="35.56" length="middle"/>
+<pin name="PJ0@J2" x="-17.78" y="43.18" length="middle"/>
+<pin name="PJ10@J3" x="-17.78" y="17.78" length="middle"/>
+<pin name="PJ5@K1" x="-17.78" y="30.48" length="middle"/>
+<pin name="PJ4@K2" x="-17.78" y="33.02" length="middle"/>
+<pin name="PJ2@K4" x="-17.78" y="38.1" length="middle"/>
+<pin name="PZ2@K5" x="-17.78" y="-33.02" length="middle"/>
+<pin name="PJ11@K6" x="-17.78" y="15.24" length="middle"/>
+<pin name="PJ9@L2" x="-17.78" y="20.32" length="middle"/>
+<pin name="PJ7@L4" x="-17.78" y="25.4" length="middle"/>
+<pin name="PJ6@L5" x="-17.78" y="27.94" length="middle"/>
+<pin name="PJ1@L6" x="-17.78" y="40.64" length="middle"/>
+<wire x1="-12.7" y1="48.26" x2="15.24" y2="48.26" width="0.254" layer="94"/>
+<wire x1="15.24" y1="48.26" x2="15.24" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-50.8" x2="-12.7" y2="-50.8" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-50.8" x2="-12.7" y2="48.26" width="0.254" layer="94"/>
+<text x="-12.7" y="49.022" size="1.778" layer="94">&gt;NAME</text>
+<text x="-12.7" y="-53.34" size="1.778" layer="94">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2287,7 +2803,7 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32mp157a.pdf"&gt
 <device name="" package="BGA448C80P22X22_1800X1800X127">
 <connects>
 <connect gate="G$1" pin="!DDR_CAS!" pad="M22"/>
-<connect gate="G$1" pin="!DDR_CLK!" pad="N21"/>
+<connect gate="G$1" pin="!DDR_CS!" pad="L18"/>
 <connect gate="G$1" pin="!DDR_RAS!" pad="M20"/>
 <connect gate="G$1" pin="!DDR_RESET!" pad="F19"/>
 <connect gate="G$1" pin="!DDR_WE!" pad="M21"/>
@@ -2321,8 +2837,8 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32mp157a.pdf"&gt
 <connect gate="G$1" pin="DDR_BA1" pad="R18"/>
 <connect gate="G$1" pin="DDR_BA2" pad="K18"/>
 <connect gate="G$1" pin="DDR_CKE" pad="R19"/>
-<connect gate="G$1" pin="DDR_CLK" pad="N20"/>
-<connect gate="G$1" pin="DDR_CSN" pad="L18"/>
+<connect gate="G$1" pin="DDR_CLKN" pad="N21"/>
+<connect gate="G$1" pin="DDR_CLKP" pad="N20"/>
 <connect gate="G$1" pin="DDR_DQ0" pad="E21"/>
 <connect gate="G$1" pin="DDR_DQ1" pad="F21"/>
 <connect gate="G$1" pin="DDR_DQ10" pad="P21"/>
@@ -2380,7 +2896,7 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32mp157a.pdf"&gt
 <connect gate="G$1" pin="DSI_D1P" pad="B17"/>
 <connect gate="G$1" pin="JTCK/SWCLK" pad="D17"/>
 <connect gate="G$1" pin="JTDI" pad="D16"/>
-<connect gate="G$1" pin="JTDOTRACE/SWO" pad="E16"/>
+<connect gate="G$1" pin="JTDO/TRACE/SWO" pad="E16"/>
 <connect gate="G$1" pin="JTMS/SWDIO" pad="E17"/>
 <connect gate="G$1" pin="OTG_VBUS" pad="V15"/>
 <connect gate="G$1" pin="PA0" pad="AA3"/>
@@ -2601,21 +3117,21 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32mp157a.pdf"&gt
 <connect gate="G$1" pin="VDDCORE_8" pad="J14"/>
 <connect gate="G$1" pin="VDDCORE_9" pad="K9"/>
 <connect gate="G$1" pin="VDDQ_DDR_1" pad="F17"/>
+<connect gate="G$1" pin="VDDQ_DDR_10" pad="W18"/>
+<connect gate="G$1" pin="VDDQ_DDR_11" pad="Y19"/>
+<connect gate="G$1" pin="VDDQ_DDR_12" pad="E18"/>
+<connect gate="G$1" pin="VDDQ_DDR_13" pad="G16"/>
+<connect gate="G$1" pin="VDDQ_DDR_14" pad="N16"/>
+<connect gate="G$1" pin="VDDQ_DDR_15" pad="H17"/>
+<connect gate="G$1" pin="VDDQ_DDR_16" pad="J16"/>
 <connect gate="G$1" pin="VDDQ_DDR_2" pad="K17"/>
 <connect gate="G$1" pin="VDDQ_DDR_3" pad="L16"/>
 <connect gate="G$1" pin="VDDQ_DDR_4" pad="M17"/>
 <connect gate="G$1" pin="VDDQ_DDR_5" pad="U16"/>
-<connect gate="G$1" pin="VDDQ__DDR_1" pad="E18"/>
-<connect gate="G$1" pin="VDDQ__DDR_10" pad="W18"/>
-<connect gate="G$1" pin="VDDQ__DDR_11" pad="Y19"/>
-<connect gate="G$1" pin="VDDQ__DDR_2" pad="G16"/>
-<connect gate="G$1" pin="VDDQ__DDR_3" pad="H17"/>
-<connect gate="G$1" pin="VDDQ__DDR_4" pad="J16"/>
-<connect gate="G$1" pin="VDDQ__DDR_5" pad="N16"/>
-<connect gate="G$1" pin="VDDQ__DDR_6" pad="P17"/>
-<connect gate="G$1" pin="VDDQ__DDR_7" pad="R16"/>
-<connect gate="G$1" pin="VDDQ__DDR_8" pad="T17"/>
-<connect gate="G$1" pin="VDDQ__DDR_9" pad="V17"/>
+<connect gate="G$1" pin="VDDQ_DDR_6" pad="P17"/>
+<connect gate="G$1" pin="VDDQ_DDR_7" pad="R16"/>
+<connect gate="G$1" pin="VDDQ_DDR_8" pad="T17"/>
+<connect gate="G$1" pin="VDDQ_DDR_9" pad="V17"/>
 <connect gate="G$1" pin="VDD_1" pad="M9"/>
 <connect gate="G$1" pin="VDD_10" pad="U12"/>
 <connect gate="G$1" pin="VDD_11" pad="U14"/>
@@ -2732,8 +3248,8 @@ Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32mp157a.pdf"&gt
 <connect gate="G$1" pin="VSS_USBHS_1" pad="Y13"/>
 <connect gate="G$1" pin="VSS_USBHS_2" pad="Y14"/>
 <connect gate="G$1" pin="VSS_USBHS_3" pad="Y15"/>
-<connect gate="G$1" pin="VSS__USBHS_1" pad="AA13"/>
-<connect gate="G$1" pin="VSS__USBHS_2" pad="AA16"/>
+<connect gate="G$1" pin="VSS_USBHS_4" pad="AA13"/>
+<connect gate="G$1" pin="VSS_USBHS_5" pad="AA16"/>
 </connects>
 <technologies>
 <technology name="">
