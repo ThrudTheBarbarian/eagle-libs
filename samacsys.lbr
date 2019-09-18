@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -2037,7 +2037,7 @@
 <pin name="DDR_DQ10@P21" x="-27.94" y="27.94" length="middle"/>
 <pin name="DDR_BA1@R18" x="27.94" y="10.16" length="middle" rot="R180"/>
 <pin name="DDR_CKE@R19" x="27.94" y="-17.78" length="middle" rot="R180"/>
-<pin name="DDR_DQ13@T23" x="-27.94" y="20.32" length="middle"/>
+<pin name="DDR_DQ13@R20" x="-27.94" y="20.32" length="middle"/>
 <pin name="DDR_DQ9@R21" x="-27.94" y="30.48" length="middle"/>
 <pin name="DDR_DQS1N@R22" x="-27.94" y="7.62" length="middle"/>
 <pin name="DDR_A4@T18" x="27.94" y="50.8" length="middle" rot="R180"/>
@@ -2093,7 +2093,7 @@
 <pin name="PA3@T4" x="-25.4" y="55.88" length="middle"/>
 <pin name="PC3@U3" x="-25.4" y="-35.56" length="middle"/>
 <pin name="PA5@U5" x="-25.4" y="50.8" length="middle"/>
-<pin name="PC0@AB5" x="-25.4" y="-27.94" length="middle"/>
+<pin name="PC0@U10" x="-25.4" y="-27.94" length="middle"/>
 <pin name="PA1@V4" x="-25.4" y="60.96" length="middle"/>
 <pin name="PA4@V6" x="-25.4" y="53.34" length="middle"/>
 <pin name="PB10@V9" x="-25.4" y="-7.62" length="middle"/>
@@ -2109,7 +2109,7 @@
 <pin name="PA11@Y16" x="-25.4" y="35.56" length="middle"/>
 <pin name="PA10@Y17" x="-25.4" y="38.1" length="middle"/>
 <pin name="PA0@AA3" x="-25.4" y="63.5" length="middle"/>
-<pin name="PB1@Y5" x="-25.4" y="15.24" length="middle"/>
+<pin name="PB1@AA5" x="-25.4" y="15.24" length="middle"/>
 <pin name="PC5@AA6" x="-25.4" y="-40.64" length="middle"/>
 <pin name="PB12@AA7" x="-25.4" y="-12.7" length="middle"/>
 <pin name="PB5@AA8" x="-25.4" y="5.08" length="middle"/>
@@ -2118,9 +2118,9 @@
 <pin name="PB0@AB5" x="-25.4" y="17.78" length="middle"/>
 <pin name="PC4@AB6" x="-25.4" y="-38.1" length="middle"/>
 <pin name="PB8@AB8" x="-25.4" y="-2.54" length="middle"/>
-<wire x1="-20.32" y1="68.58" x2="15.24" y2="68.58" width="0.254" layer="94"/>
-<wire x1="15.24" y1="68.58" x2="15.24" y2="-71.12" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-71.12" x2="-20.32" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="68.58" x2="7.62" y2="68.58" width="0.254" layer="94"/>
+<wire x1="7.62" y1="68.58" x2="7.62" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-71.12" x2="-20.32" y2="-71.12" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-71.12" x2="-20.32" y2="68.58" width="0.254" layer="94"/>
 <text x="-20.32" y="69.088" size="1.778" layer="94">&gt;NAME</text>
 <text x="-20.32" y="-73.66" size="1.778" layer="94">&gt;VALUE</text>
@@ -2176,9 +2176,9 @@
 <pin name="PD11@AB9" x="-20.32" y="33.02" length="middle"/>
 <pin name="PF8@AB10" x="-20.32" y="-50.8" length="middle"/>
 <pin name="PF9@AB11" x="-20.32" y="-53.34" length="middle"/>
-<wire x1="-15.24" y1="66.04" x2="15.24" y2="66.04" width="0.254" layer="94"/>
-<wire x1="15.24" y1="66.04" x2="15.24" y2="-73.66" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-73.66" x2="-15.24" y2="-73.66" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="66.04" x2="12.7" y2="66.04" width="0.254" layer="94"/>
+<wire x1="12.7" y1="66.04" x2="12.7" y2="-73.66" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-73.66" x2="-15.24" y2="-73.66" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-73.66" x2="-15.24" y2="66.04" width="0.254" layer="94"/>
 <text x="-15.24" y="66.548" size="1.778" layer="94">&gt;NAME</text>
 <text x="-15.24" y="-76.2" size="1.778" layer="94">&gt;VALUE</text>
@@ -2232,9 +2232,9 @@
 <pin name="PG10@AA9" x="-22.86" y="38.1" length="middle"/>
 <pin name="PG4@AB4" x="-22.86" y="53.34" length="middle"/>
 <pin name="PH2@AB7" x="-22.86" y="12.7" length="middle"/>
-<wire x1="-17.78" y1="68.58" x2="15.24" y2="68.58" width="0.254" layer="94"/>
-<wire x1="15.24" y1="68.58" x2="15.24" y2="-71.12" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-71.12" x2="-17.78" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="68.58" x2="10.16" y2="68.58" width="0.254" layer="94"/>
+<wire x1="10.16" y1="68.58" x2="10.16" y2="-71.12" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-71.12" x2="-17.78" y2="-71.12" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-71.12" x2="-17.78" y2="68.58" width="0.254" layer="94"/>
 <text x="-17.78" y="69.088" size="1.778" layer="94">&gt;NAME</text>
 <text x="-17.78" y="-73.66" size="1.778" layer="94">&gt;VALUE</text>
@@ -2794,6 +2794,485 @@ Source: &lt;a href="https://www.maxlinear.com/ds/XRA1405_100_092011.pdf"&gt; Dat
 </devices>
 </deviceset>
 <deviceset name="STM32MP157AAA3" prefix="IC">
+<description>&lt;b&gt;STMICROELECTRONICS - STM32MP157AAA3 - MPU, 32BIT, CORTEX-A7/CORTEX-M4 , LFBGA&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32mp157a.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="STM32MP157AAA3-CFG" x="-154.94" y="25.4"/>
+<gate name="G$2" symbol="STM32MP157AAA3-DDR" x="-83.82" y="-10.16"/>
+<gate name="G$3" symbol="STM32MP157AAA3-PORTABC" x="-7.62" y="2.54"/>
+<gate name="G$4" symbol="STM32MP157AAA3-PORTDEF" x="-12.7" y="-144.78"/>
+<gate name="G$5" symbol="STM32MP157AAA3-PORTGHI" x="38.1" y="-147.32"/>
+<gate name="G$6" symbol="STM32MP157AAA3-PORTJKL" x="33.02" y="22.86"/>
+<gate name="G$7" symbol="STM32MP157AAA3-POWER" x="99.06" y="-71.12"/>
+</gates>
+<devices>
+<device name="" package="BGA448C80P22X22_1800X1800X127">
+<connects>
+<connect gate="G$1" pin="!JTRST@E15" pad="E15"/>
+<connect gate="G$1" pin="!RST!@R2" pad="R2"/>
+<connect gate="G$1" pin="!RST_CORE!@R1" pad="R1"/>
+<connect gate="G$1" pin="@P4" pad="P4"/>
+<connect gate="G$1" pin="ANA0@R4" pad="R4"/>
+<connect gate="G$1" pin="ANA1@T5" pad="T5"/>
+<connect gate="G$1" pin="BOOT0@N3" pad="N3"/>
+<connect gate="G$1" pin="BOOT1@N4" pad="N4"/>
+<connect gate="G$1" pin="BYPASS_REG1V8@AA12" pad="AA12"/>
+<connect gate="G$1" pin="DSI_CKN@A16" pad="A16"/>
+<connect gate="G$1" pin="DSI_CKP@B16" pad="B16"/>
+<connect gate="G$1" pin="DSI_D0N@A15" pad="A15"/>
+<connect gate="G$1" pin="DSI_D0P@B15" pad="B15"/>
+<connect gate="G$1" pin="DSI_D1N@A17" pad="A17"/>
+<connect gate="G$1" pin="DSI_D1P@B17" pad="B17"/>
+<connect gate="G$1" pin="JTCK/SWCLK@D17" pad="D17"/>
+<connect gate="G$1" pin="JTDI@D16" pad="D16"/>
+<connect gate="G$1" pin="JTDO/TRACE/SWO@E16" pad="E16"/>
+<connect gate="G$1" pin="JTMS/SWDIO@E17" pad="E17"/>
+<connect gate="G$1" pin="OTG_VBUS@V15" pad="V15"/>
+<connect gate="G$1" pin="PDR_ON@V2" pad="V2"/>
+<connect gate="G$1" pin="PDR_ON_CORE@U2" pad="U2"/>
+<connect gate="G$1" pin="PWR_LP@U1" pad="U1"/>
+<connect gate="G$1" pin="PWR_ON@V1" pad="V1"/>
+<connect gate="G$1" pin="USB_DM1@AB15" pad="AB15"/>
+<connect gate="G$1" pin="USB_DM2@AA14" pad="AA14"/>
+<connect gate="G$1" pin="USB_DP1@AA15" pad="AA15"/>
+<connect gate="G$1" pin="USB_DP2@AB14" pad="AB14"/>
+<connect gate="G$1" pin="USB_RREF@AA17" pad="AA17"/>
+<connect gate="G$2" pin="!DDR_CAS!@M22" pad="M22"/>
+<connect gate="G$2" pin="!DDR_CS!@L18" pad="L18"/>
+<connect gate="G$2" pin="!DDR_RAS!@M20" pad="M20"/>
+<connect gate="G$2" pin="!DDR_RESET!@F19" pad="F19"/>
+<connect gate="G$2" pin="!DDR_WE!@M21" pad="M21"/>
+<connect gate="G$2" pin="DDR_A0@K19" pad="K19"/>
+<connect gate="G$2" pin="DDR_A10@N18" pad="N18"/>
+<connect gate="G$2" pin="DDR_A11@P19" pad="P19"/>
+<connect gate="G$2" pin="DDR_A12@N19" pad="N19"/>
+<connect gate="G$2" pin="DDR_A13@G18" pad="G18"/>
+<connect gate="G$2" pin="DDR_A14@P18" pad="P18"/>
+<connect gate="G$2" pin="DDR_A15@M19" pad="M19"/>
+<connect gate="G$2" pin="DDR_A1@M18" pad="M18"/>
+<connect gate="G$2" pin="DDR_A2@J18" pad="J18"/>
+<connect gate="G$2" pin="DDR_A3@J19" pad="J19"/>
+<connect gate="G$2" pin="DDR_A4@T18" pad="T18"/>
+<connect gate="G$2" pin="DDR_A5@H19" pad="H19"/>
+<connect gate="G$2" pin="DDR_A6@U19" pad="U19"/>
+<connect gate="G$2" pin="DDR_A7@F18" pad="F18"/>
+<connect gate="G$2" pin="DDR_A8@U18" pad="U18"/>
+<connect gate="G$2" pin="DDR_A9@H18" pad="H18"/>
+<connect gate="G$2" pin="DDR_ATO@AA19" pad="AA19"/>
+<connect gate="G$2" pin="DDR_BA0@K20" pad="K20"/>
+<connect gate="G$2" pin="DDR_BA1@R18" pad="R18"/>
+<connect gate="G$2" pin="DDR_BA2@K18" pad="K18"/>
+<connect gate="G$2" pin="DDR_CKE@R19" pad="R19"/>
+<connect gate="G$2" pin="DDR_CLKN@N21" pad="N21"/>
+<connect gate="G$2" pin="DDR_CLKP@N20" pad="N20"/>
+<connect gate="G$2" pin="DDR_DQ0@E21" pad="E21"/>
+<connect gate="G$2" pin="DDR_DQ10@P21" pad="P21"/>
+<connect gate="G$2" pin="DDR_DQ11@T20" pad="T20"/>
+<connect gate="G$2" pin="DDR_DQ12@V20" pad="V20"/>
+<connect gate="G$2" pin="DDR_DQ13@R20" pad="R20"/>
+<connect gate="G$2" pin="DDR_DQ14@U21" pad="U21"/>
+<connect gate="G$2" pin="DDR_DQ15@V21" pad="V21"/>
+<connect gate="G$2" pin="DDR_DQ16@B21" pad="B21"/>
+<connect gate="G$2" pin="DDR_DQ17@D21" pad="D21"/>
+<connect gate="G$2" pin="DDR_DQ18@D22" pad="D22"/>
+<connect gate="G$2" pin="DDR_DQ19@B20" pad="B20"/>
+<connect gate="G$2" pin="DDR_DQ1@F21" pad="F21"/>
+<connect gate="G$2" pin="DDR_DQ20@A20" pad="A20"/>
+<connect gate="G$2" pin="DDR_DQ21@E22" pad="E22"/>
+<connect gate="G$2" pin="DDR_DQ22@D20" pad="D20"/>
+<connect gate="G$2" pin="DDR_DQ23@A21" pad="A21"/>
+<connect gate="G$2" pin="DDR_DQ24@V22" pad="V22"/>
+<connect gate="G$2" pin="DDR_DQ25@W20" pad="W20"/>
+<connect gate="G$2" pin="DDR_DQ26@AB21" pad="AB21"/>
+<connect gate="G$2" pin="DDR_DQ27@AB20" pad="AB20"/>
+<connect gate="G$2" pin="DDR_DQ28@AA21" pad="AA21"/>
+<connect gate="G$2" pin="DDR_DQ29@AA20" pad="AA20"/>
+<connect gate="G$2" pin="DDR_DQ2@H21" pad="H21"/>
+<connect gate="G$2" pin="DDR_DQ30@W22" pad="W22"/>
+<connect gate="G$2" pin="DDR_DQ31@W21" pad="W21"/>
+<connect gate="G$2" pin="DDR_DQ3@E20" pad="E20"/>
+<connect gate="G$2" pin="DDR_DQ4@J21" pad="J21"/>
+<connect gate="G$2" pin="DDR_DQ5@H20" pad="H20"/>
+<connect gate="G$2" pin="DDR_DQ6@H22" pad="H22"/>
+<connect gate="G$2" pin="DDR_DQ7@G19" pad="G19"/>
+<connect gate="G$2" pin="DDR_DQ8@N22" pad="N22"/>
+<connect gate="G$2" pin="DDR_DQ9@R21" pad="R21"/>
+<connect gate="G$2" pin="DDR_DQM0@G20" pad="G20"/>
+<connect gate="G$2" pin="DDR_DQM2@C22" pad="C22"/>
+<connect gate="G$2" pin="DDR_DQM3@AA22" pad="AA22"/>
+<connect gate="G$2" pin="DDR_DQS0N@G21" pad="G21"/>
+<connect gate="G$2" pin="DDR_DQS0P@G22" pad="G22"/>
+<connect gate="G$2" pin="DDR_DQS1N@R22" pad="R22"/>
+<connect gate="G$2" pin="DDR_DQS1P@T22" pad="T22"/>
+<connect gate="G$2" pin="DDR_DQS2N@B22" pad="B22"/>
+<connect gate="G$2" pin="DDR_DQS2P@C21" pad="C21"/>
+<connect gate="G$2" pin="DDR_DQS3N@Y22" pad="Y22"/>
+<connect gate="G$2" pin="DDR_DQS3P@Y21" pad="Y21"/>
+<connect gate="G$2" pin="DDR_DTO0@L22" pad="L22"/>
+<connect gate="G$2" pin="DDR_DTO1@K21" pad="K21"/>
+<connect gate="G$2" pin="DDR_ODT@L21" pad="L21"/>
+<connect gate="G$2" pin="DDR_ZQ@K22" pad="K22"/>
+<connect gate="G$2" pin="DDR__VREF@AB19" pad="AB19"/>
+<connect gate="G$2" pin="DRR_DQM1@T21" pad="T21"/>
+<connect gate="G$3" pin="PA0@AA3" pad="AA3"/>
+<connect gate="G$3" pin="PA10@Y17" pad="Y17"/>
+<connect gate="G$3" pin="PA11@Y16" pad="Y16"/>
+<connect gate="G$3" pin="PA12@W16" pad="W16"/>
+<connect gate="G$3" pin="PA13@W3" pad="W3"/>
+<connect gate="G$3" pin="PA14@R3" pad="R3"/>
+<connect gate="G$3" pin="PA15@E11" pad="E11"/>
+<connect gate="G$3" pin="PA1@V4" pad="V4"/>
+<connect gate="G$3" pin="PA2@AB2" pad="AB2"/>
+<connect gate="G$3" pin="PA3@T4" pad="T4"/>
+<connect gate="G$3" pin="PA4@V6" pad="V6"/>
+<connect gate="G$3" pin="PA5@U5" pad="U5"/>
+<connect gate="G$3" pin="PA6@W9" pad="W9"/>
+<connect gate="G$3" pin="PA7@Y9" pad="Y9"/>
+<connect gate="G$3" pin="PA8@B13" pad="B13"/>
+<connect gate="G$3" pin="PA9@A11" pad="A11"/>
+<connect gate="G$3" pin="PB0@AB5" pad="AB5"/>
+<connect gate="G$3" pin="PB10@V9" pad="V9"/>
+<connect gate="G$3" pin="PB11@Y5" pad="Y5"/>
+<connect gate="G$3" pin="PB12@AA7" pad="AA7"/>
+<connect gate="G$3" pin="PB13@V10" pad="V10"/>
+<connect gate="G$3" pin="PB14@A13" pad="A13"/>
+<connect gate="G$3" pin="PB15@B12" pad="B12"/>
+<connect gate="G$3" pin="PB1@AA5" pad="AA5"/>
+<connect gate="G$3" pin="PB2@V13" pad="V13"/>
+<connect gate="G$3" pin="PB3@A12" pad="A12"/>
+<connect gate="G$3" pin="PB4@C13" pad="C13"/>
+<connect gate="G$3" pin="PB5@AA8" pad="AA8"/>
+<connect gate="G$3" pin="PB6@W13" pad="W13"/>
+<connect gate="G$3" pin="PB7@F11" pad="F11"/>
+<connect gate="G$3" pin="PB8@AB8" pad="AB8"/>
+<connect gate="G$3" pin="PB9@F12" pad="F12"/>
+<connect gate="G$3" pin="PC0@U10" pad="U10"/>
+<connect gate="G$3" pin="PC10@F14" pad="F14"/>
+<connect gate="G$3" pin="PC11@D15" pad="D15"/>
+<connect gate="G$3" pin="PC12@E12" pad="E12"/>
+<connect gate="G$3" pin="PC13@N2" pad="N2"/>
+<connect gate="G$3" pin="PC14-_OSC32__IN@P1" pad="P1"/>
+<connect gate="G$3" pin="PC15-_OSC32__OUT@P2" pad="P2"/>
+<connect gate="G$3" pin="PC1@AB3" pad="AB3"/>
+<connect gate="G$3" pin="PC2@Y1" pad="Y1"/>
+<connect gate="G$3" pin="PC3@U3" pad="U3"/>
+<connect gate="G$3" pin="PC4@AB6" pad="AB6"/>
+<connect gate="G$3" pin="PC5@AA6" pad="AA6"/>
+<connect gate="G$3" pin="PC6@E13" pad="E13"/>
+<connect gate="G$3" pin="PC7@D13" pad="D13"/>
+<connect gate="G$3" pin="PC8@E14" pad="E14"/>
+<connect gate="G$3" pin="PC9@D14" pad="D14"/>
+<connect gate="G$4" pin="PD0@C10" pad="C10"/>
+<connect gate="G$4" pin="PD10@A8" pad="A8"/>
+<connect gate="G$4" pin="PD11@AB9" pad="AB9"/>
+<connect gate="G$4" pin="PD12@W12" pad="W12"/>
+<connect gate="G$4" pin="PD13@V14" pad="V14"/>
+<connect gate="G$4" pin="PD14@M3" pad="M3"/>
+<connect gate="G$4" pin="PD15@L1" pad="L1"/>
+<connect gate="G$4" pin="PD1@B10" pad="B10"/>
+<connect gate="G$4" pin="PD2@D12" pad="D12"/>
+<connect gate="G$4" pin="PD3@B11" pad="B11"/>
+<connect gate="G$4" pin="PD4@C9" pad="C9"/>
+<connect gate="G$4" pin="PD5@A9" pad="A9"/>
+<connect gate="G$4" pin="PD6@L3" pad="L3"/>
+<connect gate="G$4" pin="PD7@F10" pad="F10"/>
+<connect gate="G$4" pin="PD8@M1" pad="M1"/>
+<connect gate="G$4" pin="PD9@M2" pad="M2"/>
+<connect gate="G$4" pin="PE0@C5" pad="C5"/>
+<connect gate="G$4" pin="PE10@W14" pad="W14"/>
+<connect gate="G$4" pin="PE11@D5" pad="D5"/>
+<connect gate="G$4" pin="PE12@E4" pad="E4"/>
+<connect gate="G$4" pin="PE13@A4" pad="A4"/>
+<connect gate="G$4" pin="PE14@B4" pad="B4"/>
+<connect gate="G$4" pin="PE15@C4" pad="C4"/>
+<connect gate="G$4" pin="PE1@D7" pad="D7"/>
+<connect gate="G$4" pin="PE2@Y2" pad="Y2"/>
+<connect gate="G$4" pin="PE3@A10" pad="A10"/>
+<connect gate="G$4" pin="PE4@F15" pad="F15"/>
+<connect gate="G$4" pin="PE5@C12" pad="C12"/>
+<connect gate="G$4" pin="PE6@E9" pad="E9"/>
+<connect gate="G$4" pin="PE7@W10" pad="W10"/>
+<connect gate="G$4" pin="PE8@Y12" pad="Y12"/>
+<connect gate="G$4" pin="PE9@W11" pad="W11"/>
+<connect gate="G$4" pin="PF0@E10" pad="E10"/>
+<connect gate="G$4" pin="PF10@V12" pad="V12"/>
+<connect gate="G$4" pin="PF11@W8" pad="W8"/>
+<connect gate="G$4" pin="PF12@V8" pad="V8"/>
+<connect gate="G$4" pin="PF13@W7" pad="W7"/>
+<connect gate="G$4" pin="PF14@V7" pad="V7"/>
+<connect gate="G$4" pin="PF15@W6" pad="W6"/>
+<connect gate="G$4" pin="PF1@B9" pad="B9"/>
+<connect gate="G$4" pin="PF2@F13" pad="F13"/>
+<connect gate="G$4" pin="PF3@V3" pad="V3"/>
+<connect gate="G$4" pin="PF4@F9" pad="F9"/>
+<connect gate="G$4" pin="PF5@D9" pad="D9"/>
+<connect gate="G$4" pin="PF6@AA11" pad="AA11"/>
+<connect gate="G$4" pin="PF7@AA10" pad="AA10"/>
+<connect gate="G$4" pin="PF8@AB10" pad="AB10"/>
+<connect gate="G$4" pin="PF9@AB11" pad="AB11"/>
+<connect gate="G$5" pin="PG0@W5" pad="W5"/>
+<connect gate="G$5" pin="PG10@AA9" pad="AA9"/>
+<connect gate="G$5" pin="PG11@U11" pad="U11"/>
+<connect gate="G$5" pin="PG12@J4" pad="J4"/>
+<connect gate="G$5" pin="PG13@AA1" pad="AA1"/>
+<connect gate="G$5" pin="PG14@AA2" pad="AA2"/>
+<connect gate="G$5" pin="PG15@D10" pad="D10"/>
+<connect gate="G$5" pin="PG1@Y4" pad="Y4"/>
+<connect gate="G$5" pin="PG2@W4" pad="W4"/>
+<connect gate="G$5" pin="PG3@U4" pad="U4"/>
+<connect gate="G$5" pin="PG4@AB4" pad="AB4"/>
+<connect gate="G$5" pin="PG5@U8" pad="U8"/>
+<connect gate="G$5" pin="PG6@D11" pad="D11"/>
+<connect gate="G$5" pin="PG7@Y11" pad="Y11"/>
+<connect gate="G$5" pin="PG8@Y8" pad="Y8"/>
+<connect gate="G$5" pin="PG9@W15" pad="W15"/>
+<connect gate="G$5" pin="PH0-_OSC_IN@T1" pad="T1"/>
+<connect gate="G$5" pin="PH1-_OSC__OUT@T2" pad="T2"/>
+<connect gate="G$5" pin="PH10@B1" pad="B1"/>
+<connect gate="G$5" pin="PH11@B3" pad="B3"/>
+<connect gate="G$5" pin="PH12@F5" pad="F5"/>
+<connect gate="G$5" pin="PH13@D3" pad="D3"/>
+<connect gate="G$5" pin="PH14@C2" pad="C2"/>
+<connect gate="G$5" pin="PH15@C1" pad="C1"/>
+<connect gate="G$5" pin="PH2@AB7" pad="AB7"/>
+<connect gate="G$5" pin="PH3@Y6" pad="Y6"/>
+<connect gate="G$5" pin="PH4@A3" pad="A3"/>
+<connect gate="G$5" pin="PH5@A2" pad="A2"/>
+<connect gate="G$5" pin="PH6@V11" pad="V11"/>
+<connect gate="G$5" pin="PH7@W2" pad="W2"/>
+<connect gate="G$5" pin="PH8@D6" pad="D6"/>
+<connect gate="G$5" pin="PH9@E6" pad="E6"/>
+<connect gate="G$5" pin="PI0@D1" pad="D1"/>
+<connect gate="G$5" pin="PI10@W1" pad="W1"/>
+<connect gate="G$5" pin="PI11@T3" pad="T3"/>
+<connect gate="G$5" pin="PI12@H2" pad="H2"/>
+<connect gate="G$5" pin="PI13@H1" pad="H1"/>
+<connect gate="G$5" pin="PI14@D2" pad="D2"/>
+<connect gate="G$5" pin="PI15@F3" pad="F3"/>
+<connect gate="G$5" pin="PI1@E2" pad="E2"/>
+<connect gate="G$5" pin="PI2@E1" pad="E1"/>
+<connect gate="G$5" pin="PI3@E3" pad="E3"/>
+<connect gate="G$5" pin="PI4@J6" pad="J6"/>
+<connect gate="G$5" pin="PI5@F2" pad="F2"/>
+<connect gate="G$5" pin="PI6@G5" pad="G5"/>
+<connect gate="G$5" pin="PI7@F1" pad="F1"/>
+<connect gate="G$5" pin="PI8@N1" pad="N1"/>
+<connect gate="G$5" pin="PI9@J5" pad="J5"/>
+<connect gate="G$6" pin="PJ0@J2" pad="J2"/>
+<connect gate="G$6" pin="PJ10@J3" pad="J3"/>
+<connect gate="G$6" pin="PJ11@K6" pad="K6"/>
+<connect gate="G$6" pin="PJ12@B8" pad="B8"/>
+<connect gate="G$6" pin="PJ13@A7" pad="A7"/>
+<connect gate="G$6" pin="PJ14@B7" pad="B7"/>
+<connect gate="G$6" pin="PJ15@C7" pad="C7"/>
+<connect gate="G$6" pin="PJ1@L6" pad="L6"/>
+<connect gate="G$6" pin="PJ2@K4" pad="K4"/>
+<connect gate="G$6" pin="PJ3@J1" pad="J1"/>
+<connect gate="G$6" pin="PJ4@K2" pad="K2"/>
+<connect gate="G$6" pin="PJ5@K1" pad="K1"/>
+<connect gate="G$6" pin="PJ6@L5" pad="L5"/>
+<connect gate="G$6" pin="PJ7@L4" pad="L4"/>
+<connect gate="G$6" pin="PJ8@H6" pad="H6"/>
+<connect gate="G$6" pin="PJ9@L2" pad="L2"/>
+<connect gate="G$6" pin="PK0@D8" pad="D8"/>
+<connect gate="G$6" pin="PK1@E7" pad="E7"/>
+<connect gate="G$6" pin="PK2@E8" pad="E8"/>
+<connect gate="G$6" pin="PK3@B6" pad="B6"/>
+<connect gate="G$6" pin="PK4@A6" pad="A6"/>
+<connect gate="G$6" pin="PK5@C6" pad="C6"/>
+<connect gate="G$6" pin="PK6@A5" pad="A5"/>
+<connect gate="G$6" pin="PK7@B5" pad="B5"/>
+<connect gate="G$6" pin="PZ0@G2" pad="G2"/>
+<connect gate="G$6" pin="PZ1@H5" pad="H5"/>
+<connect gate="G$6" pin="PZ2@K5" pad="K5"/>
+<connect gate="G$6" pin="PZ3@F4" pad="F4"/>
+<connect gate="G$6" pin="PZ4@G1" pad="G1"/>
+<connect gate="G$6" pin="PZ5@H4" pad="H4"/>
+<connect gate="G$6" pin="PZ6@G3" pad="G3"/>
+<connect gate="G$6" pin="PZ7@H3" pad="H3"/>
+<connect gate="G$7" pin="VBAT@M4" pad="M4"/>
+<connect gate="G$7" pin="VDD@M9" pad="M9"/>
+<connect gate="G$7" pin="VDD@N10" pad="N10"/>
+<connect gate="G$7" pin="VDD@N8" pad="N8"/>
+<connect gate="G$7" pin="VDD@P11" pad="P11"/>
+<connect gate="G$7" pin="VDD@P9" pad="P9"/>
+<connect gate="G$7" pin="VDD@R10" pad="R10"/>
+<connect gate="G$7" pin="VDD@R12" pad="R12"/>
+<connect gate="G$7" pin="VDD@T13" pad="T13"/>
+<connect gate="G$7" pin="VDD@U12" pad="U12"/>
+<connect gate="G$7" pin="VDD@U14" pad="U14"/>
+<connect gate="G$7" pin="VDD@U9" pad="U9"/>
+<connect gate="G$7" pin="VDDA@R5" pad="R5"/>
+<connect gate="G$7" pin="VDDA_1V1_REG@AB17" pad="AB17"/>
+<connect gate="G$7" pin="VDDA_1V8_DSI@B14" pad="B14"/>
+<connect gate="G$7" pin="VDDA_1V8_REG@AB12" pad="AB12"/>
+<connect gate="G$7" pin="VDDCORE@H11" pad="H11"/>
+<connect gate="G$7" pin="VDDCORE@H13" pad="H13"/>
+<connect gate="G$7" pin="VDDCORE@H15" pad="H15"/>
+<connect gate="G$7" pin="VDDCORE@H9" pad="H9"/>
+<connect gate="G$7" pin="VDDCORE@J10" pad="J10"/>
+<connect gate="G$7" pin="VDDCORE@J12" pad="J12"/>
+<connect gate="G$7" pin="VDDCORE@J14" pad="J14"/>
+<connect gate="G$7" pin="VDDCORE@J8" pad="J8"/>
+<connect gate="G$7" pin="VDDCORE@K11" pad="K11"/>
+<connect gate="G$7" pin="VDDCORE@K13" pad="K13"/>
+<connect gate="G$7" pin="VDDCORE@K15" pad="K15"/>
+<connect gate="G$7" pin="VDDCORE@K9" pad="K9"/>
+<connect gate="G$7" pin="VDDCORE@L10" pad="L10"/>
+<connect gate="G$7" pin="VDDCORE@L12" pad="L12"/>
+<connect gate="G$7" pin="VDDCORE@L14" pad="L14"/>
+<connect gate="G$7" pin="VDDCORE@L8" pad="L8"/>
+<connect gate="G$7" pin="VDDCORE@M11" pad="M11"/>
+<connect gate="G$7" pin="VDDCORE@M13" pad="M13"/>
+<connect gate="G$7" pin="VDDCORE@M15" pad="M15"/>
+<connect gate="G$7" pin="VDDCORE@N12" pad="N12"/>
+<connect gate="G$7" pin="VDDCORE@N14" pad="N14"/>
+<connect gate="G$7" pin="VDDCORE@P13" pad="P13"/>
+<connect gate="G$7" pin="VDDCORE@P15" pad="P15"/>
+<connect gate="G$7" pin="VDDCORE@R14" pad="R14"/>
+<connect gate="G$7" pin="VDDCORE@T15" pad="T15"/>
+<connect gate="G$7" pin="VDDQ_DDR@E18" pad="E18"/>
+<connect gate="G$7" pin="VDDQ_DDR@F17" pad="F17"/>
+<connect gate="G$7" pin="VDDQ_DDR@G16" pad="G16"/>
+<connect gate="G$7" pin="VDDQ_DDR@H17" pad="H17"/>
+<connect gate="G$7" pin="VDDQ_DDR@J16" pad="J16"/>
+<connect gate="G$7" pin="VDDQ_DDR@K17" pad="K17"/>
+<connect gate="G$7" pin="VDDQ_DDR@L16" pad="L16"/>
+<connect gate="G$7" pin="VDDQ_DDR@M17" pad="M17"/>
+<connect gate="G$7" pin="VDDQ_DDR@N16" pad="N16"/>
+<connect gate="G$7" pin="VDDQ_DDR@P17" pad="P17"/>
+<connect gate="G$7" pin="VDDQ_DDR@R16" pad="R16"/>
+<connect gate="G$7" pin="VDDQ_DDR@T17" pad="T17"/>
+<connect gate="G$7" pin="VDDQ_DDR@U16" pad="U16"/>
+<connect gate="G$7" pin="VDDQ_DDR@V17" pad="V17"/>
+<connect gate="G$7" pin="VDDQ_DDR@W18" pad="W18"/>
+<connect gate="G$7" pin="VDDQ_DDR@Y19" pad="Y19"/>
+<connect gate="G$7" pin="VDD_1V2_DSI_PHY@A18" pad="A18"/>
+<connect gate="G$7" pin="VDD_1V2_DSI_REG@B18" pad="B18"/>
+<connect gate="G$7" pin="VDD_3V3__USBFS@AB16" pad="AB16"/>
+<connect gate="G$7" pin="VDD_3V3__USBHS@AB13" pad="AB13"/>
+<connect gate="G$7" pin="VDD_ANA@N5" pad="N5"/>
+<connect gate="G$7" pin="VDD_DSI@A14" pad="A14"/>
+<connect gate="G$7" pin="VDD_PLL@D18" pad="D18"/>
+<connect gate="G$7" pin="VDD_PLL@M6" pad="M6"/>
+<connect gate="G$7" pin="VREF+@P6" pad="P6"/>
+<connect gate="G$7" pin="VREF-@N6" pad="N6"/>
+<connect gate="G$7" pin="VSS@A1" pad="A1"/>
+<connect gate="G$7" pin="VSS@A19" pad="A19"/>
+<connect gate="G$7" pin="VSS@A22" pad="A22"/>
+<connect gate="G$7" pin="VSS@AA18" pad="AA18"/>
+<connect gate="G$7" pin="VSS@AA4" pad="AA4"/>
+<connect gate="G$7" pin="VSS@AB1" pad="AB1"/>
+<connect gate="G$7" pin="VSS@AB18" pad="AB18"/>
+<connect gate="G$7" pin="VSS@AB22" pad="AB22"/>
+<connect gate="G$7" pin="VSS@B19" pad="B19"/>
+<connect gate="G$7" pin="VSS@B2" pad="B2"/>
+<connect gate="G$7" pin="VSS@C11" pad="C11"/>
+<connect gate="G$7" pin="VSS@C19" pad="C19"/>
+<connect gate="G$7" pin="VSS@C20" pad="C20"/>
+<connect gate="G$7" pin="VSS@C3" pad="C3"/>
+<connect gate="G$7" pin="VSS@C8" pad="C8"/>
+<connect gate="G$7" pin="VSS@D4" pad="D4"/>
+<connect gate="G$7" pin="VSS@E19" pad="E19"/>
+<connect gate="G$7" pin="VSS@E5" pad="E5"/>
+<connect gate="G$7" pin="VSS@F16" pad="F16"/>
+<connect gate="G$7" pin="VSS@F20" pad="F20"/>
+<connect gate="G$7" pin="VSS@F6" pad="F6"/>
+<connect gate="G$7" pin="VSS@F7" pad="F7"/>
+<connect gate="G$7" pin="VSS@F8" pad="F8"/>
+<connect gate="G$7" pin="VSS@G10" pad="G10"/>
+<connect gate="G$7" pin="VSS@G12" pad="G12"/>
+<connect gate="G$7" pin="VSS@G14" pad="G14"/>
+<connect gate="G$7" pin="VSS@G17" pad="G17"/>
+<connect gate="G$7" pin="VSS@G4" pad="G4"/>
+<connect gate="G$7" pin="VSS@G6" pad="G6"/>
+<connect gate="G$7" pin="VSS@G8" pad="G8"/>
+<connect gate="G$7" pin="VSS@H7" pad="H7"/>
+<connect gate="G$7" pin="VSS@J11" pad="J11"/>
+<connect gate="G$7" pin="VSS@J13" pad="J13"/>
+<connect gate="G$7" pin="VSS@J17" pad="J17"/>
+<connect gate="G$7" pin="VSS@J20" pad="J20"/>
+<connect gate="G$7" pin="VSS@J9" pad="J9"/>
+<connect gate="G$7" pin="VSS@K10" pad="K10"/>
+<connect gate="G$7" pin="VSS@K12" pad="K12"/>
+<connect gate="G$7" pin="VSS@K14" pad="K14"/>
+<connect gate="G$7" pin="VSS@K3" pad="K3"/>
+<connect gate="G$7" pin="VSS@K7" pad="K7"/>
+<connect gate="G$7" pin="VSS@L11" pad="L11"/>
+<connect gate="G$7" pin="VSS@L13" pad="L13"/>
+<connect gate="G$7" pin="VSS@L17" pad="L17"/>
+<connect gate="G$7" pin="VSS@L19" pad="L19"/>
+<connect gate="G$7" pin="VSS@L20" pad="L20"/>
+<connect gate="G$7" pin="VSS@L9" pad="L9"/>
+<connect gate="G$7" pin="VSS@M10" pad="M10"/>
+<connect gate="G$7" pin="VSS@M12" pad="M12"/>
+<connect gate="G$7" pin="VSS@M14" pad="M14"/>
+<connect gate="G$7" pin="VSS@M7" pad="M7"/>
+<connect gate="G$7" pin="VSS@N11" pad="N11"/>
+<connect gate="G$7" pin="VSS@N13" pad="N13"/>
+<connect gate="G$7" pin="VSS@N17" pad="N17"/>
+<connect gate="G$7" pin="VSS@N9" pad="N9"/>
+<connect gate="G$7" pin="VSS@P10" pad="P10"/>
+<connect gate="G$7" pin="VSS@P12" pad="P12"/>
+<connect gate="G$7" pin="VSS@P14" pad="P14"/>
+<connect gate="G$7" pin="VSS@P20" pad="P20"/>
+<connect gate="G$7" pin="VSS@P3" pad="P3"/>
+<connect gate="G$7" pin="VSS@P7" pad="P7"/>
+<connect gate="G$7" pin="VSS@R17" pad="R17"/>
+<connect gate="G$7" pin="VSS@R8" pad="R8"/>
+<connect gate="G$7" pin="VSS@T11" pad="T11"/>
+<connect gate="G$7" pin="VSS@T19" pad="T19"/>
+<connect gate="G$7" pin="VSS@T7" pad="T7"/>
+<connect gate="G$7" pin="VSS@T9" pad="T9"/>
+<connect gate="G$7" pin="VSS@U13" pad="U13"/>
+<connect gate="G$7" pin="VSS@U15" pad="U15"/>
+<connect gate="G$7" pin="VSS@U17" pad="U17"/>
+<connect gate="G$7" pin="VSS@U20" pad="U20"/>
+<connect gate="G$7" pin="VSS@U7" pad="U7"/>
+<connect gate="G$7" pin="VSS@V16" pad="V16"/>
+<connect gate="G$7" pin="VSS@V18" pad="V18"/>
+<connect gate="G$7" pin="VSS@V19" pad="V19"/>
+<connect gate="G$7" pin="VSS@V5" pad="V5"/>
+<connect gate="G$7" pin="VSS@W17" pad="W17"/>
+<connect gate="G$7" pin="VSS@W19" pad="W19"/>
+<connect gate="G$7" pin="VSS@Y10" pad="Y10"/>
+<connect gate="G$7" pin="VSS@Y18" pad="Y18"/>
+<connect gate="G$7" pin="VSS@Y20" pad="Y20"/>
+<connect gate="G$7" pin="VSS@Y3" pad="Y3"/>
+<connect gate="G$7" pin="VSS@Y7" pad="Y7"/>
+<connect gate="G$7" pin="VSSA@R6" pad="R6"/>
+<connect gate="G$7" pin="VSSA@T6" pad="T6"/>
+<connect gate="G$7" pin="VSSA@U6" pad="U6"/>
+<connect gate="G$7" pin="VSS_ANA@P5" pad="P5"/>
+<connect gate="G$7" pin="VSS_DSI@C14" pad="C14"/>
+<connect gate="G$7" pin="VSS_DSI@C15" pad="C15"/>
+<connect gate="G$7" pin="VSS_DSI@C16" pad="C16"/>
+<connect gate="G$7" pin="VSS_DSI@C17" pad="C17"/>
+<connect gate="G$7" pin="VSS_DSI@C18" pad="C18"/>
+<connect gate="G$7" pin="VSS_PLL@M5" pad="M5"/>
+<connect gate="G$7" pin="VSS_PLL_2@D19" pad="D19"/>
+<connect gate="G$7" pin="VSS_USBHS@AA13" pad="AA13"/>
+<connect gate="G$7" pin="VSS_USBHS@AA16" pad="AA16"/>
+<connect gate="G$7" pin="VSS_USBHS@Y13" pad="Y13"/>
+<connect gate="G$7" pin="VSS_USBHS@Y14" pad="Y14"/>
+<connect gate="G$7" pin="VSS_USBHS@Y15" pad="Y15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="STMICROELECTRONICS - STM32MP157AAA3 - MPU, 32BIT, CORTEX-A7/CORTEX-M4 , LFBGA" constant="no"/>
+<attribute name="HEIGHT" value="1.27mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="STMicroelectronics" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="STM32MP157AAA3" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="511-STM32MP157AAA3" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=511-STM32MP157AAA3" constant="no"/>
+<attribute name="RS_PART_NUMBER" value="" constant="no"/>
+<attribute name="RS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32MP157" prefix="IC">
 <description>&lt;b&gt;STMICROELECTRONICS - STM32MP157AAA3 - MPU, 32BIT, CORTEX-A7/CORTEX-M4 , LFBGA&lt;/b&gt;&lt;p&gt;
 Source: &lt;a href="https://www.st.com/resource/en/datasheet/stm32mp157a.pdf"&gt; Datasheet &lt;/a&gt;</description>
 <gates>
