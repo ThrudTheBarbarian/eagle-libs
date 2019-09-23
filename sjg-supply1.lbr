@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -305,6 +305,102 @@
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
 <text x="-4.572" y="0.762" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCCAUX" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDD_DDR">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VDD_DDR" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDD_CORE">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VDD_CORE" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VREF+">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VREF+" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VREF-">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.905" x2="0" y2="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VREF-" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDDA_1V8">
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="3.81" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VDDA_1V8" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDD_USB">
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="3.81" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VDD_USB" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDDA">
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="3.81" width="0.254" layer="94"/>
+<text x="-2.54" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="VDDA" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="3V3_HDMI">
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="3.81" width="0.254" layer="94"/>
+<text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="3V3_HDMI" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="1V2_HDMI">
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="3.81" width="0.254" layer="94"/>
+<text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="1V2_HDMI" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="1V8_AUDIO">
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="3.81" width="0.254" layer="94"/>
+<text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="1V8_AUDIO" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VTT_DDR">
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="3.81" width="0.254" layer="94"/>
+<text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="VTT_DDR" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VREF_DDR">
+<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="0" y2="3.81" width="0.254" layer="94"/>
+<text x="0" y="4.572" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="VREF_DDR" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -687,6 +783,150 @@
 <deviceset name="VCCAUX">
 <gates>
 <gate name="G$1" symbol="VCCAUX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDD_DDR">
+<gates>
+<gate name="G$1" symbol="VDD_DDR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDD_CORE">
+<gates>
+<gate name="G$1" symbol="VDD_CORE" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF+">
+<gates>
+<gate name="G$1" symbol="VREF+" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF-">
+<gates>
+<gate name="G$1" symbol="VREF-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDA_1V8">
+<gates>
+<gate name="G$1" symbol="VDDA_1V8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDD_USB">
+<gates>
+<gate name="G$1" symbol="VDD_USB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDA">
+<gates>
+<gate name="G$1" symbol="VDDA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3V3_HDMI">
+<gates>
+<gate name="G$1" symbol="3V3_HDMI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1V2_HDMI">
+<gates>
+<gate name="G$1" symbol="1V2_HDMI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1V8_AUDIO">
+<gates>
+<gate name="G$1" symbol="1V8_AUDIO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VTT_DDR">
+<gates>
+<gate name="G$1" symbol="VTT_DDR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF_DDR">
+<gates>
+<gate name="G$1" symbol="VREF_DDR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
