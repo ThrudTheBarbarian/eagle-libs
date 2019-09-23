@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -690,16 +690,16 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <description>TE Connectivity Mini-SAS AMP connector 1888019-4 - &lt;a href=https://www.digikey.com/products/en?keywords=1888019-4&gt;Digikey part&lt;/a&gt; and &lt;a href=https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=1888019&amp;DocType=Customer+Drawing&amp;DocLang=English&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;&lt;br&gt;
 Verified against drawing in datasheet</description>
-<wire x1="-8.6" y1="-13.2" x2="9.4" y2="-13.2" width="0.127" layer="21"/>
-<wire x1="-8.6" y1="-13.2" x2="-8.6" y2="3.6" width="0.127" layer="21"/>
-<wire x1="9.4" y1="-13.2" x2="9.4" y2="3.6" width="0.127" layer="21"/>
+<wire x1="-8.6" y1="-9.7" x2="9.4" y2="-9.7" width="0.127" layer="21"/>
+<wire x1="-8.6" y1="-9.7" x2="-8.6" y2="3.6" width="0.127" layer="21"/>
+<wire x1="9.4" y1="-9.7" x2="9.4" y2="3.6" width="0.127" layer="21"/>
 <wire x1="-8.6" y1="3.6" x2="-8" y2="3.6" width="0.127" layer="21"/>
 <wire x1="-8" y1="3.6" x2="-8" y2="13.6" width="0.127" layer="21"/>
 <wire x1="-8" y1="13.6" x2="8.8" y2="13.6" width="0.127" layer="21"/>
 <wire x1="8.8" y1="13.6" x2="8.8" y2="3.6" width="0.127" layer="21"/>
 <wire x1="8.8" y1="3.6" x2="9.4" y2="3.6" width="0.127" layer="21"/>
-<rectangle x1="-7.6" y1="-12" x2="8" y2="2" layer="39"/>
-<rectangle x1="-7.6" y1="-12" x2="8" y2="2" layer="40"/>
+<rectangle x1="-7.6" y1="-9.5" x2="8.5" y2="2" layer="39"/>
+<rectangle x1="-7.6" y1="-9.5" x2="8.5" y2="2" layer="40"/>
 <smd name="PA1" x="-6.2" y="8.78" dx="0.35" dy="1.8" layer="1"/>
 <smd name="PA2" x="-5.4" y="8.78" dx="0.35" dy="1.8" layer="1"/>
 <smd name="PA3" x="-4.6" y="8.78" dx="0.35" dy="1.8" layer="1"/>
