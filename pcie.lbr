@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -542,85 +542,85 @@ Reference Digikey: 609-1975-ND</description>
 </package>
 <package name="PCI-E_64">
 <description>Pinouts of 10018784-10212TLF at &lt;a href=https://www.mouser.com/ProductDetail/Amphenol-FCI/10018784-10212TLF?qs=%2fha2pyFadujfS0UOPHjDeQB4COia7gvWg1oV3AgxHkEAjbu8GU%2ft8w%3d%3d&gt;Mouser&lt;/a&gt;</description>
-<wire x1="-15.06" y1="-4.15" x2="-15.06" y2="4.65" width="0.127" layer="21"/>
-<wire x1="-15.06" y1="4.65" x2="23.94" y2="4.65" width="0.127" layer="21"/>
-<wire x1="-15.06" y1="-4.15" x2="23.94" y2="-4.15" width="0.127" layer="21"/>
-<wire x1="23.94" y1="4.65" x2="23.94" y2="-4.15" width="0.127" layer="21"/>
-<pad name="B2" x="-11.06" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B4" x="-9.06" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B3" x="-10.06" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B5" x="-8.06" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B6" x="-7.06" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B8" x="-5.06" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B10" x="-3.06" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B1" x="-12.06" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B7" x="-6.06" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B9" x="-4.06" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B11" x="-2.06" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="A1" x="-12.06" y="1.5" drill="0.7" diameter="1.27" shape="square"/>
-<pad name="A3" x="-10.06" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A5" x="-8.06" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A7" x="-6.06" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A9" x="-4.06" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A11" x="-2.06" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A2" x="-11.06" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A4" x="-9.06" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A6" x="-7.06" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A8" x="-5.06" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A10" x="-3.06" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A12" x="0.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A14" x="2.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A16" x="4.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A18" x="6.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A20" x="8.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A22" x="10.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A24" x="12.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A26" x="14.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A28" x="16.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A30" x="18.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A32" x="20.94" y="3.5" drill="0.7" diameter="1.27"/>
-<pad name="A13" x="1.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A15" x="3.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A17" x="5.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A19" x="7.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A21" x="9.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A23" x="11.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A25" x="13.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A27" x="15.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A29" x="17.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="A31" x="19.94" y="1.5" drill="0.7" diameter="1.27"/>
-<pad name="B13" x="1.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B15" x="3.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B17" x="5.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B19" x="7.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B21" x="9.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B23" x="11.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B25" x="13.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B27" x="15.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B29" x="17.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B31" x="19.94" y="-1" drill="0.7" diameter="1.27"/>
-<pad name="B12" x="0.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B14" x="2.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B16" x="4.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B18" x="6.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B20" x="8.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B22" x="10.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B24" x="12.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B26" x="14.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B28" x="16.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B30" x="18.94" y="-3" drill="0.7" diameter="1.27"/>
-<pad name="B32" x="20.94" y="-3" drill="0.7" diameter="1.27"/>
-<text x="-13.97" y="5.08" size="1.27" layer="25">&gt;NAME</text>
-<text x="-15.24" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-13.06" y1="-0.75" x2="-1.56" y2="1.25" layer="21"/>
-<rectangle x1="0.94" y1="-0.75" x2="21.44" y2="1.25" layer="21"/>
-<hole x="-0.41" y="0.25" drill="2.15"/>
-<hole x="22.74" y="0.25" drill="2.15"/>
-<circle x="-0.41" y="0.25" radius="1.075" width="0.127" layer="41"/>
-<circle x="-0.41" y="0.25" radius="1.075" width="0.127" layer="42"/>
+<wire x1="-14.6155" y1="-4.3786" x2="-14.6155" y2="4.4214" width="0.127" layer="21"/>
+<wire x1="-14.6155" y1="4.4214" x2="24.3845" y2="4.4214" width="0.127" layer="21"/>
+<wire x1="-14.6155" y1="-4.3786" x2="24.3845" y2="-4.3786" width="0.127" layer="21"/>
+<wire x1="24.3845" y1="4.4214" x2="24.3845" y2="-4.3786" width="0.127" layer="21"/>
+<pad name="B2" x="-10.6155" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B4" x="-8.6155" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B3" x="-9.6155" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B5" x="-7.6155" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B6" x="-6.6155" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B8" x="-4.6155" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B10" x="-2.6155" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B1" x="-11.6155" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B7" x="-5.6155" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B9" x="-3.6155" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B11" x="-1.6155" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="A1" x="-11.6155" y="1.2714" drill="0.7" diameter="1.27" shape="square"/>
+<pad name="A3" x="-9.6155" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A5" x="-7.6155" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A7" x="-5.6155" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A9" x="-3.6155" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A11" x="-1.6155" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A2" x="-10.6155" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A4" x="-8.6155" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A6" x="-6.6155" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A8" x="-4.6155" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A10" x="-2.6155" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A12" x="1.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A14" x="3.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A16" x="5.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A18" x="7.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A20" x="9.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A22" x="11.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A24" x="13.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A26" x="15.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A28" x="17.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A30" x="19.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A32" x="21.3845" y="3.2714" drill="0.7" diameter="1.27"/>
+<pad name="A13" x="2.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A15" x="4.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A17" x="6.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A19" x="8.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A21" x="10.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A23" x="12.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A25" x="14.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A27" x="16.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A29" x="18.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="A31" x="20.3845" y="1.2714" drill="0.7" diameter="1.27"/>
+<pad name="B13" x="2.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B15" x="4.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B17" x="6.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B19" x="8.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B21" x="10.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B23" x="12.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B25" x="14.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B27" x="16.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B29" x="18.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B31" x="20.3845" y="-1.2286" drill="0.7" diameter="1.27"/>
+<pad name="B12" x="1.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B14" x="3.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B16" x="5.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B18" x="7.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B20" x="9.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B22" x="11.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B24" x="13.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B26" x="15.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B28" x="17.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B30" x="19.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<pad name="B32" x="21.3845" y="-3.2286" drill="0.7" diameter="1.27"/>
+<text x="-13.5255" y="4.8514" size="1.27" layer="25">&gt;NAME</text>
+<text x="-14.7955" y="-6.5786" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-12.6155" y1="-0.9786" x2="-1.1155" y2="1.0214" layer="21"/>
+<rectangle x1="1.3845" y1="-0.9786" x2="21.8845" y2="1.0214" layer="21"/>
+<hole x="0.0345" y="0.0214" drill="2.15"/>
+<hole x="23.1845" y="0.0214" drill="2.15"/>
+<circle x="0.0345" y="0.0214" radius="1.075" width="0.127" layer="41"/>
+<circle x="0.0345" y="0.0214" radius="1.075" width="0.127" layer="42"/>
 <circle x="-0.41" y="0.25" radius="1.075" width="0.127" layer="29"/>
-<circle x="22.74" y="0.25" radius="1.075" width="0.127" layer="43"/>
-<circle x="22.74" y="0.25" radius="1.075" width="0.127" layer="42"/>
+<circle x="23.1845" y="0.0214" radius="1.075" width="0.127" layer="43"/>
+<circle x="23.1845" y="0.0214" radius="1.075" width="0.127" layer="42"/>
 <circle x="22.74" y="0.25" radius="1.075" width="0.127" layer="29"/>
 </package>
 <package name="XLIO-HOST">
