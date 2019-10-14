@@ -8120,8 +8120,8 @@ Bus</text>
 <pin name="PH1@30" x="-15.24" y="15.24" length="middle"/>
 <pin name="PH2@43" x="-15.24" y="12.7" length="middle"/>
 <pin name="PH3@44" x="-15.24" y="10.16" length="middle"/>
-<pin name="PH5@45" x="-15.24" y="7.62" length="middle"/>
-<pin name="PH6@46" x="-15.24" y="5.08" length="middle"/>
+<pin name="PH4@45" x="-15.24" y="7.62" length="middle"/>
+<pin name="PH5@46" x="-15.24" y="5.08" length="middle"/>
 <pin name="PH6@83" x="-15.24" y="2.54" length="middle"/>
 <pin name="PH7@84" x="-15.24" y="0" length="middle"/>
 <pin name="PH8@85" x="-15.24" y="-2.54" length="middle"/>
@@ -10712,8 +10712,8 @@ Source: &lt;a href="https://www.st.com/en/microcontrollers-microprocessors/stm32
 <connect gate="-H" pin="PH1@30" pad="30"/>
 <connect gate="-H" pin="PH2@43" pad="43"/>
 <connect gate="-H" pin="PH3@44" pad="44"/>
-<connect gate="-H" pin="PH5@45" pad="45"/>
-<connect gate="-H" pin="PH6@46" pad="46"/>
+<connect gate="-H" pin="PH4@45" pad="45"/>
+<connect gate="-H" pin="PH5@46" pad="46"/>
 <connect gate="-H" pin="PH6@83" pad="83"/>
 <connect gate="-H" pin="PH7@84" pad="84"/>
 <connect gate="-H" pin="PH8@85" pad="85"/>
